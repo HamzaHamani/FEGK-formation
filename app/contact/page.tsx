@@ -9,78 +9,78 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <section className="py-16 px-4 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+      <section className="py-12 sm:py-16 px-4 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Contactez-Nous</h1>
-          <p className="text-xl opacity-90 max-w-3xl">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">Contactez-Nous</h1>
+          <p className="text-base sm:text-lg lg:text-xl opacity-90 max-w-3xl leading-relaxed px-2 sm:px-0">
             Notre équipe est là pour répondre à toutes vos questions concernant nos programmes de formation continue.
           </p>
         </div>
       </section>
 
-      <section className="py-16 px-4">
+      <section className="py-12 sm:py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12">
             {/* Contact Information */}
             <div>
-              <h2 className="text-3xl font-bold mb-8">Informations de Contact</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Informations de Contact</h2>
 
-              <div className="space-y-6 mb-8">
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                      <MapPin className="h-5 w-5 text-blue-600" />
+              <div className="space-y-4 sm:space-y-6 mb-6 sm:mb-8">
+                <Card className="transition-all duration-300 hover:shadow-lg">
+                  <CardHeader className="pb-3 sm:pb-4">
+                    <CardTitle className="flex items-center gap-2 text-base sm:text-lg">
+                      <MapPin className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600" />
                       Adresse
                     </CardTitle>
                   </CardHeader>
-                  <CardContent>
-                    <p>Faculté d'Économie et de Gestion</p>
-                    <p>Campus Universitaire Maamora</p>
-                    <p>BP: 2010 Kénitra, Maroc</p>
+                  <CardContent className="pt-0">
+                    <p className="text-sm sm:text-base">Faculté d'Économie et de Gestion</p>
+                    <p className="text-sm sm:text-base">Campus Universitaire Maamora</p>
+                    <p className="text-sm sm:text-base">BP: 2010 Kénitra, Maroc</p>
                   </CardContent>
                 </Card>
 
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                      <Phone className="h-5 w-5 text-blue-600" />
+                <Card className="transition-all duration-300 hover:shadow-lg">
+                  <CardHeader className="pb-3 sm:pb-4">
+                    <CardTitle className="flex items-center gap-2 text-base sm:text-lg">
+                      <Phone className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600" />
                       Téléphone
                     </CardTitle>
                   </CardHeader>
-                  <CardContent>
-                    <p>+212 537 32 93 54</p>
-                    <p>+212 537 32 93 55 (Admissions)</p>
+                  <CardContent className="pt-0">
+                    <p className="text-sm sm:text-base">+212 537 32 93 54</p>
+                    <p className="text-sm sm:text-base">+212 537 32 93 55 (Admissions)</p>
                   </CardContent>
                 </Card>
 
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                      <Mail className="h-5 w-5 text-blue-600" />
+                <Card className="transition-all duration-300 hover:shadow-lg">
+                  <CardHeader className="pb-3 sm:pb-4">
+                    <CardTitle className="flex items-center gap-2 text-base sm:text-lg">
+                      <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600" />
                       Email
                     </CardTitle>
                   </CardHeader>
-                  <CardContent>
-                    <p>economie@uit.ac.ma</p>
-                    <p>admissions.eco@uit.ac.ma</p>
+                  <CardContent className="pt-0">
+                    <p className="text-sm sm:text-base">economie@uit.ac.ma</p>
+                    <p className="text-sm sm:text-base">admissions.eco@uit.ac.ma</p>
                   </CardContent>
                 </Card>
 
-                <Card>
-                  <CardHeader>
-                    <CardTitle className="flex items-center gap-2">
-                      <Clock className="h-5 w-5 text-blue-600" />
+                <Card className="transition-all duration-300 hover:shadow-lg">
+                  <CardHeader className="pb-3 sm:pb-4">
+                    <CardTitle className="flex items-center gap-2 text-base sm:text-lg">
+                      <Clock className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600" />
                       Horaires d'Ouverture
                     </CardTitle>
                   </CardHeader>
-                  <CardContent>
-                    <p>
+                  <CardContent className="pt-0">
+                    <p className="text-sm sm:text-base">
                       <strong>Lundi - Vendredi:</strong> 8h00 - 17h00
                     </p>
-                    <p>
+                    <p className="text-sm sm:text-base">
                       <strong>Samedi:</strong> 8h00 - 12h00
                     </p>
-                    <p>
+                    <p className="text-sm sm:text-base">
                       <strong>Dimanche:</strong> Fermé
                     </p>
                   </CardContent>
@@ -90,52 +90,52 @@ export default function ContactPage() {
 
             {/* Contact Form */}
             <div>
-              <h2 className="text-3xl font-bold mb-8">Envoyez-nous un Message</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8">Envoyez-nous un Message</h2>
 
-              <Card>
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
-                    <MessageSquare className="h-5 w-5 text-blue-600" />
+              <Card className="transition-all duration-300 hover:shadow-lg">
+                <CardHeader className="pb-4 sm:pb-6">
+                  <CardTitle className="flex items-center gap-2 text-base sm:text-lg">
+                    <MessageSquare className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600" />
                     Formulaire de Contact
                   </CardTitle>
-                  <CardDescription>
+                  <CardDescription className="text-sm sm:text-base">
                     Remplissez ce formulaire et nous vous répondrons dans les plus brefs délais.
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <form className="space-y-6">
-                    <div className="grid grid-cols-2 gap-4">
+                  <form className="space-y-4 sm:space-y-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
-                        <Label htmlFor="firstName">Prénom *</Label>
-                        <Input id="firstName" placeholder="Votre prénom" required />
+                        <Label htmlFor="firstName" className="text-sm sm:text-base">Prénom *</Label>
+                        <Input id="firstName" placeholder="Votre prénom" required className="h-10 sm:h-auto text-sm sm:text-base" />
                       </div>
                       <div>
-                        <Label htmlFor="lastName">Nom *</Label>
-                        <Input id="lastName" placeholder="Votre nom" required />
+                        <Label htmlFor="lastName" className="text-sm sm:text-base">Nom *</Label>
+                        <Input id="lastName" placeholder="Votre nom" required className="h-10 sm:h-auto text-sm sm:text-base" />
                       </div>
                     </div>
 
                     <div>
-                      <Label htmlFor="email">Email *</Label>
-                      <Input id="email" type="email" placeholder="votre.email@exemple.com" required />
+                      <Label htmlFor="email" className="text-sm sm:text-base">Email *</Label>
+                      <Input id="email" type="email" placeholder="votre.email@exemple.com" required className="h-10 sm:h-auto text-sm sm:text-base" />
                     </div>
 
                     <div>
-                      <Label htmlFor="phone">Téléphone</Label>
-                      <Input id="phone" type="tel" placeholder="+212 6XX XXX XXX" />
+                      <Label htmlFor="phone" className="text-sm sm:text-base">Téléphone</Label>
+                      <Input id="phone" type="tel" placeholder="+212 6XX XXX XXX" className="h-10 sm:h-auto text-sm sm:text-base" />
                     </div>
 
                     <div>
-                      <Label htmlFor="subject">Sujet *</Label>
-                      <Input id="subject" placeholder="Objet de votre message" required />
+                      <Label htmlFor="subject" className="text-sm sm:text-base">Sujet *</Label>
+                      <Input id="subject" placeholder="Objet de votre message" required className="h-10 sm:h-auto text-sm sm:text-base" />
                     </div>
 
                     <div>
-                      <Label htmlFor="message">Message *</Label>
-                      <Textarea id="message" placeholder="Décrivez votre demande en détail..." rows={6} required />
+                      <Label htmlFor="message" className="text-sm sm:text-base">Message *</Label>
+                      <Textarea id="message" placeholder="Décrivez votre demande en détail..." rows={4} className="text-sm sm:text-base resize-none sm:rows-6" required />
                     </div>
 
-                    <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700">
+                    <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-sm sm:text-base py-2 sm:py-3 transition-all duration-300 hover:scale-105 hover:shadow-lg">
                       Envoyer le Message
                     </Button>
                   </form>
@@ -145,9 +145,9 @@ export default function ContactPage() {
           </div>
 
           {/* FAQ Section */}
-          <div className="mt-16">
-            <h2 className="text-3xl font-bold mb-8 text-center">Questions Fréquentes</h2>
-            <div className="grid md:grid-cols-2 gap-6">
+          <div className="mt-12 sm:mt-16">
+            <h2 className="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-center">Questions Fréquentes</h2>
+            <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
               <Card>
                 <CardHeader>
                   <CardTitle>Quand commencent les cours ?</CardTitle>

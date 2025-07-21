@@ -66,17 +66,17 @@ export default function HomePage() {
               <Link href="/programmes" className="w-full sm:w-auto">
                 <Button
                   size="lg"
-                  className="w-full sm:w-auto bg-white text-blue-900 hover:bg-gray-100 font-medium px-6 sm:px-8 lg:px-10 py-4 sm:py-5 text-base sm:text-lg"
+                  className="w-full sm:w-auto bg-white text-blue-900 hover:bg-gray-100 font-medium px-6 sm:px-8 lg:px-10 py-4 sm:py-5 text-base sm:text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl group"
                 >
                   Explorer les Programmes
-                  <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+                  <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-300 group-hover:translate-x-1" />
                 </Button>
               </Link>
               <Link href="/admissions" className="w-full sm:w-auto">
                 <Button
                   size="lg"
                   variant="outline"
-                  className="w-full sm:w-auto border-white text-white hover:bg-white hover:text-blue-900 font-medium px-6 sm:px-8 lg:px-10 py-4 sm:py-5 text-base sm:text-lg bg-transparent"
+                  className="w-full sm:w-auto border-white text-white hover:bg-white hover:text-blue-900 font-medium px-6 sm:px-8 lg:px-10 py-4 sm:py-5 text-base sm:text-lg bg-transparent transition-all duration-300 hover:scale-105 hover:shadow-xl"
                 >
                   Candidater Aujourd'hui
                 </Button>
@@ -87,88 +87,88 @@ export default function HomePage() {
       </section>
 
       {/* Formations Overview Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="font-playfair text-4xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="font-playfair text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
               Nos Domaines de Formation
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto px-4 sm:px-0">
               La Faculté d'Économie et de Gestion de Kénitra propose des
               formations spécialisées dans deux domaines d'excellence, adaptées
               aux besoins du marché professionnel moderne.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
             {/* Management et Marketing des Services */}
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
-                  <Users className="h-6 w-6 text-white" />
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-4 sm:p-6 lg:p-8 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:bg-blue-700 group-hover:scale-110">
+                  <Users className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
                 </div>
-                <h3 className="font-playfair text-2xl font-bold text-blue-900">
+                <h3 className="font-playfair text-lg sm:text-xl lg:text-2xl font-bold text-blue-900 leading-tight">
                   Management et Marketing des Services
                 </h3>
               </div>
-              <p className="text-gray-700 mb-6 leading-relaxed">
+              <p className="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6 leading-relaxed">
                 Nos programmes en Management et Marketing des Services forment
                 des professionnels capables de concevoir, commercialiser et
                 gérer des offres de services compétitives. Cette formation
                 combine expertise managériale et marketing stratégique pour
                 répondre aux défis du secteur tertiaire.
               </p>
-              <div className="flex gap-3">
-                <Badge className="bg-blue-600 text-white">
+              <div className="flex flex-row flex-wrap gap-2 sm:gap-3">
+                <Badge className="bg-blue-600 text-white text-xs sm:text-sm px-2 py-1 whitespace-nowrap">
                   Licence Spécialisée
                 </Badge>
-                <Badge className="bg-blue-800 text-white">
+                <Badge className="bg-blue-800 text-white text-xs sm:text-sm px-2 py-1 whitespace-nowrap">
                   Master Spécialisé
                 </Badge>
               </div>
             </div>
 
             {/* Audit et Qualité */}
-            <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-8">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center">
-                  <Award className="h-6 w-6 text-white" />
+            <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-4 sm:p-6 lg:p-8 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-600 rounded-lg flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:bg-green-700 group-hover:scale-110">
+                  <Award className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
                 </div>
-                <h3 className="font-playfair text-2xl font-bold text-green-900">
+                <h3 className="font-playfair text-lg sm:text-xl lg:text-2xl font-bold text-green-900 leading-tight">
                   Audit et Qualité
                 </h3>
               </div>
-              <p className="text-gray-700 mb-6 leading-relaxed">
+              <p className="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6 leading-relaxed">
                 Nos formations en Audit et Qualité préparent les futurs experts
                 en management de la qualité et audit organisationnel. Ces
                 programmes développent les compétences nécessaires pour
                 améliorer les performances et assurer la conformité des
                 organisations modernes.
               </p>
-              <div className="flex gap-3">
-                <Badge className="bg-green-600 text-white">
+              <div className="flex flex-row flex-wrap gap-2 sm:gap-3">
+                <Badge className="bg-green-600 text-white text-xs sm:text-sm px-2 py-1 whitespace-nowrap">
                   Licence Spécialisée
                 </Badge>
-                <Badge className="bg-green-800 text-white">
+                <Badge className="bg-green-800 text-white text-xs sm:text-sm px-2 py-1 whitespace-nowrap">
                   Master Spécialisé
                 </Badge>
               </div>
             </div>
           </div>
 
-          <div className="text-center mt-12">
-            <p className="text-gray-600 mb-6">
+          <div className="text-center mt-8 sm:mt-12">
+            <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 px-4 sm:px-0">
               Chaque domaine propose des formations de niveau Licence et Master,
               conçues pour s'adapter à votre parcours professionnel.
             </p>
-            <Link href="/a-propos">
+            <Link href="/a-propos" className="w-full sm:w-auto">
               <Button
                 variant="outline"
                 size="lg"
-                className="border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white bg-transparent"
+                className="w-full sm:w-auto border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white bg-transparent text-sm sm:text-base px-4 sm:px-6 lg:px-8 transition-all duration-300 hover:scale-105 hover:shadow-lg"
               >
                 En Savoir Plus sur Nos Formations
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
               </Button>
             </Link>
           </div>
@@ -176,61 +176,61 @@ export default function HomePage() {
       </section>
 
       {/* Featured Programs */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="font-playfair text-4xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+            <h2 className="font-playfair text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
               Programmes Phares
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto px-4 sm:px-0">
               Découvrez nos programmes emblématiques conçus pour les
               professionnels souhaitant faire progresser leur carrière
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-2 gap-6 sm:gap-8">
             {/* MMS Program */}
-            <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+            <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 w-full group hover:scale-105">
               <div className="aspect-video bg-gradient-to-r from-blue-600 to-blue-700 relative overflow-hidden">
                 <div className="absolute inset-0 bg-black/10"></div>
-                <div className="absolute bottom-4 left-6 right-6">
-                  <Badge className="bg-white/20 text-white border-white/30 mb-2">
+                <div className="absolute bottom-3 sm:bottom-4 left-4 sm:left-6 right-4 sm:right-6">
+                  <Badge className="bg-white/20 text-white border-white/30 mb-2 text-xs sm:text-sm transition-all duration-300 group-hover:bg-white/30">
                     Licence Spécialisée
                   </Badge>
-                  <h3 className="font-playfair text-2xl font-bold text-white">
+                  <h3 className="font-playfair text-lg sm:text-xl lg:text-2xl font-bold text-white leading-tight">
                     Management et Marketing des Services
                   </h3>
                 </div>
               </div>
-              <CardContent className="p-6">
-                <div className="flex items-center gap-6 text-sm text-gray-600 mb-4">
-                  <div className="flex items-center gap-2">
-                    <Clock className="h-4 w-4" />
+              <CardContent className="p-4 sm:p-6">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4">
+                  <div className="flex items-center gap-1 sm:gap-2">
+                    <Clock className="h-3 w-3 sm:h-4 sm:w-4" />
                     <span>2 Semestres</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Calendar className="h-4 w-4" />
+                  <div className="flex items-center gap-1 sm:gap-2">
+                    <Calendar className="h-3 w-3 sm:h-4 sm:w-4" />
                     <span>Week-ends</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Users className="h-4 w-4" />
+                  <div className="flex items-center gap-1 sm:gap-2">
+                    <Users className="h-3 w-3 sm:h-4 sm:w-4" />
                     <span>Format Hybride</span>
                   </div>
                 </div>
-                <p className="text-gray-700 mb-6 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6 leading-relaxed">
                   Maîtrisez la conception et la production d'offres de services
                   compétitives adaptées aux besoins clients. Ce programme
                   combine expertise en management et marketing très appréciée
                   par les employeurs.
                 </p>
-                <div className="flex items-center justify-between">
-                  <div className="text-2xl font-bold text-blue-800">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                  <div className="text-xl sm:text-2xl font-bold text-blue-800">
                     16 000 DH
                   </div>
-                  <Link href="/programmes/mms">
-                    <Button className="bg-blue-800 hover:bg-blue-900 text-white">
+                  <Link href="/programmes/mms" className="w-full sm:w-auto">
+                    <Button className="w-full sm:w-auto bg-blue-800 hover:bg-blue-900 text-white text-sm sm:text-base px-4 sm:px-6 transition-all duration-300 hover:scale-105 hover:shadow-lg group">
                       En Savoir Plus
-                      <ArrowRight className="ml-2 h-4 w-4" />
+                      <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4 transition-transform duration-300 group-hover:translate-x-1" />
                     </Button>
                   </Link>
                 </div>
@@ -238,47 +238,47 @@ export default function HomePage() {
             </Card>
 
             {/* MSMS Program */}
-            <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+            <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 w-full group hover:scale-105">
               <div className="aspect-video bg-gradient-to-r from-blue-700 to-blue-800 relative overflow-hidden">
                 <div className="absolute inset-0 bg-black/10"></div>
-                <div className="absolute bottom-4 left-6 right-6">
-                  <Badge className="bg-white/20 text-white border-white/30 mb-2">
+                <div className="absolute bottom-3 sm:bottom-4 left-4 sm:left-6 right-4 sm:right-6">
+                  <Badge className="bg-white/20 text-white border-white/30 mb-2 text-xs sm:text-sm transition-all duration-300 group-hover:bg-white/30">
                     Master Spécialisé
                   </Badge>
-                  <h3 className="font-playfair text-2xl font-bold text-white">
+                  <h3 className="font-playfair text-lg sm:text-xl lg:text-2xl font-bold text-white leading-tight">
                     Management Stratégique et Marketing
                   </h3>
                 </div>
               </div>
-              <CardContent className="p-6">
-                <div className="flex items-center gap-6 text-sm text-gray-600 mb-4">
-                  <div className="flex items-center gap-2">
-                    <Clock className="h-4 w-4" />
+              <CardContent className="p-4 sm:p-6">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4">
+                  <div className="flex items-center gap-1 sm:gap-2">
+                    <Clock className="h-3 w-3 sm:h-4 sm:w-4" />
                     <span>18 Mois</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Calendar className="h-4 w-4" />
+                  <div className="flex items-center gap-1 sm:gap-2">
+                    <Calendar className="h-3 w-3 sm:h-4 sm:w-4" />
                     <span>Week-ends</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Award className="h-4 w-4" />
+                  <div className="flex items-center gap-1 sm:gap-2">
+                    <Award className="h-3 w-3 sm:h-4 sm:w-4" />
                     <span>Niveau Avancé</span>
                   </div>
                 </div>
-                <p className="text-gray-700 mb-6 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6 leading-relaxed">
                   Formation avancée pour les cadres du middle et top management
                   dans le secteur des services. Développez votre pensée
                   stratégique et vos compétences de leadership pour des postes
                   supérieurs.
                 </p>
-                <div className="flex items-center justify-between">
-                  <div className="text-2xl font-bold text-blue-800">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                  <div className="text-xl sm:text-2xl font-bold text-blue-800">
                     31 000 DH
                   </div>
-                  <Link href="/programmes/msms">
-                    <Button className="bg-blue-800 hover:bg-blue-900 text-white">
+                  <Link href="/programmes/msms" className="w-full sm:w-auto">
+                    <Button className="w-full sm:w-auto bg-blue-800 hover:bg-blue-900 text-white text-sm sm:text-base px-4 sm:px-6 transition-all duration-300 hover:scale-105 hover:shadow-lg group">
                       En Savoir Plus
-                      <ArrowRight className="ml-2 h-4 w-4" />
+                      <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4 transition-transform duration-300 group-hover:translate-x-1" />
                     </Button>
                   </Link>
                 </div>
@@ -286,15 +286,15 @@ export default function HomePage() {
             </Card>
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-8 sm:mt-12">
             <Link href="/programmes">
               <Button
                 variant="outline"
                 size="lg"
-                className="border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white bg-transparent"
+                className="border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white bg-transparent text-sm sm:text-base px-4 sm:px-6 lg:px-8 transition-all duration-300 hover:scale-105 hover:shadow-lg group"
               >
                 Voir Tous les Programmes
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-300 group-hover:translate-x-1" />
               </Button>
             </Link>
           </div>
@@ -302,53 +302,53 @@ export default function HomePage() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
             <div>
-              <h2 className="font-playfair text-4xl font-bold text-gray-900 mb-8">
+              <h2 className="font-playfair text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 sm:mb-8">
                 Pourquoi Choisir la Faculté d'Économie et de Gestion ?
               </h2>
-              <div className="space-y-8">
-                <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Award className="h-6 w-6 text-blue-800" />
+              <div className="space-y-6 sm:space-y-8">
+                <div className="flex gap-3 sm:gap-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Award className="h-5 w-5 sm:h-6 sm:w-6 text-blue-800" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                    <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">
                       Excellence Académique
                     </h3>
-                    <p className="text-gray-600 leading-relaxed">
+                    <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                       Plus de 30 ans d'excellence éducative avec des programmes
                       conçus par des universitaires de premier plan et des
                       professionnels de l'industrie.
                     </p>
                   </div>
                 </div>
-                <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Users className="h-6 w-6 text-blue-800" />
+                <div className="flex gap-3 sm:gap-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Users className="h-5 w-5 sm:h-6 sm:w-6 text-blue-800" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                    <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">
                       Focus Professionnel
                     </h3>
-                    <p className="text-gray-600 leading-relaxed">
+                    <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                       Programmes spécifiquement conçus pour les professionnels
                       en activité avec des horaires flexibles en week-end et des
                       options d'apprentissage hybride.
                     </p>
                   </div>
                 </div>
-                <div className="flex gap-4">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Globe className="h-6 w-6 text-blue-800" />
+                <div className="flex gap-3 sm:gap-4">
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Globe className="h-5 w-5 sm:h-6 sm:w-6 text-blue-800" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                    <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">
                       Impact Carrière
                     </h3>
-                    <p className="text-gray-600 leading-relaxed">
+                    <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                       95% de nos diplômés rapportent une progression de carrière
                       dans les deux ans suivant l'achèvement du programme, avec
                       de solides connexions industrielles.
@@ -357,13 +357,13 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative order-first lg:order-last flex justify-center lg:justify-end">
               <Image
                 src="/placeholder.svg?height=600&width=500"
                 alt="Étudiants en classe"
                 width={500}
                 height={600}
-                className="rounded-lg shadow-xl"
+                className="rounded-lg shadow-xl max-w-full h-auto"
               />
             </div>
           </div>
@@ -371,43 +371,59 @@ export default function HomePage() {
       </section>
 
       {/* Quick Stats */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-blue-900 text-white">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-blue-900 text-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 text-center">
             <div>
-              <div className="text-4xl font-bold mb-2">30+</div>
-              <div className="text-blue-200">Années d'Excellence</div>
+              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2">
+                30+
+              </div>
+              <div className="text-xs sm:text-sm lg:text-base text-blue-200">
+                Années d'Excellence
+              </div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">200+</div>
-              <div className="text-blue-200">Diplômés</div>
+              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2">
+                200+
+              </div>
+              <div className="text-xs sm:text-sm lg:text-base text-blue-200">
+                Diplômés
+              </div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">95%</div>
-              <div className="text-blue-200">Taux de Réussite</div>
+              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2">
+                95%
+              </div>
+              <div className="text-xs sm:text-sm lg:text-base text-blue-200">
+                Taux de Réussite
+              </div>
             </div>
             <div>
-              <div className="text-4xl font-bold mb-2">85%</div>
-              <div className="text-blue-200">Progression de Carrière</div>
+              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2">
+                85%
+              </div>
+              <div className="text-xs sm:text-sm lg:text-base text-blue-200">
+                Progression de Carrière
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* News & Events Preview */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="font-playfair text-4xl font-bold text-gray-900 mb-6">
+          <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+            <h2 className="font-playfair text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
               Actualités & Événements
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-base sm:text-lg lg:text-xl text-gray-600 px-4 sm:px-0">
               Restez informé de nos dernières nouvelles et événements
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow w-full">
               <div className="aspect-video bg-gray-200 rounded-t-lg">
                 <Image
                   src="/placeholder.svg?height=200&width=400&text=Actualité"
@@ -417,26 +433,28 @@ export default function HomePage() {
                   className="w-full h-full object-cover rounded-t-lg"
                 />
               </div>
-              <CardContent className="p-6">
-                <Badge className="mb-3">Actualités</Badge>
-                <h3 className="font-playfair text-xl font-bold mb-3">
+              <CardContent className="p-4 sm:p-6">
+                <Badge className="mb-2 sm:mb-3 text-xs sm:text-sm">
+                  Actualités
+                </Badge>
+                <h3 className="font-playfair text-lg sm:text-xl font-bold mb-2 sm:mb-3">
                   Ouverture des Inscriptions 2024-2025
                 </h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
                   Les inscriptions pour l'année académique 2024-2025 sont
                   maintenant ouvertes. Découvrez les modalités et dates
                   importantes.
                 </p>
                 <Button
                   variant="outline"
-                  className="border-blue-800 text-blue-800 hover:bg-blue-50 bg-transparent"
+                  className="border-blue-800 text-blue-800 hover:bg-blue-50 bg-transparent text-sm sm:text-base px-3 sm:px-4"
                 >
                   Lire la Suite
                 </Button>
               </CardContent>
             </Card>
 
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow w-full">
               <div className="aspect-video bg-gray-200 rounded-t-lg">
                 <Image
                   src="/placeholder.svg?height=200&width=400&text=Événement"
@@ -446,26 +464,28 @@ export default function HomePage() {
                   className="w-full h-full object-cover rounded-t-lg"
                 />
               </div>
-              <CardContent className="p-6">
-                <Badge className="mb-3">Événements</Badge>
-                <h3 className="font-playfair text-xl font-bold mb-3">
+              <CardContent className="p-4 sm:p-6">
+                <Badge className="mb-2 sm:mb-3 text-xs sm:text-sm">
+                  Événements
+                </Badge>
+                <h3 className="font-playfair text-lg sm:text-xl font-bold mb-2 sm:mb-3">
                   Journée Portes Ouvertes
                 </h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
                   Venez découvrir nos programmes, rencontrer nos professeurs et
                   visiter nos installations lors de notre journée portes
                   ouvertes.
                 </p>
                 <Button
                   variant="outline"
-                  className="border-blue-800 text-blue-800 hover:bg-blue-50 bg-transparent"
+                  className="border-blue-800 text-blue-800 hover:bg-blue-50 bg-transparent text-sm sm:text-base px-3 sm:px-4"
                 >
                   S'Inscrire
                 </Button>
               </CardContent>
             </Card>
 
-            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+            <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow w-full md:col-span-2 lg:col-span-1">
               <div className="aspect-video bg-gray-200 rounded-t-lg">
                 <Image
                   src="/placeholder.svg?height=200&width=400&text=Témoignage"
@@ -475,18 +495,20 @@ export default function HomePage() {
                   className="w-full h-full object-cover rounded-t-lg"
                 />
               </div>
-              <CardContent className="p-6">
-                <Badge className="mb-3">Témoignages</Badge>
-                <h3 className="font-playfair text-xl font-bold mb-3">
+              <CardContent className="p-4 sm:p-6">
+                <Badge className="mb-2 sm:mb-3 text-xs sm:text-sm">
+                  Témoignages
+                </Badge>
+                <h3 className="font-playfair text-lg sm:text-xl font-bold mb-2 sm:mb-3">
                   Succès de nos Diplômés
                 </h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
                   Découvrez les parcours inspirants de nos anciens étudiants qui
                   excellent dans leurs carrières professionnelles.
                 </p>
                 <Button
                   variant="outline"
-                  className="border-blue-800 text-blue-800 hover:bg-blue-50 bg-transparent"
+                  className="border-blue-800 text-blue-800 hover:bg-blue-50 bg-transparent text-sm sm:text-base px-3 sm:px-4"
                 >
                   Voir Plus
                 </Button>
@@ -497,50 +519,62 @@ export default function HomePage() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-24 px-4 bg-blue-900 text-white">
+      <section className="py-16 sm:py-20 lg:py-24 px-4 bg-blue-900 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-playfair text-4xl font-bold mb-6">
+          <h2 className="font-playfair text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 sm:mb-6">
             Rejoignez Notre Communauté
           </h2>
-          <p className="text-xl mb-12 text-blue-100 leading-relaxed">
+          <p className="text-base sm:text-lg lg:text-xl mb-8 sm:mb-10 lg:mb-12 text-blue-100 leading-relaxed px-4 sm:px-0">
             Les inscriptions sont ouvertes. Faites le premier pas vers
             l'excellence académique et professionnelle.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12 text-left">
-            <div className="bg-white/10 rounded-lg p-8">
-              <h3 className="font-semibold mb-4 text-blue-200">
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-10 lg:mb-12 text-left">
+            <div className="bg-white/10 rounded-lg p-4 sm:p-6 lg:p-8">
+              <h3 className="font-semibold mb-3 sm:mb-4 text-blue-200 text-sm sm:text-base">
                 Contact Responsable
               </h3>
-              <p className="text-white font-medium text-lg">Pr Hicham OUAKIL</p>
-              <p className="text-blue-200">Tél: 06 61 13 08 94</p>
-              <p className="text-blue-200">Email: hicham.ouakil@uit.ac.ma</p>
+              <p className="text-white font-medium text-base sm:text-lg">
+                Pr Hicham OUAKIL
+              </p>
+              <p className="text-blue-200 text-sm sm:text-base">
+                Tél: 06 61 13 08 94
+              </p>
+              <p className="text-blue-200 text-sm sm:text-base">
+                Email: hicham.ouakil@uit.ac.ma
+              </p>
             </div>
-            <div className="bg-white/10 rounded-lg p-8">
-              <h3 className="font-semibold mb-4 text-blue-200">Campus</h3>
-              <p className="text-white font-medium text-lg">
+            <div className="bg-white/10 rounded-lg p-4 sm:p-6 lg:p-8">
+              <h3 className="font-semibold mb-3 sm:mb-4 text-blue-200 text-sm sm:text-base">
+                Campus
+              </h3>
+              <p className="text-white font-medium text-base sm:text-lg">
                 Campus Universitaire Maamora
               </p>
-              <p className="text-blue-200">BP: 2010 Kénitra</p>
-              <p className="text-blue-200">Tél: 05 37 32 92 18</p>
+              <p className="text-blue-200 text-sm sm:text-base">
+                BP: 2010 Kénitra
+              </p>
+              <p className="text-blue-200 text-sm sm:text-base">
+                Tél: 05 37 32 92 18
+              </p>
             </div>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Link href="/admissions">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center px-4 sm:px-0">
+            <Link href="/admissions" className="w-full sm:w-auto">
               <Button
                 size="lg"
-                className="bg-white text-blue-900 hover:bg-blue-50 font-semibold px-10 py-4 text-lg"
+                className="w-full sm:w-auto bg-white text-blue-900 hover:bg-blue-50 font-semibold px-6 sm:px-8 lg:px-10 py-3 sm:py-4 text-base sm:text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl group"
               >
                 Candidater Maintenant
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-300 group-hover:translate-x-1" />
               </Button>
             </Link>
-            <Link href="/contact">
+            <Link href="/contact" className="w-full sm:w-auto">
               <Button
                 size="lg"
                 variant="outline"
-                className="border-2 border-white text-white hover:bg-white hover:text-blue-900 font-semibold px-10 py-4 text-lg bg-transparent"
+                className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-blue-900 font-semibold px-6 sm:px-8 lg:px-10 py-3 sm:py-4 text-base sm:text-lg bg-transparent transition-all duration-300 hover:scale-105 hover:shadow-xl"
               >
                 Nous Contacter
               </Button>

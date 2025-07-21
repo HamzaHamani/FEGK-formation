@@ -9,53 +9,53 @@ export default function MMSPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <section className="py-16 px-4 bg-gradient-to-r from-blue-700 to-blue-900 text-white">
+      <section className="py-12 sm:py-16 px-4 bg-gradient-to-r from-blue-700 to-blue-900 text-white">
         <div className="max-w-6xl mx-auto">
-          <div className="flex items-center gap-4 mb-6">
-            <Badge className="bg-blue-500">Licence Universitaire Spécialisée</Badge>
-            <Badge variant="outline" className="border-white text-white">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+            <Badge className="bg-blue-500 text-xs sm:text-sm">Licence Universitaire Spécialisée</Badge>
+            <Badge variant="outline" className="border-white text-white text-xs sm:text-sm">
               Bac+2 Requis
             </Badge>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Management et Marketing des Services</h1>
-          <p className="text-xl opacity-90 max-w-4xl">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight">Management et Marketing des Services</h1>
+          <p className="text-base sm:text-lg lg:text-xl opacity-90 max-w-4xl leading-relaxed">
             Formez-vous à concevoir et produire une offre de services compétitive adaptée aux besoins des clients
           </p>
         </div>
       </section>
 
       {/* Program Overview */}
-      <section className="py-16 px-4">
+      <section className="py-12 sm:py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center mb-12 sm:mb-16">
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-blue-800">Objectif Général de la Formation</h2>
-              <p className="text-gray-600 mb-6">
+              <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 sm:mb-6 text-blue-800">Objectif Général de la Formation</h2>
+              <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed">
                 La Licence Management et Marketing des Services (MMS) forme les étudiants à concevoir et produire une
                 offre de services compétitive adaptée aux besoins des clients tant dans les entreprises de services que
                 dans les entreprises industrielles qui proposent des services associés à leur produit.
               </p>
-              <p className="text-gray-600 mb-6">
+              <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 leading-relaxed">
                 Intégrant les caractéristiques particulières des services, la licence MMS permet aux étudiants
                 d'acquérir une double compétence en Management et en marketing, très appréciée des entreprises.
               </p>
 
-              <div className="grid grid-cols-2 gap-4 mb-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-4 sm:mb-6">
                 <div className="flex items-center gap-2">
-                  <Clock className="h-5 w-5 text-blue-600" />
-                  <span>2 semestres</span>
+                  <Clock className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600" />
+                  <span className="text-sm sm:text-base">2 semestres</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Users className="h-5 w-5 text-blue-600" />
-                  <span>Formation hybride</span>
+                  <Users className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600" />
+                  <span className="text-sm sm:text-base">Formation hybride</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Euro className="h-5 w-5 text-blue-600" />
-                  <span>16 000 DH</span>
+                  <Euro className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600" />
+                  <span className="text-sm sm:text-base">16 000 DH</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Calendar className="h-5 w-5 text-blue-600" />
-                  <span>Samedi & Dimanche</span>
+                  <Calendar className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600" />
+                  <span className="text-sm sm:text-base">Samedi & Dimanche</span>
                 </div>
               </div>
             </div>
@@ -65,19 +65,19 @@ export default function MMSPage() {
                 alt="Management et Marketing des Services"
                 width={600}
                 height={400}
-                className="rounded-lg shadow-lg"
+                className="rounded-lg shadow-lg w-full h-auto"
               />
             </div>
           </div>
 
           {/* Curriculum */}
-          <div className="mb-16">
-            <h2 className="text-3xl font-bold mb-8 text-center text-blue-800">Modules Enseignés</h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <Card className="border-blue-200">
-                <CardHeader className="bg-blue-50">
-                  <Badge className="w-fit mb-2 bg-blue-600">Semestre 1</Badge>
-                  <CardTitle className="text-blue-800">Fondements</CardTitle>
+          <div className="mb-12 sm:mb-16">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-6 sm:mb-8 text-center text-blue-800">Modules Enseignés</h2>
+            <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
+              <Card className="border-blue-200 transition-all duration-300 hover:shadow-lg hover:scale-105">
+                <CardHeader className="bg-blue-50 pb-3 sm:pb-4">
+                  <Badge className="w-fit mb-2 bg-blue-600 text-xs sm:text-sm">Semestre 1</Badge>
+                  <CardTitle className="text-blue-800 text-base sm:text-lg">Fondements</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-sm">

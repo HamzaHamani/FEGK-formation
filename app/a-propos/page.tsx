@@ -9,27 +9,27 @@ export default function AProposPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <section className="py-20 px-4 bg-blue-800 text-white">
+      <section className="py-12 sm:py-16 lg:py-20 px-4 bg-blue-800 text-white">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-6">À Propos</h1>
-          <p className="text-lg text-blue-100 max-w-3xl mx-auto">
+          <h1 className="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">À Propos</h1>
+          <p className="text-base sm:text-lg text-blue-100 max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
             Découvrez l'histoire, la mission et les valeurs de la Faculté d'Économie et de Gestion de Kénitra
           </p>
         </div>
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 px-4">
+      <section className="py-12 sm:py-16 lg:py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center mb-12 sm:mb-16 lg:mb-20">
             <div>
-              <h2 className="font-playfair text-4xl font-bold text-gray-900 mb-8">Notre Mission</h2>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+              <h2 className="font-playfair text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 sm:mb-8">Notre Mission</h2>
+              <p className="text-sm sm:text-base lg:text-lg text-gray-600 mb-4 sm:mb-6 leading-relaxed">
                 La Faculté d'Économie et de Gestion de Kénitra s'engage à fournir une éducation de qualité supérieure en
                 sciences économiques et de gestion, en formant les leaders de demain et en contribuant au développement
                 économique et social du Maroc.
               </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <p className="text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed">
                 Nous nous efforçons d'offrir des programmes innovants qui combinent excellence académique et pertinence
                 professionnelle, préparant nos étudiants à exceller dans un environnement économique en constante
                 évolution.
@@ -41,39 +41,39 @@ export default function AProposPage() {
                 alt="Campus de la faculté"
                 width={600}
                 height={500}
-                className="rounded-lg shadow-xl"
+                className="rounded-lg shadow-xl w-full h-auto"
               />
             </div>
           </div>
 
           {/* Values */}
-          <div className="mb-20">
-            <h2 className="font-playfair text-4xl font-bold text-gray-900 mb-12 text-center">Nos Valeurs</h2>
-            <div className="grid lg:grid-cols-3 gap-8">
-              <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-                <CardHeader className="text-center pb-6">
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Award className="h-8 w-8 text-blue-800" />
+          <div className="mb-12 sm:mb-16 lg:mb-20">
+            <h2 className="font-playfair text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-8 sm:mb-12 text-center">Nos Valeurs</h2>
+            <div className="grid lg:grid-cols-3 gap-6 sm:gap-8">
+              <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <CardHeader className="text-center pb-4 sm:pb-6">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                    <Award className="h-6 w-6 sm:h-8 sm:w-8 text-blue-800" />
                   </div>
-                  <CardTitle className="font-playfair text-xl">Excellence</CardTitle>
+                  <CardTitle className="font-playfair text-lg sm:text-xl">Excellence</CardTitle>
                 </CardHeader>
                 <CardContent className="text-center">
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                     Nous poursuivons l'excellence dans tous nos programmes, recherches et services, en maintenant les
                     plus hauts standards académiques.
                   </p>
                 </CardContent>
               </Card>
 
-              <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-                <CardHeader className="text-center pb-6">
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Users className="h-8 w-8 text-blue-800" />
+              <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <CardHeader className="text-center pb-4 sm:pb-6">
+                  <div className="w-12 h-12 sm:w-16 sm:h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                    <Users className="h-6 w-6 sm:h-8 sm:w-8 text-blue-800" />
                   </div>
-                  <CardTitle className="font-playfair text-xl">Collaboration</CardTitle>
+                  <CardTitle className="font-playfair text-lg sm:text-xl">Collaboration</CardTitle>
                 </CardHeader>
                 <CardContent className="text-center">
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                     Nous favorisons un environnement collaboratif où étudiants, professeurs et professionnels
                     travaillent ensemble vers des objectifs communs.
                   </p>

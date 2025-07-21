@@ -4,6 +4,7 @@ import { Playfair_Display, Source_Serif_4 } from "next/font/google"
 import localFont from "next/font/local"
 import "./globals.css"
 import Navigation from "@/components/navigation"
+import NavigationSpacer from "@/components/navigation-spacer"
 import Footer from "@/components/footer"
 
 const playfair = Playfair_Display({
@@ -51,6 +52,7 @@ export default function RootLayout({
     <html lang="fr" className={`${playfair.variable} ${sourceSerif.variable} ${tiemposHeadline.variable}`}>
       <body className={sourceSerif.className}>
         <Navigation />
+        <NavigationSpacer />
         <main>{children}</main>
         <Footer />
       </body>

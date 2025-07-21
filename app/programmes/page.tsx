@@ -98,10 +98,10 @@ export default function ProgrammesPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <section className="py-20 px-4 bg-blue-900 text-white">
+      <section className="py-12 sm:py-16 lg:py-20 px-4 bg-blue-900 text-white">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="font-playfair text-4xl md:text-5xl font-bold mb-6">Nos Programmes</h1>
-          <p className="text-xl text-blue-100 max-w-4xl mx-auto leading-relaxed">
+          <h1 className="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">Nos Programmes</h1>
+          <p className="text-base sm:text-lg lg:text-xl text-blue-100 max-w-4xl mx-auto leading-relaxed px-2 sm:px-0">
             Découvrez notre gamme complète de formations spécialisées en management et marketing des services, conçues
             pour répondre aux besoins du marché professionnel
           </p>
@@ -109,47 +109,49 @@ export default function ProgrammesPage() {
       </section>
 
       {/* Search and Filters */}
-      <section className="py-12 px-4 bg-gray-50 border-b">
+      <section className="py-8 sm:py-12 px-4 bg-gray-50 border-b">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col lg:flex-row gap-6 items-center">
+          <div className="flex flex-col lg:flex-row gap-4 sm:gap-6 items-stretch lg:items-center">
             <div className="flex-1 relative">
-              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400" />
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 h-4 w-4 sm:h-5 sm:w-5 text-gray-400" />
               <Input
                 placeholder="Rechercher un programme..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="pl-10 h-12 text-base"
+                className="pl-8 sm:pl-10 h-10 sm:h-12 text-sm sm:text-base"
               />
             </div>
 
-            <div className="flex gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <div className="flex items-center gap-2">
-                <Filter className="h-5 w-5 text-gray-600" />
-                <span className="text-sm font-medium text-gray-700">Filtres:</span>
+                <Filter className="h-4 w-4 sm:h-5 sm:w-5 text-gray-600" />
+                <span className="text-xs sm:text-sm font-medium text-gray-700">Filtres:</span>
               </div>
 
-              <Select value={levelFilter} onValueChange={setLevelFilter}>
-                <SelectTrigger className="w-48">
-                  <SelectValue placeholder="Niveau d'études" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="all">Tous les niveaux</SelectItem>
-                  <SelectItem value="license">Licence Spécialisée</SelectItem>
-                  <SelectItem value="master">Master Spécialisé</SelectItem>
-                </SelectContent>
-              </Select>
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                <Select value={levelFilter} onValueChange={setLevelFilter}>
+                  <SelectTrigger className="w-full sm:w-48 h-10 sm:h-auto text-sm sm:text-base">
+                    <SelectValue placeholder="Niveau d'études" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="all">Tous les niveaux</SelectItem>
+                    <SelectItem value="license">Licence Spécialisée</SelectItem>
+                    <SelectItem value="master">Master Spécialisé</SelectItem>
+                  </SelectContent>
+                </Select>
 
-              <Select value={durationFilter} onValueChange={setDurationFilter}>
-                <SelectTrigger className="w-40">
-                  <SelectValue placeholder="Durée" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="all">Toutes durées</SelectItem>
-                  <SelectItem value="short">Court (&lt;= 1 an)</SelectItem>
-                  <SelectItem value="medium">Moyen (1-2 ans)</SelectItem>
-                  <SelectItem value="long">Long (&gt; 2 ans)</SelectItem>
-                </SelectContent>
-              </Select>
+                <Select value={durationFilter} onValueChange={setDurationFilter}>
+                  <SelectTrigger className="w-full sm:w-40 h-10 sm:h-auto text-sm sm:text-base">
+                    <SelectValue placeholder="Durée" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="all">Toutes durées</SelectItem>
+                    <SelectItem value="short">Court (&lt;= 1 an)</SelectItem>
+                    <SelectItem value="medium">Moyen (1-2 ans)</SelectItem>
+                    <SelectItem value="long">Long (&gt; 2 ans)</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
             </div>
           </div>
 
@@ -160,9 +162,9 @@ export default function ProgrammesPage() {
       </section>
 
       {/* Programs Grid */}
-      <section className="py-16 px-4">
+      <section className="py-12 sm:py-16 px-4">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid lg:grid-cols-2 gap-6 sm:gap-8">
             {filteredPrograms.map((program) => (
               <Card
                 key={program.id}
@@ -170,89 +172,89 @@ export default function ProgrammesPage() {
                   program.comingSoon ? "opacity-75" : ""
                 }`}
               >
-                <div className={`p-8 text-white ${program.comingSoon ? "bg-gray-600" : "bg-blue-800"}`}>
-                  <div className="flex justify-between items-start mb-6">
+                <div className={`p-4 sm:p-6 lg:p-8 text-white ${program.comingSoon ? "bg-gray-600" : "bg-blue-800"}`}>
+                  <div className="flex flex-col sm:flex-row justify-between items-start sm:items-start mb-4 sm:mb-6 gap-3 sm:gap-0">
                     <Badge
-                      className={`font-semibold px-3 py-1 ${
+                      className={`font-semibold px-3 py-1 text-sm sm:text-base ${
                         program.comingSoon ? "bg-white text-gray-600" : "bg-white text-blue-800"
                       }`}
                     >
                       {program.level}
                     </Badge>
-                    <div className="flex gap-2">
-                      <Badge variant="outline" className="border-white text-white bg-white/20 font-semibold">
+                    <div className="flex flex-wrap gap-2">
+                      <Badge variant="outline" className="border-white text-white bg-white/20 font-semibold text-xs sm:text-sm">
                         {program.requirements}
                       </Badge>
                       {program.featured && !program.comingSoon && (
-                        <Badge className="bg-yellow-500 text-yellow-900 font-semibold">Populaire</Badge>
+                        <Badge className="bg-yellow-500 text-yellow-900 font-semibold text-xs sm:text-sm">Populaire</Badge>
                       )}
-                      {program.comingSoon && <Badge className="bg-orange-500 text-white font-semibold">Bientôt</Badge>}
+                      {program.comingSoon && <Badge className="bg-orange-500 text-white font-semibold text-xs sm:text-sm">Bientôt</Badge>}
                     </div>
                   </div>
-                  <h3 className="font-playfair text-2xl font-bold mb-4 leading-tight">{program.title}</h3>
-                  <p className={`text-lg leading-relaxed ${program.comingSoon ? "text-gray-200" : "text-blue-100"}`}>
+                  <h3 className="font-playfair text-lg sm:text-xl lg:text-2xl font-bold mb-3 sm:mb-4 leading-tight">{program.title}</h3>
+                  <p className={`text-sm sm:text-base lg:text-lg leading-relaxed ${program.comingSoon ? "text-gray-200" : "text-blue-100"}`}>
                     {program.description}
                   </p>
                 </div>
 
-                <CardContent className="p-8">
-                  <div className="grid grid-cols-2 gap-6 mb-8">
+                <CardContent className="p-4 sm:p-6 lg:p-8">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
                     <div className="flex items-center gap-3">
                       <div
-                        className={`w-10 h-10 rounded-full flex items-center justify-center ${
+                        className={`w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center ${
                           program.comingSoon ? "bg-gray-100" : "bg-blue-50"
                         }`}
                       >
-                        <Clock className={`h-5 w-5 ${program.comingSoon ? "text-gray-600" : "text-blue-800"}`} />
+                        <Clock className={`h-4 w-4 sm:h-5 sm:w-5 ${program.comingSoon ? "text-gray-600" : "text-blue-800"}`} />
                       </div>
                       <div>
-                        <div className="font-semibold text-gray-900">Durée</div>
-                        <div className="text-gray-600">{program.duration}</div>
+                        <div className="font-semibold text-gray-900 text-sm sm:text-base">Durée</div>
+                        <div className="text-gray-600 text-xs sm:text-sm">{program.duration}</div>
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
                       <div
-                        className={`w-10 h-10 rounded-full flex items-center justify-center ${
+                        className={`w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center ${
                           program.comingSoon ? "bg-gray-100" : "bg-blue-50"
                         }`}
                       >
-                        <Euro className={`h-5 w-5 ${program.comingSoon ? "text-gray-600" : "text-blue-800"}`} />
+                        <Euro className={`h-4 w-4 sm:h-5 sm:w-5 ${program.comingSoon ? "text-gray-600" : "text-blue-800"}`} />
                       </div>
                       <div>
-                        <div className="font-semibold text-gray-900">Investissement</div>
-                        <div className="text-gray-600">{program.cost}</div>
+                        <div className="font-semibold text-gray-900 text-sm sm:text-base">Investissement</div>
+                        <div className="text-gray-600 text-xs sm:text-sm">{program.cost}</div>
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
                       <div
-                        className={`w-10 h-10 rounded-full flex items-center justify-center ${
+                        className={`w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center ${
                           program.comingSoon ? "bg-gray-100" : "bg-blue-50"
                         }`}
                       >
-                        <Calendar className={`h-5 w-5 ${program.comingSoon ? "text-gray-600" : "text-blue-800"}`} />
+                        <Calendar className={`h-4 w-4 sm:h-5 sm:w-5 ${program.comingSoon ? "text-gray-600" : "text-blue-800"}`} />
                       </div>
                       <div>
-                        <div className="font-semibold text-gray-900">Planning</div>
-                        <div className="text-gray-600">{program.schedule}</div>
+                        <div className="font-semibold text-gray-900 text-sm sm:text-base">Planning</div>
+                        <div className="text-gray-600 text-xs sm:text-sm">{program.schedule}</div>
                       </div>
                     </div>
                     <div className="flex items-center gap-3">
                       <div
-                        className={`w-10 h-10 rounded-full flex items-center justify-center ${
+                        className={`w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center ${
                           program.comingSoon ? "bg-gray-100" : "bg-blue-50"
                         }`}
                       >
-                        <Users className={`h-5 w-5 ${program.comingSoon ? "text-gray-600" : "text-blue-800"}`} />
+                        <Users className={`h-4 w-4 sm:h-5 sm:w-5 ${program.comingSoon ? "text-gray-600" : "text-blue-800"}`} />
                       </div>
                       <div>
-                        <div className="font-semibold text-gray-900">Format</div>
-                        <div className="text-gray-600">{program.format}</div>
+                        <div className="font-semibold text-gray-900 text-sm sm:text-base">Format</div>
+                        <div className="text-gray-600 text-xs sm:text-sm">{program.format}</div>
                       </div>
                     </div>
                   </div>
 
-                  <div className="mb-8 p-6 bg-gray-50 rounded-lg">
-                    <h4 className="font-semibold mb-3 text-gray-900">Débouchés Professionnels</h4>
+                  <div className="mb-6 sm:mb-8 p-4 sm:p-6 bg-gray-50 rounded-lg">
+                    <h4 className="font-semibold mb-3 text-gray-900 text-sm sm:text-base">Débouchés Professionnels</h4>
                     <div className="flex flex-wrap gap-2">
                       {program.careers.map((career, index) => (
                         <Badge key={index} variant="secondary" className="text-xs">
@@ -265,15 +267,15 @@ export default function ProgrammesPage() {
                   {program.comingSoon ? (
                     <Button
                       disabled
-                      className="w-full bg-gray-400 text-white font-semibold py-4 text-lg cursor-not-allowed"
+                      className="w-full bg-gray-400 text-white font-semibold py-3 sm:py-4 text-base sm:text-lg cursor-not-allowed"
                     >
                       Bientôt Disponible
                     </Button>
                   ) : (
                     <Link href={`/programmes/${program.id}`}>
-                      <Button className="w-full bg-blue-800 hover:bg-blue-900 text-white font-semibold py-4 text-lg">
+                      <Button className="w-full bg-blue-800 hover:bg-blue-900 text-white font-semibold py-3 sm:py-4 text-base sm:text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg group">
                         Découvrir le Programme
-                        <ArrowRight className="ml-2 h-5 w-5" />
+                        <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-300 group-hover:translate-x-1" />
                       </Button>
                     </Link>
                   )}
@@ -283,10 +285,10 @@ export default function ProgrammesPage() {
           </div>
 
           {filteredPrograms.length === 0 && (
-            <div className="text-center py-16">
-              <BookOpen className="h-16 w-16 text-gray-400 mx-auto mb-4" />
-              <h3 className="font-playfair text-2xl font-bold text-gray-900 mb-2">Aucun programme trouvé</h3>
-              <p className="text-gray-600 mb-6">
+            <div className="text-center py-12 sm:py-16">
+              <BookOpen className="h-12 w-12 sm:h-16 sm:w-16 text-gray-400 mx-auto mb-4" />
+              <h3 className="font-playfair text-xl sm:text-2xl font-bold text-gray-900 mb-2">Aucun programme trouvé</h3>
+              <p className="text-sm sm:text-base text-gray-600 mb-4 sm:mb-6 px-4">
                 Essayez de modifier vos critères de recherche ou de supprimer les filtres.
               </p>
               <Button
@@ -296,7 +298,7 @@ export default function ProgrammesPage() {
                   setDurationFilter("all")
                 }}
                 variant="outline"
-                className="border-blue-800 text-blue-800 hover:bg-blue-50"
+                className="text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3 border-blue-800 text-blue-800 hover:bg-blue-50"
               >
                 Réinitialiser les Filtres
               </Button>
@@ -306,47 +308,47 @@ export default function ProgrammesPage() {
       </section>
 
       {/* Program Comparison */}
-      <section className="py-16 px-4 bg-gray-50">
+      <section className="py-12 sm:py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="font-playfair text-3xl font-bold text-gray-900 mb-4">Comparaison des Programmes</h2>
-            <p className="text-lg text-gray-600">Trouvez le programme qui correspond le mieux à votre profil</p>
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">Comparaison des Programmes</h2>
+            <p className="text-base sm:text-lg text-gray-600 px-4 sm:px-0">Trouvez le programme qui correspond le mieux à votre profil</p>
           </div>
 
           <div className="overflow-x-auto">
-            <table className="w-full bg-white rounded-lg shadow-lg overflow-hidden">
+            <table className="w-full bg-white rounded-lg shadow-lg overflow-hidden min-w-[600px]">
               <thead className="bg-blue-800 text-white">
                 <tr>
-                  <th className="px-6 py-4 text-left font-semibold">Critères</th>
-                  <th className="px-6 py-4 text-center font-semibold">MMS (Licence)</th>
-                  <th className="px-6 py-4 text-center font-semibold">MSMS (Master)</th>
+                  <th className="px-3 sm:px-6 py-3 sm:py-4 text-left font-semibold text-sm sm:text-base">Critères</th>
+                  <th className="px-3 sm:px-6 py-3 sm:py-4 text-center font-semibold text-sm sm:text-base">MMS (Licence)</th>
+                  <th className="px-3 sm:px-6 py-3 sm:py-4 text-center font-semibold text-sm sm:text-base">MSMS (Master)</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-200">
                 <tr>
-                  <td className="px-6 py-4 font-medium text-gray-900">Niveau d'entrée</td>
-                  <td className="px-6 py-4 text-center text-blue-800 font-medium">Bac+2</td>
-                  <td className="px-6 py-4 text-center text-blue-800 font-medium">Bac+3</td>
+                  <td className="px-3 sm:px-6 py-3 sm:py-4 font-medium text-gray-900 text-sm sm:text-base">Niveau d'entrée</td>
+                  <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-blue-800 font-medium text-sm sm:text-base">Bac+2</td>
+                  <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-blue-800 font-medium text-sm sm:text-base">Bac+3</td>
                 </tr>
                 <tr className="bg-gray-50">
-                  <td className="px-6 py-4 font-medium text-gray-900">Durée</td>
-                  <td className="px-6 py-4 text-center text-blue-800 font-medium">2 semestres</td>
-                  <td className="px-6 py-4 text-center text-blue-800 font-medium">18 mois</td>
+                  <td className="px-3 sm:px-6 py-3 sm:py-4 font-medium text-gray-900 text-sm sm:text-base">Durée</td>
+                  <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-blue-800 font-medium text-sm sm:text-base">2 semestres</td>
+                  <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-blue-800 font-medium text-sm sm:text-base">18 mois</td>
                 </tr>
                 <tr>
-                  <td className="px-6 py-4 font-medium text-gray-900">Investissement</td>
-                  <td className="px-6 py-4 text-center text-blue-800 font-medium">16 000 DH</td>
-                  <td className="px-6 py-4 text-center text-blue-800 font-medium">31 000 DH</td>
+                  <td className="px-3 sm:px-6 py-3 sm:py-4 font-medium text-gray-900 text-sm sm:text-base">Investissement</td>
+                  <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-blue-800 font-medium text-sm sm:text-base">16 000 DH</td>
+                  <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-blue-800 font-medium text-sm sm:text-base">31 000 DH</td>
                 </tr>
                 <tr className="bg-gray-50">
-                  <td className="px-6 py-4 font-medium text-gray-900">Public cible</td>
-                  <td className="px-6 py-4 text-center text-gray-700">Professionnels junior</td>
-                  <td className="px-6 py-4 text-center text-gray-700">Cadres expérimentés</td>
+                  <td className="px-3 sm:px-6 py-3 sm:py-4 font-medium text-gray-900 text-sm sm:text-base">Public cible</td>
+                  <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-gray-700 text-xs sm:text-sm">Professionnels junior</td>
+                  <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-gray-700 text-xs sm:text-sm">Cadres expérimentés</td>
                 </tr>
                 <tr>
-                  <td className="px-6 py-4 font-medium text-gray-900">Spécialisation</td>
-                  <td className="px-6 py-4 text-center text-gray-700">Marketing des services</td>
-                  <td className="px-6 py-4 text-center text-gray-700">Management stratégique</td>
+                  <td className="px-3 sm:px-6 py-3 sm:py-4 font-medium text-gray-900 text-sm sm:text-base">Spécialisation</td>
+                  <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-gray-700 text-xs sm:text-sm">Marketing des services</td>
+                  <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-gray-700 text-xs sm:text-sm">Management stratégique</td>
                 </tr>
               </tbody>
             </table>
@@ -355,24 +357,24 @@ export default function ProgrammesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 bg-blue-900 text-white">
+      <section className="py-12 sm:py-16 px-4 bg-blue-900 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="font-playfair text-3xl font-bold mb-6">Prêt à Commencer ?</h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <h2 className="font-playfair text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Prêt à Commencer ?</h2>
+          <p className="text-base sm:text-lg lg:text-xl mb-6 sm:mb-8 text-blue-100 px-2 sm:px-0">
             Choisissez le programme qui correspond à vos ambitions et rejoignez notre communauté d'excellence.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/admissions">
-              <Button size="lg" className="bg-white text-blue-900 hover:bg-blue-50 font-semibold px-8 py-3">
+            <Link href="/admissions" className="w-full sm:w-auto">
+              <Button size="lg" className="w-full sm:w-auto bg-white text-blue-900 hover:bg-blue-50 font-semibold px-6 sm:px-8 py-3 text-sm sm:text-base transition-all duration-300 hover:scale-105 hover:shadow-lg group">
                 Processus d'Admission
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-300 group-hover:translate-x-1" />
               </Button>
             </Link>
-            <Link href="/contact">
+            <Link href="/contact" className="w-full sm:w-auto">
               <Button
                 size="lg"
                 variant="outline"
-                className="border-2 border-white text-white hover:bg-white hover:text-blue-900 font-semibold px-8 py-3 bg-transparent"
+                className="w-full sm:w-auto border-2 border-white text-white hover:bg-white hover:text-blue-900 font-semibold px-6 sm:px-8 py-3 text-sm sm:text-base bg-transparent transition-all duration-300 hover:scale-105 hover:shadow-lg"
               >
                 Nous Contacter
               </Button>
