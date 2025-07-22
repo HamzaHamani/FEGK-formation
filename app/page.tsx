@@ -103,9 +103,9 @@ export default function HomePage() {
 
           <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
             {/* Management et Marketing des Services */}
-            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-4 sm:p-6 lg:p-8 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-4 sm:p-6 lg:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 group">
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:bg-blue-700 group-hover:scale-110">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-600 rounded-lg flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:bg-blue-700">
                   <Users className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
                 </div>
                 <h3 className="font-playfair text-lg sm:text-xl lg:text-2xl font-bold text-blue-900 leading-tight">
@@ -130,9 +130,9 @@ export default function HomePage() {
             </div>
 
             {/* Audit et Qualité */}
-            <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-4 sm:p-6 lg:p-8 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
+            <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-4 sm:p-6 lg:p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 group">
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-600 rounded-lg flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:bg-green-700 group-hover:scale-110">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-600 rounded-lg flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:bg-green-700">
                   <Award className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
                 </div>
                 <h3 className="font-playfair text-lg sm:text-xl lg:text-2xl font-bold text-green-900 leading-tight">
@@ -191,7 +191,7 @@ export default function HomePage() {
 
           <div className="grid lg:grid-cols-2 gap-6 sm:gap-8">
             {/* MMS Program */}
-            <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 w-full group hover:scale-105">
+            <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 w-full group">
               <div className="aspect-video bg-gradient-to-r from-blue-600 to-blue-700 relative overflow-hidden">
                 <div className="absolute inset-0 bg-black/10"></div>
                 <div className="absolute bottom-3 sm:bottom-4 left-4 sm:left-6 right-4 sm:right-6">
@@ -229,7 +229,7 @@ export default function HomePage() {
                     16 000 DH
                   </div>
                   <Link href="/programmes/mms" className="w-full sm:w-auto">
-                    <Button className="w-full sm:w-auto bg-blue-800 hover:bg-blue-900 text-white text-sm sm:text-base px-4 sm:px-6 transition-all duration-300 hover:scale-105 hover:shadow-lg group">
+                    <Button className="w-full sm:w-auto bg-blue-800 hover:bg-blue-900 text-white text-sm sm:text-base px-4 sm:px-6 transition-colors duration-300 group">
                       En Savoir Plus
                       <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4 transition-transform duration-300 group-hover:translate-x-1" />
                     </Button>
@@ -239,7 +239,7 @@ export default function HomePage() {
             </Card>
 
             {/* MSMS Program */}
-            <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-all duration-300 w-full group hover:scale-105">
+            <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 w-full group">
               <div className="aspect-video bg-gradient-to-r from-blue-700 to-blue-800 relative overflow-hidden">
                 <div className="absolute inset-0 bg-black/10"></div>
                 <div className="absolute bottom-3 sm:bottom-4 left-4 sm:left-6 right-4 sm:right-6">
@@ -277,7 +277,7 @@ export default function HomePage() {
                     31 000 DH
                   </div>
                   <Link href="/programmes/msms" className="w-full sm:w-auto">
-                    <Button className="w-full sm:w-auto bg-blue-800 hover:bg-blue-900 text-white text-sm sm:text-base px-4 sm:px-6 transition-all duration-300 hover:scale-105 hover:shadow-lg group">
+                    <Button className="w-full sm:w-auto bg-blue-800 hover:bg-blue-900 text-white text-sm sm:text-base px-4 sm:px-6 transition-colors duration-300 group">
                       En Savoir Plus
                       <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4 transition-transform duration-300 group-hover:translate-x-1" />
                     </Button>
