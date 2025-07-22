@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowRight, Calendar, Clock, Users, Award, Globe } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import AnimatedCounter from "@/components/animated-counter";
 
 export default function HomePage() {
   return (
@@ -373,39 +374,67 @@ export default function HomePage() {
       {/* Quick Stats */}
       <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-blue-900 text-white">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 text-center">
-            <div>
-              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2">
-                30+
-              </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 text-center relative">
+            <div className="py-6 sm:py-8 px-3 sm:px-4 relative">
+              <AnimatedCounter 
+                target={30} 
+                suffix="+" 
+                duration={2500}
+                className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2"
+              />
               <div className="text-xs sm:text-sm lg:text-base text-blue-200">
                 Années d'Excellence
               </div>
+              {/* Desktop separator */}
+              <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-12 sm:h-16 bg-blue-700"></div>
             </div>
-            <div>
-              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2">
-                200+
-              </div>
+            
+            <div className="py-6 sm:py-8 px-3 sm:px-4 relative">
+              <AnimatedCounter 
+                target={200} 
+                suffix="+" 
+                duration={2800}
+                className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2"
+              />
               <div className="text-xs sm:text-sm lg:text-base text-blue-200">
                 Diplômés
               </div>
+              {/* Desktop separator */}
+              <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-12 sm:h-16 bg-blue-700"></div>
             </div>
-            <div>
-              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2">
-                95%
-              </div>
+            
+            <div className="py-6 sm:py-8 px-3 sm:px-4 relative">
+              <AnimatedCounter 
+                target={95} 
+                suffix="%" 
+                duration={2200}
+                className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2"
+              />
               <div className="text-xs sm:text-sm lg:text-base text-blue-200">
                 Taux de Réussite
               </div>
+              {/* Desktop separator only */}
+              <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-12 sm:h-16 bg-blue-700"></div>
             </div>
-            <div>
-              <div className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2">
-                85%
-              </div>
+            
+            <div className="py-6 sm:py-8 px-3 sm:px-4">
+              <AnimatedCounter 
+                target={85} 
+                suffix="%" 
+                duration={2600}
+                className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2"
+              />
               <div className="text-xs sm:text-sm lg:text-base text-blue-200">
                 Progression de Carrière
               </div>
             </div>
+
+            {/* Mobile separators */}
+            {/* Vertical separator down the middle (mobile only) */}
+            <div className="md:hidden absolute left-1/2 top-0 bottom-0 w-px bg-blue-700 transform -translate-x-1/2"></div>
+            
+            {/* Horizontal separator across full width (mobile only) */}
+            <div className="md:hidden absolute left-0 right-0 top-1/2 h-px bg-blue-700 transform -translate-y-1/2"></div>
           </div>
         </div>
       </section>

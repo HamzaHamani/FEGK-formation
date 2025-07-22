@@ -1,9 +1,9 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Users, Award, Globe } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Users, Award, Globe } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function AProposPage() {
   return (
@@ -11,9 +11,12 @@ export default function AProposPage() {
       {/* Header */}
       <section className="py-12 sm:py-16 lg:py-20 px-4 bg-blue-800 text-white">
         <div className="max-w-6xl mx-auto text-center">
-          <h1 className="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">À Propos</h1>
+          <h1 className="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
+            À Propos
+          </h1>
           <p className="text-base sm:text-lg text-blue-100 max-w-3xl mx-auto leading-relaxed px-2 sm:px-0">
-            Découvrez l'histoire, la mission et les valeurs de la Faculté d'Économie et de Gestion de Kénitra
+            Découvrez l'histoire, la mission et les valeurs de la Faculté
+            d'Économie et de Gestion de Kénitra
           </p>
         </div>
       </section>
@@ -23,16 +26,20 @@ export default function AProposPage() {
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center mb-12 sm:mb-16 lg:mb-20">
             <div>
-              <h2 className="font-playfair text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 sm:mb-8">Notre Mission</h2>
+              <h2 className="font-playfair text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 sm:mb-8">
+                Notre Mission
+              </h2>
               <p className="text-sm sm:text-base lg:text-lg text-gray-600 mb-4 sm:mb-6 leading-relaxed">
-                La Faculté d'Économie et de Gestion de Kénitra s'engage à fournir une éducation de qualité supérieure en
-                sciences économiques et de gestion, en formant les leaders de demain et en contribuant au développement
-                économique et social du Maroc.
+                La Faculté d'Économie et de Gestion de Kénitra s'engage à
+                fournir une éducation de qualité supérieure en sciences
+                économiques et de gestion, en formant les leaders de demain et
+                en contribuant au développement économique et social du Maroc.
               </p>
               <p className="text-sm sm:text-base lg:text-lg text-gray-600 leading-relaxed">
-                Nous nous efforçons d'offrir des programmes innovants qui combinent excellence académique et pertinence
-                professionnelle, préparant nos étudiants à exceller dans un environnement économique en constante
-                évolution.
+                Nous nous efforçons d'offrir des programmes innovants qui
+                combinent excellence académique et pertinence professionnelle,
+                préparant nos étudiants à exceller dans un environnement
+                économique en constante évolution.
               </p>
             </div>
             <div className="relative">
@@ -48,19 +55,24 @@ export default function AProposPage() {
 
           {/* Values */}
           <div className="mb-12 sm:mb-16 lg:mb-20">
-            <h2 className="font-playfair text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-8 sm:mb-12 text-center">Nos Valeurs</h2>
+            <h2 className="font-playfair text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-8 sm:mb-12 text-center">
+              Nos Valeurs
+            </h2>
             <div className="grid lg:grid-cols-3 gap-6 sm:gap-8">
               <Card className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                 <CardHeader className="text-center pb-4 sm:pb-6">
                   <div className="w-12 h-12 sm:w-16 sm:h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
                     <Award className="h-6 w-6 sm:h-8 sm:w-8 text-blue-800" />
                   </div>
-                  <CardTitle className="font-playfair text-lg sm:text-xl">Excellence</CardTitle>
+                  <CardTitle className="font-playfair text-lg sm:text-xl">
+                    Excellence
+                  </CardTitle>
                 </CardHeader>
                 <CardContent className="text-center">
                   <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                    Nous poursuivons l'excellence dans tous nos programmes, recherches et services, en maintenant les
-                    plus hauts standards académiques.
+                    Nous poursuivons l'excellence dans tous nos programmes,
+                    recherches et services, en maintenant les plus hauts
+                    standards académiques.
                   </p>
                 </CardContent>
               </Card>
@@ -70,12 +82,15 @@ export default function AProposPage() {
                   <div className="w-12 h-12 sm:w-16 sm:h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4">
                     <Users className="h-6 w-6 sm:h-8 sm:w-8 text-blue-800" />
                   </div>
-                  <CardTitle className="font-playfair text-lg sm:text-xl">Collaboration</CardTitle>
+                  <CardTitle className="font-playfair text-lg sm:text-xl">
+                    Collaboration
+                  </CardTitle>
                 </CardHeader>
                 <CardContent className="text-center">
                   <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                    Nous favorisons un environnement collaboratif où étudiants, professeurs et professionnels
-                    travaillent ensemble vers des objectifs communs.
+                    Nous favorisons un environnement collaboratif où étudiants,
+                    professeurs et professionnels travaillent ensemble vers des
+                    objectifs communs.
                   </p>
                 </CardContent>
               </Card>
@@ -85,12 +100,14 @@ export default function AProposPage() {
                   <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Globe className="h-8 w-8 text-blue-800" />
                   </div>
-                  <CardTitle className="font-playfair text-xl">Innovation</CardTitle>
+                  <CardTitle className="font-playfair text-xl">
+                    Innovation
+                  </CardTitle>
                 </CardHeader>
                 <CardContent className="text-center">
                   <p className="text-gray-600 leading-relaxed">
-                    Nous embrassons l'innovation pédagogique et technologique pour préparer nos étudiants aux défis du
-                    futur.
+                    Nous embrassons l'innovation pédagogique et technologique
+                    pour préparer nos étudiants aux défis du futur.
                   </p>
                 </CardContent>
               </Card>
@@ -99,57 +116,76 @@ export default function AProposPage() {
 
           {/* History */}
           <div className="bg-gray-50 rounded-lg p-8 mb-20">
-            <h2 className="font-playfair text-4xl font-bold text-gray-900 mb-8 text-center">Notre Histoire</h2>
+            <h2 className="font-playfair text-4xl font-bold text-gray-900 mb-8 text-center">
+              Notre Histoire
+            </h2>
             <div className="max-w-4xl mx-auto">
               <div className="space-y-8">
                 <div className="flex gap-6">
                   <div className="flex-shrink-0">
-                    <Badge className="bg-blue-800 text-white px-4 py-2">1989</Badge>
+                    <Badge className="bg-blue-800 text-white px-4 py-2">
+                      1989
+                    </Badge>
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-2">Fondation</h3>
                     <p className="text-gray-600">
-                      Création de la Faculté d'Économie et de Gestion dans le cadre de l'Université Ibn Tofail, avec
-                      pour mission de former des cadres compétents en économie et gestion.
+                      Création de la Faculté d'Économie et de Gestion dans le
+                      cadre de l'Université Ibn Tofail, avec pour mission de
+                      former des cadres compétents en économie et gestion.
                     </p>
                   </div>
                 </div>
 
                 <div className="flex gap-6">
                   <div className="flex-shrink-0">
-                    <Badge className="bg-blue-800 text-white px-4 py-2">2000</Badge>
+                    <Badge className="bg-blue-800 text-white px-4 py-2">
+                      2000
+                    </Badge>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-2">Expansion des Programmes</h3>
+                    <h3 className="font-semibold text-lg mb-2">
+                      Expansion des Programmes
+                    </h3>
                     <p className="text-gray-600">
-                      Lancement des premiers programmes de formation continue pour répondre aux besoins des
-                      professionnels en activité.
+                      Lancement des premiers programmes de formation continue
+                      pour répondre aux besoins des professionnels en activité.
                     </p>
                   </div>
                 </div>
 
                 <div className="flex gap-6">
                   <div className="flex-shrink-0">
-                    <Badge className="bg-blue-800 text-white px-4 py-2">2010</Badge>
+                    <Badge className="bg-blue-800 text-white px-4 py-2">
+                      2010
+                    </Badge>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-2">Modernisation</h3>
+                    <h3 className="font-semibold text-lg mb-2">
+                      Modernisation
+                    </h3>
                     <p className="text-gray-600">
-                      Modernisation des infrastructures et intégration des nouvelles technologies dans l'enseignement et
-                      la recherche.
+                      Modernisation des infrastructures et intégration des
+                      nouvelles technologies dans l'enseignement et la
+                      recherche.
                     </p>
                   </div>
                 </div>
 
                 <div className="flex gap-6">
                   <div className="flex-shrink-0">
-                    <Badge className="bg-blue-800 text-white px-4 py-2">2020</Badge>
+                    <Badge className="bg-blue-800 text-white px-4 py-2">
+                      2020
+                    </Badge>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-lg mb-2">Innovation Pédagogique</h3>
+                    <h3 className="font-semibold text-lg mb-2">
+                      Innovation Pédagogique
+                    </h3>
                     <p className="text-gray-600">
-                      Adoption de l'apprentissage hybride et développement de programmes spécialisés en management et
-                      marketing des services.
+                      Adoption de l'apprentissage hybride et développement de
+                      programmes spécialisés en management et marketing des
+                      services.
                     </p>
                   </div>
                 </div>
@@ -159,7 +195,9 @@ export default function AProposPage() {
 
           {/* Leadership Team */}
           <div className="mb-20">
-            <h2 className="font-playfair text-4xl font-bold text-gray-900 mb-12 text-center">Équipe de Direction</h2>
+            <h2 className="font-playfair text-4xl font-bold text-gray-900 mb-12 text-center">
+              Équipe de Direction
+            </h2>
             <div className="grid lg:grid-cols-3 gap-8">
               <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <CardHeader className="text-center">
@@ -172,13 +210,17 @@ export default function AProposPage() {
                       className="rounded-full"
                     />
                   </div>
-                  <CardTitle className="font-playfair">Prof. Ahmed Benali</CardTitle>
-                  <p className="text-blue-800 font-medium">Doyen de la Faculté</p>
+                  <CardTitle className="font-playfair">
+                    Prof. Ahmed Benali
+                  </CardTitle>
+                  <p className="text-blue-800 font-medium">
+                    Doyen de la Faculté
+                  </p>
                 </CardHeader>
                 <CardContent className="text-center">
                   <p className="text-gray-600 text-sm">
-                    Docteur en Sciences Économiques avec plus de 20 ans d'expérience dans l'enseignement supérieur et la
-                    recherche.
+                    Docteur en Sciences Économiques avec plus de 20 ans
+                    d'expérience dans l'enseignement supérieur et la recherche.
                   </p>
                 </CardContent>
               </Card>
@@ -194,13 +236,15 @@ export default function AProposPage() {
                       className="rounded-full"
                     />
                   </div>
-                  <CardTitle className="font-playfair">Prof. Fatima Zahra</CardTitle>
+                  <CardTitle className="font-playfair">
+                    Prof. Fatima Zahra
+                  </CardTitle>
                   <p className="text-blue-800 font-medium">Vice-Doyenne</p>
                 </CardHeader>
                 <CardContent className="text-center">
                   <p className="text-gray-600 text-sm">
-                    Spécialiste en Management et Marketing avec une expertise reconnue dans la formation continue
-                    professionnelle.
+                    Spécialiste en Management et Marketing avec une expertise
+                    reconnue dans la formation continue professionnelle.
                   </p>
                 </CardContent>
               </Card>
@@ -216,12 +260,17 @@ export default function AProposPage() {
                       className="rounded-full"
                     />
                   </div>
-                  <CardTitle className="font-playfair">Prof. Hicham Ouakil</CardTitle>
-                  <p className="text-blue-800 font-medium">Responsable Formation Continue</p>
+                  <CardTitle className="font-playfair">
+                    Prof. Hicham Ouakil
+                  </CardTitle>
+                  <p className="text-blue-800 font-medium">
+                    Responsable Formation Continue
+                  </p>
                 </CardHeader>
                 <CardContent className="text-center">
                   <p className="text-gray-600 text-sm">
-                    Expert en développement de programmes professionnels et en partenariats avec le secteur privé.
+                    Expert en développement de programmes professionnels et en
+                    partenariats avec le secteur privé.
                   </p>
                 </CardContent>
               </Card>
@@ -230,7 +279,9 @@ export default function AProposPage() {
 
           {/* Stats */}
           <div className="bg-blue-900 text-white rounded-lg p-12 mb-20">
-            <h2 className="font-playfair text-4xl font-bold mb-12 text-center">Nos Réalisations</h2>
+            <h2 className="font-playfair text-4xl font-bold mb-12 text-center">
+              Nos Réalisations
+            </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div>
                 <div className="text-4xl font-bold mb-2">35+</div>
@@ -253,13 +304,19 @@ export default function AProposPage() {
 
           {/* Call to Action */}
           <div className="text-center">
-            <h2 className="font-playfair text-4xl font-bold text-gray-900 mb-6">Rejoignez Notre Communauté</h2>
+            <h2 className="font-playfair text-4xl font-bold text-gray-900 mb-6">
+              Rejoignez Notre Communauté
+            </h2>
             <p className="text-lg text-gray-600 mb-8 max-w-3xl mx-auto">
-              Découvrez comment notre faculté peut vous aider à atteindre vos objectifs académiques et professionnels.
+              Découvrez comment notre faculté peut vous aider à atteindre vos
+              objectifs académiques et professionnels.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/programmes">
-                <Button size="lg" className="bg-blue-800 hover:bg-blue-900 text-white font-medium px-8 py-3">
+                <Button
+                  size="lg"
+                  className="bg-blue-800 hover:bg-blue-900 text-white font-medium px-8 py-3"
+                >
                   Nos Programmes
                 </Button>
               </Link>
@@ -277,5 +334,5 @@ export default function AProposPage() {
         </div>
       </section>
     </div>
-  )
+  );
 }
