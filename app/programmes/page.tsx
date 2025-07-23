@@ -56,7 +56,7 @@ export default function ProgrammesPage() {
       title: "Management Stratégique et Marketing des Services",
       level: "Master Spécialisé",
       levelCode: "master",
-      duration: "18 mois",
+      duration: "3 semestres",
       durationCode: "long",
       cost: "31 000 DH",
       schedule: "Week-end",
@@ -74,45 +74,52 @@ export default function ProgrammesPage() {
     },
     {
       id: "audit-qualite-licence",
-      title: "Audit et Qualité",
-      level: "Licence Spécialisée",
+      title: "Management Audit Qualité",
+      level: "Licence Universitaire Spécialisée",
       levelCode: "license",
-      duration: "À définir",
-      durationCode: "medium",
-      cost: "À définir",
-      schedule: "En préparation",
+      duration: "2 semestres",
+      durationCode: "short",
+      cost: "17 000 DH (étudiants nationaux)",
+      schedule: "Week-end",
       format: "Hybride",
       description:
-        "Formation spécialisée en audit et management de la qualité pour les entreprises modernes",
-      requirements: "Bac+2",
+        "Formation spécialisée dans le Management Audit Qualité pour requalifier certains profils et répondre aux besoins spécifiques du Management d'entreprise",
+      requirements: "Bac+2 (ou équivalent)",
       careers: [
-        "Auditeur qualité",
-        "Responsable qualité",
-        "Consultant en amélioration continue",
+        "Techniciens qualités",
+        "Responsables qualité",
+        "Responsables en audit",
+        "Opérateurs et contrôleurs en qualité",
+        "Chargé de produit",
+        "Responsable de projet",
       ],
-      featured: false,
-      comingSoon: true,
+      featured: true,
+      comingSoon: false,
     },
     {
       id: "audit-qualite-master",
-      title: "Audit et Qualité",
-      level: "Master Spécialisé",
+      title: "Management Audit Qualité Industrie & Service",
+      level: "Master Universitaire Spécialisé",
       levelCode: "master",
-      duration: "À définir",
+      duration: "4 semestres (2 ans)",
       durationCode: "long",
-      cost: "À définir",
-      schedule: "En préparation",
+      cost: "31 000 DH (étudiants nationaux)",
+      schedule: "Week-end",
       format: "Hybride",
       description:
-        "Formation avancée en audit et management de la qualité pour les cadres supérieurs",
-      requirements: "Bac+3",
+        "Formation avancée dans le Management Audit Qualité pour former des cadres dans le domaine spécialisé en Management Audit Qualité",
+      requirements: "Bac+3 (ou équivalent)",
       careers: [
-        "Directeur qualité",
-        "Auditeur senior",
-        "Consultant en management de la qualité",
+        "Responsables qualité dans différents secteurs",
+        "Responsables audit dans différents secteurs",
+        "Opérateurs et contrôleurs en qualité",
+        "Opérateurs dans des bureaux et cabinets de consultants",
+        "Responsable relation client",
+        "Chargé d'affaires",
+        "Consultants en organisation",
       ],
-      featured: false,
-      comingSoon: true,
+      featured: true,
+      comingSoon: false,
     },
   ];
 
@@ -210,57 +217,62 @@ export default function ProgrammesPage() {
             {filteredPrograms.map((program) => (
               <Card
                 key={program.id}
-                className={`border-0 shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden ${
+                className={`border-0 shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col h-full ${
                   program.comingSoon ? "opacity-75" : ""
                 }`}
               >
                 <div
-                  className={`p-4 sm:p-6 lg:p-8 text-white ${
+                  className={`p-4 sm:p-6 lg:p-8 text-white flex flex-col justify-between ${
                     program.comingSoon ? "bg-gray-600" : "bg-blue-800"
                   }`}
+                  style={{ minHeight: '280px' }}
                 >
-                  <div className="flex flex-col sm:flex-row justify-between items-start sm:items-start mb-4 sm:mb-6 gap-3 sm:gap-0">
-                    <Badge
-                      className={`font-semibold px-3 py-1 text-sm sm:text-base ${
-                        program.comingSoon
-                          ? "bg-white text-gray-600"
-                          : "bg-white text-blue-800"
+                  <div>
+                    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-start mb-4 sm:mb-6 gap-3 sm:gap-0">
+                      <Badge
+                        className={`font-semibold px-3 py-1 text-sm sm:text-base ${
+                          program.comingSoon
+                            ? "bg-white text-gray-600"
+                            : "bg-white text-blue-800"
+                        }`}
+                      >
+                        {program.level}
+                      </Badge>
+                      <div className="flex flex-wrap gap-2">
+                        <Badge
+                          variant="outline"
+                          className="border-white text-white bg-white/20 font-semibold text-xs sm:text-sm"
+                        >
+                          {program.requirements}
+                        </Badge>
+                        {program.featured && !program.comingSoon && (
+                          <Badge className="bg-yellow-500 text-yellow-900 font-semibold text-xs sm:text-sm">
+                            Populaire
+                          </Badge>
+                        )}
+                        {program.comingSoon && (
+                          <Badge className="bg-orange-500 text-white font-semibold text-xs sm:text-sm">
+                            Bientôt
+                          </Badge>
+                        )}
+                      </div>
+                    </div>
+                    <h3 className="font-playfair text-lg sm:text-xl lg:text-2xl font-bold mb-3 sm:mb-4 leading-tight">
+                      {program.title}
+                    </h3>
+                  </div>
+                  <div className="flex-1 flex items-end">
+                    <p
+                      className={`text-sm sm:text-base lg:text-lg leading-relaxed ${
+                        program.comingSoon ? "text-gray-200" : "text-blue-100"
                       }`}
                     >
-                      {program.level}
-                    </Badge>
-                    <div className="flex flex-wrap gap-2">
-                      <Badge
-                        variant="outline"
-                        className="border-white text-white bg-white/20 font-semibold text-xs sm:text-sm"
-                      >
-                        {program.requirements}
-                      </Badge>
-                      {program.featured && !program.comingSoon && (
-                        <Badge className="bg-yellow-500 text-yellow-900 font-semibold text-xs sm:text-sm">
-                          Populaire
-                        </Badge>
-                      )}
-                      {program.comingSoon && (
-                        <Badge className="bg-orange-500 text-white font-semibold text-xs sm:text-sm">
-                          Bientôt
-                        </Badge>
-                      )}
-                    </div>
+                      {program.description}
+                    </p>
                   </div>
-                  <h3 className="font-playfair text-lg sm:text-xl lg:text-2xl font-bold mb-3 sm:mb-4 leading-tight">
-                    {program.title}
-                  </h3>
-                  <p
-                    className={`text-sm sm:text-base lg:text-lg leading-relaxed ${
-                      program.comingSoon ? "text-gray-200" : "text-blue-100"
-                    }`}
-                  >
-                    {program.description}
-                  </p>
                 </div>
 
-                <CardContent className="p-4 sm:p-6 lg:p-8">
+                <CardContent className="p-4 sm:p-6 lg:p-8 flex-1 flex flex-col">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mb-6 sm:mb-8">
                     <div className="flex items-center gap-3">
                       <div
@@ -356,7 +368,7 @@ export default function ProgrammesPage() {
                     </div>
                   </div>
 
-                  <div className="mb-6 sm:mb-8 p-4 sm:p-6 bg-gray-50 rounded-lg">
+                  <div className="mb-6 sm:mb-8 p-4 sm:p-6 bg-gray-50 rounded-lg flex-1">
                     <h4 className="font-semibold mb-3 text-gray-900 text-sm sm:text-base">
                       Débouchés Professionnels
                     </h4>
@@ -373,21 +385,23 @@ export default function ProgrammesPage() {
                     </div>
                   </div>
 
-                  {program.comingSoon ? (
-                    <Button
-                      disabled
-                      className="w-full bg-gray-400 text-white font-semibold py-3 sm:py-4 text-base sm:text-lg cursor-not-allowed"
-                    >
-                      Bientôt Disponible
-                    </Button>
-                  ) : (
-                    <Link href={`/programmes/${program.id}`}>
-                      <Button className="w-full bg-blue-800 hover:bg-blue-900 text-white font-semibold py-3 sm:py-4 text-base sm:text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg group">
-                        Découvrir le Programme
-                        <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-300 group-hover:translate-x-1" />
+                  <div className="mt-auto">
+                    {program.comingSoon ? (
+                      <Button
+                        disabled
+                        className="w-full bg-gray-400 text-white font-semibold py-3 sm:py-4 text-base sm:text-lg cursor-not-allowed"
+                      >
+                        Bientôt Disponible
                       </Button>
-                    </Link>
-                  )}
+                    ) : (
+                      <Link href={`/programmes/${program.id}`}>
+                        <Button className="w-full bg-blue-800 hover:bg-blue-900 text-white font-semibold py-3 sm:py-4 text-base sm:text-lg transition-all duration-300 hover:scale-105 hover:shadow-lg group">
+                          Découvrir le Programme
+                          <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-300 group-hover:translate-x-1" />
+                        </Button>
+                      </Link>
+                    )}
+                  </div>
                 </CardContent>
               </Card>
             ))}

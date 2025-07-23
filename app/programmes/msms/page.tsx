@@ -1,9 +1,20 @@
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Clock, Euro, Calendar, FileText, CheckCircle, Users, Target, BookOpen, Globe, TrendingUp } from "lucide-react"
-import Image from "next/image"
-import Link from "next/link"
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import {
+  Clock,
+  Euro,
+  Calendar,
+  FileText,
+  CheckCircle,
+  Users,
+  Target,
+  BookOpen,
+  Globe,
+  TrendingUp,
+} from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function MSMSPage() {
   return (
@@ -12,14 +23,19 @@ export default function MSMSPage() {
       <section className="py-16 px-4 bg-gradient-to-r from-blue-800 to-blue-900 text-white">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center gap-4 mb-6">
-            <Badge className="bg-blue-600">Master Universitaire Spécialisé</Badge>
+            <Badge className="bg-blue-600">
+              Master Universitaire Spécialisé
+            </Badge>
             <Badge variant="outline" className="border-white text-white">
               Bac+3 Requis
             </Badge>
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Management Stratégique et Marketing des Services</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            Management Stratégique et Marketing des Services
+          </h1>
           <p className="text-xl opacity-90 max-w-4xl">
-            Formation avancée pour les cadres du middle et top management destinés au secteur des services
+            Formation avancée pour les cadres du middle et top management
+            destinés au secteur des services
           </p>
         </div>
       </section>
@@ -29,26 +45,32 @@ export default function MSMSPage() {
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-blue-800">Objectifs de la Formation</h2>
+              <h2 className="text-3xl font-bold mb-6 text-blue-800">
+                Objectifs de la Formation
+              </h2>
               <div className="space-y-4 mb-6">
                 <div className="flex items-start gap-3">
                   <Target className="h-6 w-6 text-blue-600 mt-1" />
                   <p className="text-gray-600">
-                    Participer à la réussite de l'industrie du service par la formation de cadres du middle et top
-                    management destinés au secteur des services et domaines connexes
+                    Participer à la réussite de l'industrie du service par la
+                    formation de cadres du middle et top management destinés au
+                    secteur des services et domaines connexes
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Users className="h-6 w-6 text-blue-600 mt-1" />
                   <p className="text-gray-600">
-                    Former des cadres supérieurs poly-compétents capables d'intervenir dans le montage de produits et/ou
-                    de projets, de commercialiser un produit et/ou une destination touristique
+                    Former des cadres supérieurs poly-compétents capables
+                    d'intervenir dans le montage de produits et/ou de projets,
+                    de commercialiser un produit et/ou une destination
+                    touristique
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
                   <TrendingUp className="h-6 w-6 text-blue-600 mt-1" />
                   <p className="text-gray-600">
-                    Renforcer les compétences dans le marketing des services et la conduite des affaires
+                    Renforcer les compétences dans le marketing des services et
+                    la conduite des affaires
                   </p>
                 </div>
               </div>
@@ -85,13 +107,17 @@ export default function MSMSPage() {
 
           {/* Curriculum */}
           <div className="mb-16">
-            <h2 className="text-3xl font-bold mb-8 text-center text-blue-800">Programme d'Études</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center text-blue-800">
+              Programme d'Études
+            </h2>
             <div className="grid md:grid-cols-2 gap-6">
               {/* Semester 1 */}
               <Card className="border-blue-200">
                 <CardHeader className="bg-blue-50">
                   <Badge className="w-fit mb-2 bg-blue-600">Semestre 1</Badge>
-                  <CardTitle className="text-blue-800">Fondements Stratégiques</CardTitle>
+                  <CardTitle className="text-blue-800">
+                    Fondements Stratégiques
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-sm">
@@ -131,7 +157,9 @@ export default function MSMSPage() {
               <Card className="border-blue-200">
                 <CardHeader className="bg-blue-50">
                   <Badge className="w-fit mb-2 bg-blue-600">Semestre 2</Badge>
-                  <CardTitle className="text-blue-800">Marketing Avancé</CardTitle>
+                  <CardTitle className="text-blue-800">
+                    Marketing Avancé
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-sm">
@@ -171,7 +199,9 @@ export default function MSMSPage() {
               <Card className="border-blue-200">
                 <CardHeader className="bg-blue-50">
                   <Badge className="w-fit mb-2 bg-blue-600">Semestre 3</Badge>
-                  <CardTitle className="text-blue-800">Innovation & Management</CardTitle>
+                  <CardTitle className="text-blue-800">
+                    Innovation & Management
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 text-sm">
@@ -225,8 +255,9 @@ export default function MSMSPage() {
                     </li>
                   </ul>
                   <p className="text-sm text-gray-600 mt-4">
-                    Le semestre final est consacré à la réalisation d'un projet professionnel et au développement des
-                    compétences d'employabilité.
+                    Le semestre final est consacré à la réalisation d'un projet
+                    professionnel et au développement des compétences
+                    d'employabilité.
                   </p>
                 </CardContent>
               </Card>
@@ -235,49 +266,77 @@ export default function MSMSPage() {
 
           {/* Career Prospects */}
           <div className="mb-16">
-            <h2 className="text-3xl font-bold mb-8 text-center text-blue-800">Débouchés Professionnels</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center text-blue-800">
+              Débouchés Professionnels
+            </h2>
             <div className="bg-blue-50 rounded-lg p-8">
               <p className="text-gray-700 mb-6">
-                Les titulaires du Master Management Stratégique et Marketing des services (MSMS) peuvent s'orienter dans
-                tout type d'entreprise (Groupes multinationaux, Grandes entreprises, PME/PMI...) en tant que cadres
-                travaillant à la conception, à la commercialisation et à la production des services.
+                Les titulaires du Master Management Stratégique et Marketing des
+                services (MSMS) peuvent s'orienter dans tout type d'entreprise
+                (Groupes multinationaux, Grandes entreprises, PME/PMI...) en
+                tant que cadres travaillant à la conception, à la
+                commercialisation et à la production des services.
               </p>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div className="text-center">
                   <TrendingUp className="h-8 w-8 text-blue-600 mx-auto mb-2" />
-                  <h3 className="font-semibold mb-2 text-blue-800">Marketing Stratégique</h3>
-                  <p className="text-sm text-gray-600">Responsable marketing stratégique, Directeur marketing</p>
+                  <h3 className="font-semibold mb-2 text-blue-800">
+                    Marketing Stratégique
+                  </h3>
+                  <p className="text-sm text-gray-600">
+                    Responsable marketing stratégique, Directeur marketing
+                  </p>
                 </div>
 
                 <div className="text-center">
                   <Target className="h-8 w-8 text-blue-600 mx-auto mb-2" />
-                  <h3 className="font-semibold mb-2 text-blue-800">Marketing Opérationnel</h3>
-                  <p className="text-sm text-gray-600">Chef de produit, Responsable communication</p>
+                  <h3 className="font-semibold mb-2 text-blue-800">
+                    Marketing Opérationnel
+                  </h3>
+                  <p className="text-sm text-gray-600">
+                    Chef de produit, Responsable communication
+                  </p>
                 </div>
 
                 <div className="text-center">
                   <BookOpen className="h-8 w-8 text-blue-600 mx-auto mb-2" />
-                  <h3 className="font-semibold mb-2 text-blue-800">Innovation</h3>
-                  <p className="text-sm text-gray-600">Chargé de veille innovation, Chef de projet innovation</p>
+                  <h3 className="font-semibold mb-2 text-blue-800">
+                    Innovation
+                  </h3>
+                  <p className="text-sm text-gray-600">
+                    Chargé de veille innovation, Chef de projet innovation
+                  </p>
                 </div>
 
                 <div className="text-center">
                   <Globe className="h-8 w-8 text-blue-600 mx-auto mb-2" />
-                  <h3 className="font-semibold mb-2 text-blue-800">Management International</h3>
-                  <p className="text-sm text-gray-600">Directeur export, Responsable développement international</p>
+                  <h3 className="font-semibold mb-2 text-blue-800">
+                    Management International
+                  </h3>
+                  <p className="text-sm text-gray-600">
+                    Directeur export, Responsable développement international
+                  </p>
                 </div>
 
                 <div className="text-center">
                   <Users className="h-8 w-8 text-blue-600 mx-auto mb-2" />
-                  <h3 className="font-semibold mb-2 text-blue-800">Consulting</h3>
-                  <p className="text-sm text-gray-600">Consultant en stratégie, Auditeur organisationnel</p>
+                  <h3 className="font-semibold mb-2 text-blue-800">
+                    Consulting
+                  </h3>
+                  <p className="text-sm text-gray-600">
+                    Consultant en stratégie, Auditeur organisationnel
+                  </p>
                 </div>
 
                 <div className="text-center">
                   <Target className="h-8 w-8 text-blue-600 mx-auto mb-2" />
-                  <h3 className="font-semibold mb-2 text-blue-800">Entrepreneuriat</h3>
-                  <p className="text-sm text-gray-600">Créateur d'entreprise, Directeur général</p>
+                  <h3 className="font-semibold mb-2 text-blue-800">
+                    Entrepreneuriat
+                  </h3>
+                  <p className="text-sm text-gray-600">
+                    Créateur d'entreprise, Directeur général
+                  </p>
                 </div>
               </div>
             </div>
@@ -286,10 +345,14 @@ export default function MSMSPage() {
           {/* Admission Requirements */}
           <div className="grid lg:grid-cols-2 gap-12 mb-16">
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-blue-800">Modalités d'Admission</h2>
+              <h2 className="text-3xl font-bold mb-6 text-blue-800">
+                Modalités d'Admission
+              </h2>
               <Card className="border-blue-200">
                 <CardHeader className="bg-blue-50">
-                  <CardTitle className="text-blue-800">Conditions d'Accès</CardTitle>
+                  <CardTitle className="text-blue-800">
+                    Conditions d'Accès
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3">
@@ -299,7 +362,9 @@ export default function MSMSPage() {
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
-                      <span>Titulaires d'un Bac + 3 public ou privé (Accrédité)</span>
+                      <span>
+                        Titulaires d'un Bac + 3 public ou privé (Accrédité)
+                      </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
@@ -307,7 +372,9 @@ export default function MSMSPage() {
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
-                      <span>Validation sans compensation de tous les modules</span>
+                      <span>
+                        Validation sans compensation de tous les modules
+                      </span>
                     </li>
                   </ul>
                 </CardContent>
@@ -315,10 +382,14 @@ export default function MSMSPage() {
             </div>
 
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-blue-800">Dossier de Candidature</h2>
+              <h2 className="text-3xl font-bold mb-6 text-blue-800">
+                Dossier de Candidature
+              </h2>
               <Card className="border-blue-200">
                 <CardHeader className="bg-blue-50">
-                  <CardTitle className="text-blue-800">Documents Requis</CardTitle>
+                  <CardTitle className="text-blue-800">
+                    Documents Requis
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3">
@@ -348,7 +419,9 @@ export default function MSMSPage() {
                     </li>
                     <li className="flex items-start gap-2">
                       <FileText className="h-5 w-5 text-blue-600 mt-0.5" />
-                      <span>Reçu du versement des frais de dossier (1000 Dhs)</span>
+                      <span>
+                        Reçu du versement des frais de dossier (1000 Dhs)
+                      </span>
                     </li>
                   </ul>
                 </CardContent>
@@ -358,24 +431,32 @@ export default function MSMSPage() {
 
           {/* Cost and Payment */}
           <div className="bg-gray-50 rounded-lg p-8 mb-16">
-            <h2 className="text-3xl font-bold mb-6 text-center text-blue-800">Coût et Modalités de Paiement</h2>
+            <h2 className="text-3xl font-bold mb-6 text-center text-blue-800">
+              Coût et Modalités de Paiement
+            </h2>
             <div className="grid md:grid-cols-4 gap-6">
               <Card className="text-center border-blue-200">
                 <CardHeader>
                   <CardTitle className="text-blue-800">Coût Total</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="text-3xl font-bold text-blue-600 mb-2">31 000 DH</div>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">
+                    31 000 DH
+                  </div>
                   <p className="text-gray-600">Formation complète</p>
                 </CardContent>
               </Card>
 
               <Card className="text-center border-blue-200">
                 <CardHeader>
-                  <CardTitle className="text-blue-800">Frais de Dossier</CardTitle>
+                  <CardTitle className="text-blue-800">
+                    Frais de Dossier
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="text-3xl font-bold text-blue-600 mb-2">1 000 DH</div>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">
+                    1 000 DH
+                  </div>
                   <p className="text-gray-600">Non remboursables</p>
                 </CardContent>
               </Card>
@@ -385,7 +466,9 @@ export default function MSMSPage() {
                   <CardTitle className="text-blue-800">Modalités</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="text-lg font-bold text-blue-600 mb-2">4 Tranches</div>
+                  <div className="text-lg font-bold text-blue-600 mb-2">
+                    4 Tranches
+                  </div>
                   <p className="text-gray-600">Paiement échelonné</p>
                 </CardContent>
               </Card>
@@ -395,27 +478,35 @@ export default function MSMSPage() {
                   <CardTitle className="text-blue-800">Durée</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="text-lg font-bold text-blue-600 mb-2">18 Mois</div>
+                  <div className="text-lg font-bold text-blue-600 mb-2">
+                    18 Mois
+                  </div>
                   <p className="text-gray-600">4 semestres</p>
                 </CardContent>
               </Card>
             </div>
 
             <div className="mt-6 p-4 bg-blue-100 rounded-lg">
-              <h3 className="font-semibold text-blue-800 mb-2">Informations Bancaires</h3>
+              <h3 className="font-semibold text-blue-800 mb-2">
+                Informations Bancaires
+              </h3>
               <p className="text-sm text-blue-700">
                 <strong>Bénéficiaire:</strong> L'Université Ibn Tofaïl
                 <br />
-                <strong>Compte au trésor N°:</strong> 310 330 1006 021 701980101 68
+                <strong>Compte au trésor N°:</strong> 310 330 1006 021 701980101
+                68
               </p>
             </div>
           </div>
 
           {/* Application */}
           <div className="text-center">
-            <h2 className="text-3xl font-bold mb-6 text-blue-800">Candidature</h2>
+            <h2 className="text-3xl font-bold mb-6 text-blue-800">
+              Candidature
+            </h2>
             <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-              Postulez dès maintenant pour intégrer notre Master en Management Stratégique et Marketing des Services.
+              Postulez dès maintenant pour intégrer notre Master en Management
+              Stratégique et Marketing des Services.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
@@ -439,16 +530,33 @@ export default function MSMSPage() {
           <h2 className="text-3xl font-bold mb-4">Contact et Informations</h2>
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div>
-              <h3 className="font-semibold mb-2">Responsable de Formation</h3>
-              <p>Pr Hicham OUAKIL</p>
-              <p>Tél: 06 61 13 08 94</p>
-              <p>Email: hicham.ouakil@uit.ac.ma</p>
+              <h3 className="font-semibold mb-2">Équipe de Direction</h3>
+              <p>
+                <strong>M. Hicham OUAKIL</strong> - Vice-Doyen
+              </p>
+              <p>Tel: +212 661-130894 | Email: hicham.ouakil@uit.ac.ma
+              </p>
+              <p>
+                <strong>Mme. Houda LECHHEB</strong> - Équipe de Direction
+              </p>
+              <p>Tel: +212 661-849348 | Email: houda.lechheb@uit.ac.ma</p>
+              <p>
+                <strong>M. Mohammed ELATMANI</strong> - Équipe de Direction
+              </p>
+              <p>Tel: +212 635-587844 | Email: mohammed.elatmani@uit.ac.ma</p>
+              <p>
+                <strong>M. Hamza HAMANI</strong> - Équipe de Direction
+              </p>
+              <p>Tel: +212 693-517484 | Email: hamza.hamani@uit.ac.ma</p>
             </div>
             <div>
-              <h3 className="font-semibold mb-2">Faculté d'Économie et de Gestion</h3>
+              <h3 className="font-semibold mb-2">
+                Faculté d'Économie et de Gestion
+              </h3>
               <p>Campus Universitaire Maamora</p>
               <p>BP: 2010 Kénitra</p>
               <p>Tél: 05 37 32 92 18</p>
+              <p>Email: hicham.ouakil@uit.ac.ma</p>
             </div>
           </div>
           <Link href="/programmes">
@@ -459,5 +567,5 @@ export default function MSMSPage() {
         </div>
       </section>
     </div>
-  )
+  );
 }

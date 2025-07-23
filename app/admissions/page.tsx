@@ -43,21 +43,11 @@ export default function AdmissionsPage() {
                 <h3 className="font-semibold text-yellow-800 mb-2 text-sm sm:text-base">
                   Dates Importantes - Année 2024-2025
                 </h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 text-xs sm:text-sm">
+                <div className="text-xs sm:text-sm">
                   <div>
                     <strong>Ouverture des candidatures:</strong>
                     <br />
                     15 Mars 2024
-                  </div>
-                  <div>
-                    <strong>Date limite de candidature:</strong>
-                    <br />
-                    30 Juin 2024
-                  </div>
-                  <div>
-                    <strong>Résultats d'admission:</strong>
-                    <br />
-                    15 Juillet 2024
                   </div>
                 </div>
               </div>
@@ -116,13 +106,12 @@ export default function AdmissionsPage() {
                 </div>
                 <CardTitle className="flex items-center gap-2 font-playfair">
                   <CheckCircle className="h-5 w-5 text-blue-700" />
-                  Entretien & Admission
+                  Admission & Début des Études
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Les candidats présélectionnés passent un entretien de
-                  motivation. Les résultats sont communiqués sous 48h.
+                  Après validation de votre dossier, vous recevez votre lettre d'admission et pouvez commencer vos études dans le programme choisi.
                 </CardDescription>
               </CardContent>
             </Card>
