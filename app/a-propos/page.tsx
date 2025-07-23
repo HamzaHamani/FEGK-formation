@@ -198,57 +198,7 @@ export default function AProposPage() {
             <h2 className="font-playfair text-4xl font-bold text-gray-900 mb-12 text-center">
               Équipe de Direction
             </h2>
-            <div className="grid lg:grid-cols-3 gap-8">
-              <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-                <CardHeader className="text-center">
-                  <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4">
-                    <Image
-                      src="/placeholder.svg?height=96&width=96"
-                      alt="Doyen"
-                      width={96}
-                      height={96}
-                      className="rounded-full"
-                    />
-                  </div>
-                  <CardTitle className="font-playfair">
-                    Prof. Ahmed Benali
-                  </CardTitle>
-                  <p className="text-blue-800 font-medium">
-                    Doyen de la Faculté
-                  </p>
-                </CardHeader>
-                <CardContent className="text-center">
-                  <p className="text-gray-600 text-sm">
-                    Docteur en Sciences Économiques avec plus de 20 ans
-                    d'expérience dans l'enseignement supérieur et la recherche.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
-                <CardHeader className="text-center">
-                  <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4">
-                    <Image
-                      src="/placeholder.svg?height=96&width=96"
-                      alt="Vice-Doyen"
-                      width={96}
-                      height={96}
-                      className="rounded-full"
-                    />
-                  </div>
-                  <CardTitle className="font-playfair">
-                    Prof. Fatima Zahra
-                  </CardTitle>
-                  <p className="text-blue-800 font-medium">Vice-Doyenne</p>
-                </CardHeader>
-                <CardContent className="text-center">
-                  <p className="text-gray-600 text-sm">
-                    Spécialiste en Management et Marketing avec une expertise
-                    reconnue dans la formation continue professionnelle.
-                  </p>
-                </CardContent>
-              </Card>
-
+            <div className="grid lg:grid-cols-2 xl:grid-cols-4 gap-8">
               <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <CardHeader className="text-center">
                   <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4">
@@ -260,18 +210,98 @@ export default function AProposPage() {
                       className="rounded-full"
                     />
                   </div>
-                  <CardTitle className="font-playfair">
-                    Prof. Hicham Ouakil
+                  <CardTitle className="font-playfair text-lg">
+                    Pr Hicham OUAKIL
                   </CardTitle>
-                  <p className="text-blue-800 font-medium">
+                  <p className="text-blue-800 font-medium text-sm">
                     Responsable Formation Continue
                   </p>
                 </CardHeader>
                 <CardContent className="text-center">
-                  <p className="text-gray-600 text-sm">
-                    Expert en développement de programmes professionnels et en
-                    partenariats avec le secteur privé.
+                  <p className="text-gray-600 text-xs mb-2">
+                    Tél: 06 61 13 08 94
                   </p>
+                  <p className="text-gray-600 text-xs">
+                    hicham.ouakil@uit.ac.ma
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+                <CardHeader className="text-center">
+                  <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4">
+                    <Image
+                      src="/placeholder.svg?height=96&width=96"
+                      alt="Coordinatrice Pédagogique"
+                      width={96}
+                      height={96}
+                      className="rounded-full"
+                    />
+                  </div>
+                  <CardTitle className="font-playfair text-lg">
+                    Pr Hajar HBADI
+                  </CardTitle>
+                  <p className="text-green-700 font-medium text-sm">
+                    Coordinatrice Pédagogique
+                  </p>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <p className="text-gray-600 text-xs mb-2">
+                    Tél: 06 67 48 01 59
+                  </p>
+                  <p className="text-gray-600 text-xs">hajar.hbadi@uit.ac.ma</p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+                <CardHeader className="text-center">
+                  <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4">
+                    <Image
+                      src="/placeholder.svg?height=96&width=96"
+                      alt="Secrétaire"
+                      width={96}
+                      height={96}
+                      className="rounded-full"
+                    />
+                  </div>
+                  <CardTitle className="font-playfair text-lg">
+                    Mme Fatima SBAI
+                  </CardTitle>
+                  <p className="text-blue-800 font-medium text-sm">
+                    Secrétaire Formation Continue
+                  </p>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <p className="text-gray-600 text-xs mb-2">
+                    Tél: 05 37 32 92 23
+                  </p>
+                  <p className="text-gray-600 text-xs">fatima.sbai@uit.ac.ma</p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+                <CardHeader className="text-center">
+                  <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4">
+                    <Image
+                      src="/placeholder.svg?height=96&width=96"
+                      alt="Agent d'Accueil"
+                      width={96}
+                      height={96}
+                      className="rounded-full"
+                    />
+                  </div>
+                  <CardTitle className="font-playfair text-lg">
+                    Mr Najib ELFAR
+                  </CardTitle>
+                  <p className="text-green-700 font-medium text-sm">
+                    Agent d'Accueil et d'Information
+                  </p>
+                </CardHeader>
+                <CardContent className="text-center">
+                  <p className="text-gray-600 text-xs mb-2">
+                    Tél: 05 37 32 92 18
+                  </p>
+                  <p className="text-gray-600 text-xs">najib.elfar@uit.ac.ma</p>
                 </CardContent>
               </Card>
             </div>

@@ -376,9 +376,9 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 text-center relative">
             <div className="py-6 sm:py-8 px-3 sm:px-4 relative">
-              <AnimatedCounter 
-                target={30} 
-                suffix="+" 
+              <AnimatedCounter
+                target={30}
+                suffix="+"
                 duration={2500}
                 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2"
               />
@@ -388,11 +388,11 @@ export default function HomePage() {
               {/* Desktop separator */}
               <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-12 sm:h-16 bg-blue-700"></div>
             </div>
-            
+
             <div className="py-6 sm:py-8 px-3 sm:px-4 relative">
-              <AnimatedCounter 
-                target={200} 
-                suffix="+" 
+              <AnimatedCounter
+                target={200}
+                suffix="+"
                 duration={2800}
                 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2"
               />
@@ -402,11 +402,11 @@ export default function HomePage() {
               {/* Desktop separator */}
               <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-12 sm:h-16 bg-blue-700"></div>
             </div>
-            
+
             <div className="py-6 sm:py-8 px-3 sm:px-4 relative">
-              <AnimatedCounter 
-                target={95} 
-                suffix="%" 
+              <AnimatedCounter
+                target={95}
+                suffix="%"
                 duration={2200}
                 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2"
               />
@@ -416,11 +416,11 @@ export default function HomePage() {
               {/* Desktop separator only */}
               <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-12 sm:h-16 bg-blue-700"></div>
             </div>
-            
+
             <div className="py-6 sm:py-8 px-3 sm:px-4">
-              <AnimatedCounter 
-                target={85} 
-                suffix="%" 
+              <AnimatedCounter
+                target={85}
+                suffix="%"
                 duration={2600}
                 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2"
               />
@@ -432,7 +432,7 @@ export default function HomePage() {
             {/* Mobile separators */}
             {/* Vertical separator down the middle (mobile only) */}
             <div className="md:hidden absolute left-1/2 top-0 bottom-0 w-px bg-blue-700 transform -translate-x-1/2"></div>
-            
+
             {/* Horizontal separator across full width (mobile only) */}
             <div className="md:hidden absolute left-0 right-0 top-1/2 h-px bg-blue-700 transform -translate-y-1/2"></div>
           </div>
@@ -557,37 +557,6 @@ export default function HomePage() {
             Les inscriptions sont ouvertes. Faites le premier pas vers
             l'excellence académique et professionnelle.
           </p>
-
-          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-10 lg:mb-12 text-left">
-            <div className="bg-white/10 rounded-lg p-4 sm:p-6 lg:p-8">
-              <h3 className="font-semibold mb-3 sm:mb-4 text-blue-200 text-sm sm:text-base">
-                Contact Responsable
-              </h3>
-              <p className="text-white font-medium text-base sm:text-lg">
-                Pr Hicham OUAKIL
-              </p>
-              <p className="text-blue-200 text-sm sm:text-base">
-                Tél: 06 61 13 08 94
-              </p>
-              <p className="text-blue-200 text-sm sm:text-base">
-                Email: hicham.ouakil@uit.ac.ma
-              </p>
-            </div>
-            <div className="bg-white/10 rounded-lg p-4 sm:p-6 lg:p-8">
-              <h3 className="font-semibold mb-3 sm:mb-4 text-blue-200 text-sm sm:text-base">
-                Campus
-              </h3>
-              <p className="text-white font-medium text-base sm:text-lg">
-                Campus Universitaire Maamora
-              </p>
-              <p className="text-blue-200 text-sm sm:text-base">
-                BP: 2010 Kénitra
-              </p>
-              <p className="text-blue-200 text-sm sm:text-base">
-                Tél: 05 37 32 92 18
-              </p>
-            </div>
-          </div>
 
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center px-4 sm:px-0">
             <Link href="/admissions" className="w-full sm:w-auto">

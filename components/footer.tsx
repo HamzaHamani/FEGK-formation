@@ -1,6 +1,15 @@
-import Link from "next/link"
-import { MapPin, Phone, Mail, Clock, Facebook, Twitter, Linkedin, Instagram } from "lucide-react"
-import Image from "next/image"
+import Link from "next/link";
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
+  Facebook,
+  Twitter,
+  Linkedin,
+  Instagram,
+} from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -21,8 +30,9 @@ export default function Footer() {
             <p className="text-gray-300 mb-6 text-sm leading-relaxed max-w-md">
               Faculté d'Économie et de Gestion - Kénitra
               <br />
-              Programmes spécialisés en Management et Marketing des Services pour développer vos compétences
-              professionnelles et accélérer votre carrière.
+              Programmes spécialisés en Management et Marketing des Services
+              pour développer vos compétences professionnelles et accélérer
+              votre carrière.
             </p>
 
             {/* Social Media */}
@@ -56,9 +66,14 @@ export default function Footer() {
 
           {/* Programmes */}
           <div>
-            <h3 className="font-bold text-lg mb-6 text-white">Nos Programmes</h3>
+            <h3 className="font-bold text-lg mb-6 text-white">
+              Nos Programmes
+            </h3>
             <div className="space-y-3">
-              <Link href="/programmes" className="block text-gray-300 hover:text-white transition-colors text-sm">
+              <Link
+                href="/programmes"
+                className="block text-gray-300 hover:text-white transition-colors text-sm"
+              >
                 Tous les Programmes
               </Link>
               <Link
@@ -73,7 +88,22 @@ export default function Footer() {
               >
                 MSMS - Master Spécialisé
               </Link>
-              <Link href="/admissions" className="block text-gray-300 hover:text-white transition-colors text-sm">
+              <Link
+                href="/programmes/audit-qualite-licence"
+                className="block text-gray-300 hover:text-blue-400 transition-colors text-sm"
+              >
+                Audit Qualité - Licence
+              </Link>
+              <Link
+                href="/programmes/audit-qualite-master"
+                className="block text-gray-300 hover:text-blue-400 transition-colors text-sm"
+              >
+                Audit Qualité - Master
+              </Link>
+              <Link
+                href="/admissions"
+                className="block text-gray-300 hover:text-white transition-colors text-sm"
+              >
                 Conditions d'Admission
               </Link>
             </div>
@@ -81,12 +111,16 @@ export default function Footer() {
 
           {/* Contact & Info */}
           <div>
-            <h3 className="font-bold text-lg mb-6 text-white">Contact & Informations</h3>
+            <h3 className="font-bold text-lg mb-6 text-white">
+              Contact & Informations
+            </h3>
             <div className="space-y-4 text-sm">
               <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-gray-400 mt-0.5 flex-shrink-0" />
                 <div className="text-gray-300">
-                  <div className="font-medium text-white">Campus Universitaire Maamora</div>
+                  <div className="font-medium text-white">
+                    Campus Universitaire Maamora
+                  </div>
                   <div>BP: 2010 Kénitra, Maroc</div>
                 </div>
               </div>
@@ -109,9 +143,13 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <Clock className="h-5 w-5 text-gray-400 mt-0.5 flex-shrink-0" />
                 <div className="text-gray-300">
-                  <div className="font-medium text-white">Horaires des Cours</div>
+                  <div className="font-medium text-white">
+                    Horaires des Cours
+                  </div>
                   <div>Samedi & Dimanche</div>
-                  <div className="text-xs text-gray-400 mt-1">Inscription: À partir du 1er Juin</div>
+                  <div className="text-xs text-gray-400 mt-1">
+                    Inscription: À partir du 1er Juin
+                  </div>
                 </div>
               </div>
             </div>
@@ -122,16 +160,26 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} Faculté d'Économie et de Gestion - Kénitra. Tous droits réservés.
+              &copy; {new Date().getFullYear()} Faculté d'Économie et de Gestion
+              - Kénitra. Tous droits réservés.
             </div>
             <div className="flex space-x-6 text-sm">
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              <Link
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 Mentions Légales
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              <Link
+                href="#"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 Politique de Confidentialité
               </Link>
-              <Link href="/contact" className="text-gray-400 hover:text-white transition-colors">
+              <Link
+                href="/contact"
+                className="text-gray-400 hover:text-white transition-colors"
+              >
                 Support
               </Link>
             </div>
@@ -139,5 +187,5 @@ export default function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

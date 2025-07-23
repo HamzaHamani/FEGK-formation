@@ -205,12 +205,12 @@ export default function AdmissionsPage() {
               <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
                 <CardHeader>
                   <CardTitle className="text-center font-playfair">
-                    Étudiants Marocains
+                    Frais de Scolarité Licence
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-center">
                   <div className="text-3xl font-bold text-blue-700 mb-2">
-                    15 000 DH
+                    16 000 DH
                   </div>
                   <p className="text-gray-600">par année</p>
                 </CardContent>
@@ -218,12 +218,12 @@ export default function AdmissionsPage() {
               <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
                 <CardHeader>
                   <CardTitle className="text-center font-playfair">
-                    Étudiants Internationaux
+                    Frais de Scolarité Master
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-center">
                   <div className="text-3xl font-bold text-blue-700 mb-2">
-                    25 000 DH
+                    31 000 DH
                   </div>
                   <p className="text-gray-600">par année</p>
                 </CardContent>
@@ -231,12 +231,12 @@ export default function AdmissionsPage() {
               <Card className="border border-gray-200 shadow-sm hover:shadow-md transition-shadow">
                 <CardHeader>
                   <CardTitle className="text-center font-playfair">
-                    Frais d'Inscription
+                    Frais de Dossier
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="text-center">
                   <div className="text-3xl font-bold text-blue-700 mb-2">
-                    2 000 DH
+                    1 000 DH
                   </div>
                   <p className="text-gray-600">une seule fois</p>
                 </CardContent>

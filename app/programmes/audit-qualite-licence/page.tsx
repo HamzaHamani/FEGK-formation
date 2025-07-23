@@ -381,16 +381,6 @@ export default function AuditQualiteLicencePage() {
                 01 68
               </p>
             </div>
-
-            <div className="mt-4 p-4 bg-yellow-100 rounded-lg">
-              <h3 className="font-semibold text-yellow-800 mb-2">
-                Note Importante
-              </h3>
-              <p className="text-sm text-yellow-700">
-                Pour les frais des étudiants internationaux, contactez-nous
-                directement.
-              </p>
-            </div>
           </div>
 
           {/* Pre-registration */}
