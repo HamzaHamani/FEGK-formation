@@ -111,7 +111,9 @@ export default function AdmissionsPage() {
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Après validation de votre dossier, vous recevez votre lettre d'admission et pouvez commencer vos études dans le programme choisi.
+                  Après validation de votre dossier, vous recevez votre lettre
+                  d'admission et pouvez commencer vos études dans le programme
+                  choisi.
                 </CardDescription>
               </CardContent>
             </Card>

@@ -534,8 +534,7 @@ export default function MSMSPage() {
               <p>
                 <strong>M. Hicham OUAKIL</strong> - Vice-Doyen
               </p>
-              <p>Tel: +212 661-130894 | Email: hicham.ouakil@uit.ac.ma
-              </p>
+              <p>Tel: +212 661-130894 | Email: hicham.ouakil@uit.ac.ma</p>
               <p>
                 <strong>Mme. Houda LECHHEB</strong> - Équipe de Direction
               </p>

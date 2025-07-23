@@ -260,49 +260,67 @@ export default function AuditQualiteMasterPage() {
 
           {/* Career Opportunities */}
           <div className="mb-12 sm:mb-16">
-            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-6 sm:mb-8 text-center text-blue-800">Débouchés de la Formation</h2>
+            <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-6 sm:mb-8 text-center text-blue-800">
+              Débouchés de la Formation
+            </h2>
             <div className="bg-blue-50 rounded-lg p-6 sm:p-8">
               <p className="text-gray-700 mb-6 text-sm sm:text-base">
-                La formation offre beaucoup de débouchés dans différents domaines dans le secteur public et privé, 
-                via les domaines de Management et Développement durable, pour former des cadres spécialisés en Management Audit Qualité.
+                La formation offre beaucoup de débouchés dans différents
+                domaines dans le secteur public et privé, via les domaines de
+                Management et Développement durable, pour former des cadres
+                spécialisés en Management Audit Qualité.
               </p>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div className="text-center">
                   <Target className="h-8 w-8 text-blue-600 mx-auto mb-2" />
-                  <h3 className="font-semibold mb-2 text-blue-800">Responsables Qualité</h3>
+                  <h3 className="font-semibold mb-2 text-blue-800">
+                    Responsables Qualité
+                  </h3>
                   <p className="text-sm text-gray-600">
-                    Responsables qualité dans différents secteurs publics et privés
+                    Responsables qualité dans différents secteurs publics et
+                    privés
                   </p>
                 </div>
 
                 <div className="text-center">
                   <CheckCircle className="h-8 w-8 text-blue-600 mx-auto mb-2" />
-                  <h3 className="font-semibold mb-2 text-blue-800">Audit & Contrôle</h3>
+                  <h3 className="font-semibold mb-2 text-blue-800">
+                    Audit & Contrôle
+                  </h3>
                   <p className="text-sm text-gray-600">
-                    Responsables audit dans différents secteurs, Audit et contrôle interne
+                    Responsables audit dans différents secteurs, Audit et
+                    contrôle interne
                   </p>
                 </div>
 
                 <div className="text-center">
                   <Users className="h-8 w-8 text-blue-600 mx-auto mb-2" />
-                  <h3 className="font-semibold mb-2 text-blue-800">Conseil & Consulting</h3>
+                  <h3 className="font-semibold mb-2 text-blue-800">
+                    Conseil & Consulting
+                  </h3>
                   <p className="text-sm text-gray-600">
-                    Opérateurs dans des bureaux et cabinets de consultants, Consultants en organisation
+                    Opérateurs dans des bureaux et cabinets de consultants,
+                    Consultants en organisation
                   </p>
                 </div>
 
                 <div className="text-center">
                   <BookOpen className="h-8 w-8 text-blue-600 mx-auto mb-2" />
-                  <h3 className="font-semibold mb-2 text-blue-800">Opérations & Contrôle</h3>
+                  <h3 className="font-semibold mb-2 text-blue-800">
+                    Opérations & Contrôle
+                  </h3>
                   <p className="text-sm text-gray-600">
-                    Opérateurs et contrôleurs en qualité dans diverses entreprises
+                    Opérateurs et contrôleurs en qualité dans diverses
+                    entreprises
                   </p>
                 </div>
 
                 <div className="text-center">
                   <FileText className="h-8 w-8 text-blue-600 mx-auto mb-2" />
-                  <h3 className="font-semibold mb-2 text-blue-800">Gestion Commerciale</h3>
+                  <h3 className="font-semibold mb-2 text-blue-800">
+                    Gestion Commerciale
+                  </h3>
                   <p className="text-sm text-gray-600">
                     Chargé d'affaires, Responsable relation client
                   </p>
@@ -314,7 +332,9 @@ export default function AuditQualiteMasterPage() {
           {/* Admission Requirements */}
           <div className="grid lg:grid-cols-2 gap-12 mb-16">
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-blue-800">Conditions d'Admission</h2>
+              <h2 className="text-3xl font-bold mb-6 text-blue-800">
+                Conditions d'Admission
+              </h2>
               <Card className="border-blue-200">
                 <CardHeader className="bg-blue-50">
                   <CardTitle className="text-blue-800">Prérequis</CardTitle>
@@ -331,7 +351,9 @@ export default function AuditQualiteMasterPage() {
                     </li>
                     <li className="flex items-start gap-2">
                       <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
-                      <span>Inscription ouverte à partir du 01 juin de chaque année</span>
+                      <span>
+                        Inscription ouverte à partir du 01 juin de chaque année
+                      </span>
                     </li>
                   </ul>
                 </CardContent>
@@ -339,16 +361,22 @@ export default function AuditQualiteMasterPage() {
             </div>
 
             <div>
-              <h2 className="text-3xl font-bold mb-6 text-blue-800">Dossier de Candidature</h2>
+              <h2 className="text-3xl font-bold mb-6 text-blue-800">
+                Dossier de Candidature
+              </h2>
               <Card className="border-blue-200">
                 <CardHeader className="bg-blue-50">
-                  <CardTitle className="text-blue-800">Procédures de Sélection</CardTitle>
+                  <CardTitle className="text-blue-800">
+                    Procédures de Sélection
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3">
                     <li className="flex items-start gap-2">
                       <FileText className="h-5 w-5 text-blue-600 mt-0.5" />
-                      <span>2 Copies légalisées du BAC (Public ou Fond accrédité)</span>
+                      <span>
+                        2 Copies légalisées du BAC (Public ou Fond accrédité)
+                      </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <FileText className="h-5 w-5 text-blue-600 mt-0.5" />
@@ -364,15 +392,22 @@ export default function AuditQualiteMasterPage() {
                     </li>
                     <li className="flex items-start gap-2">
                       <FileText className="h-5 w-5 text-blue-600 mt-0.5" />
-                      <span>4 copies de contrat de formation dûment légalisé</span>
+                      <span>
+                        4 copies de contrat de formation dûment légalisé
+                      </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <FileText className="h-5 w-5 text-blue-600 mt-0.5" />
-                      <span>Reçu du versement des frais de dossiers (1000 DH)</span>
+                      <span>
+                        Reçu du versement des frais de dossiers (1000 DH)
+                      </span>
                     </li>
                     <li className="flex items-start gap-2">
                       <FileText className="h-5 w-5 text-blue-600 mt-0.5" />
-                      <span>Site d'inscription: https://bac.google.com/uit.ac.ma/mus-maqis</span>
+                      <span>
+                        Site d'inscription:
+                        https://bac.google.com/uit.ac.ma/mus-maqis
+                      </span>
                     </li>
                   </ul>
                 </CardContent>
@@ -382,24 +417,34 @@ export default function AuditQualiteMasterPage() {
 
           {/* Cost and Payment */}
           <div className="bg-gray-50 rounded-lg p-8 mb-16">
-            <h2 className="text-3xl font-bold mb-6 text-center text-blue-800">Coût et Modalités de Paiement</h2>
+            <h2 className="text-3xl font-bold mb-6 text-center text-blue-800">
+              Coût et Modalités de Paiement
+            </h2>
             <div className="grid md:grid-cols-3 gap-6">
               <Card className="text-center border-blue-200">
                 <CardHeader>
                   <CardTitle className="text-blue-800">Coût Total</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="text-3xl font-bold text-blue-600 mb-2">31 000 DH</div>
-                  <p className="text-gray-600">Formation complète (étudiants nationaux)</p>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">
+                    31 000 DH
+                  </div>
+                  <p className="text-gray-600">
+                    Formation complète (étudiants nationaux)
+                  </p>
                 </CardContent>
               </Card>
 
               <Card className="text-center border-blue-200">
                 <CardHeader>
-                  <CardTitle className="text-blue-800">Frais de Dossier</CardTitle>
+                  <CardTitle className="text-blue-800">
+                    Frais de Dossier
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="text-3xl font-bold text-blue-600 mb-2">1 000 DH</div>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">
+                    1 000 DH
+                  </div>
                   <p className="text-gray-600">Non remboursables</p>
                 </CardContent>
               </Card>
@@ -409,27 +454,35 @@ export default function AuditQualiteMasterPage() {
                   <CardTitle className="text-blue-800">Modalités</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <div className="text-lg font-bold text-blue-600 mb-2">4 Tranches</div>
+                  <div className="text-lg font-bold text-blue-600 mb-2">
+                    4 Tranches
+                  </div>
                   <p className="text-gray-600">Paiement échelonné possible</p>
                 </CardContent>
               </Card>
             </div>
 
             <div className="mt-6 p-4 bg-blue-100 rounded-lg">
-              <h3 className="font-semibold text-blue-800 mb-2">Informations Bancaires</h3>
+              <h3 className="font-semibold text-blue-800 mb-2">
+                Informations Bancaires
+              </h3>
               <p className="text-sm text-blue-700">
                 <strong>Bénéficiaire:</strong> L'Université Ibn Tofaïl
                 <br />
-                <strong>Compte au trésor N°:</strong> 310 330 1006 021 7019801 01 68
+                <strong>Compte au trésor N°:</strong> 310 330 1006 021 7019801
+                01 68
               </p>
             </div>
           </div>
 
           {/* Pre-registration */}
           <div className="text-center">
-            <h2 className="text-3xl font-bold mb-6 text-blue-800">Pré-inscription</h2>
+            <h2 className="text-3xl font-bold mb-6 text-blue-800">
+              Pré-inscription
+            </h2>
             <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-              Effectuez votre pré-inscription en ligne ou contactez directement le coordonnateur de la formation.
+              Effectuez votre pré-inscription en ligne ou contactez directement
+              le coordonnateur de la formation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
@@ -457,8 +510,7 @@ export default function AuditQualiteMasterPage() {
               <p>
                 <strong>M. Hicham OUAKIL</strong> - Vice-Doyen
               </p>
-              <p>Tel: +212 661-130894 | Email: hicham.ouakil@uit.ac.ma
-              </p>
+              <p>Tel: +212 661-130894 | Email: hicham.ouakil@uit.ac.ma</p>
               <p>
                 <strong>Mme. Houda LECHHEB</strong> - Équipe de Direction
               </p>
@@ -473,7 +525,9 @@ export default function AuditQualiteMasterPage() {
               <p>Tel: +212 693-517484 | Email: hamza.hamani@uit.ac.ma</p>
             </div>
             <div>
-              <h3 className="font-semibold mb-2">Faculté d'Économie et de Gestion</h3>
+              <h3 className="font-semibold mb-2">
+                Faculté d'Économie et de Gestion
+              </h3>
               <p>Campus Universitaire Maamora</p>
               <p>BP: 2010 Kénitra</p>
               <p>Tél: 05 37 32 92 18</p>
