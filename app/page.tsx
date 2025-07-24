@@ -67,7 +67,7 @@ export default function HomePage() {
               <Link href="/programmes" className="w-full sm:w-auto">
                 <Button
                   size="lg"
-                  className="w-full sm:w-auto bg-white text-blue-900 hover:bg-gray-100 font-medium px-6 sm:px-8 lg:px-10 py-4 sm:py-5 text-base sm:text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl group"
+                  className="w-full sm:w-auto bg-white text-blue-900  font-medium px-6 sm:px-8 lg:px-10 py-4 sm:py-5 text-base sm:text-lg transition-all duration-300 hover:bg-gray-200 hover:shadow-xl group"
                 >
                   Explorer les Programmes
                   <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-300 group-hover:translate-x-1" />
@@ -77,7 +77,7 @@ export default function HomePage() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="w-full sm:w-auto border-white text-white hover:bg-white hover:text-blue-900 font-medium px-6 sm:px-8 lg:px-10 py-4 sm:py-5 text-base sm:text-lg bg-transparent transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                  className="w-full sm:w-auto border-white text-white hover:bg-white hover:text-blue-900 font-medium px-6 sm:px-8 lg:px-10 py-4 sm:py-5 text-base sm:text-lg bg-transparent transition-all duration-300  hover:shadow-xl"
                 >
                   Candidater Aujourd'hui
                 </Button>
@@ -228,7 +228,10 @@ export default function HomePage() {
                   <div className="text-xl sm:text-2xl font-bold text-blue-800">
                     16 000 DH
                   </div>
-                  <Link href="/programmes/mms" className="text-blue-800 hover:text-blue-900 text-sm sm:text-base font-medium underline inline-flex items-center transition-colors duration-300 group">
+                  <Link
+                    href="/programmes/mms"
+                    className="text-blue-800 hover:text-blue-900 text-sm sm:text-base font-medium underline inline-flex items-center transition-colors duration-300 group"
+                  >
                     En Savoir Plus
                     <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </Link>
@@ -286,7 +289,10 @@ export default function HomePage() {
                   <div className="text-xl sm:text-2xl font-bold text-blue-800">
                     31 000 DH
                   </div>
-                  <Link href="/programmes/msms" className="text-blue-800 hover:text-blue-900 text-sm sm:text-base font-medium underline inline-flex items-center transition-colors duration-300 group">
+                  <Link
+                    href="/programmes/msms"
+                    className="text-blue-800 hover:text-blue-900 text-sm sm:text-base font-medium underline inline-flex items-center transition-colors duration-300 group"
+                  >
                     En Savoir Plus
                     <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </Link>
@@ -335,13 +341,19 @@ export default function HomePage() {
                   </div>
                 </div>
                 <p className="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6 leading-relaxed">
-                  Formation spécialisée en management de la qualité et audit organisationnel. Maîtrisez les outils et méthodes pour améliorer les performances et assurer la conformité des organisations.
+                  Formation spécialisée en management de la qualité et audit
+                  organisationnel. Maîtrisez les outils et méthodes pour
+                  améliorer les performances et assurer la conformité des
+                  organisations.
                 </p>
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-4">
                   <div className="text-xl sm:text-2xl font-bold text-blue-800">
                     16 000 DH
                   </div>
-                  <Link href="/programmes/audit-qualite-licence" className="text-blue-800 hover:text-blue-900 text-sm sm:text-base font-medium underline inline-flex items-center transition-colors duration-300 group">
+                  <Link
+                    href="/programmes/audit-qualite-licence"
+                    className="text-blue-800 hover:text-blue-900 text-sm sm:text-base font-medium underline inline-flex items-center transition-colors duration-300 group"
+                  >
                     En Savoir Plus
                     <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </Link>
@@ -390,13 +402,19 @@ export default function HomePage() {
                   </div>
                 </div>
                 <p className="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6 leading-relaxed">
-                  Formation avancée pour devenir expert en audit et management de la qualité. Développez votre expertise pour des postes de direction dans l'amélioration continue et la certification qualité.
+                  Formation avancée pour devenir expert en audit et management
+                  de la qualité. Développez votre expertise pour des postes de
+                  direction dans l'amélioration continue et la certification
+                  qualité.
                 </p>
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-4">
                   <div className="text-xl sm:text-2xl font-bold text-blue-800">
                     31 000 DH
                   </div>
-                  <Link href="/programmes/audit-qualite-master" className="text-blue-800 hover:text-blue-900 text-sm sm:text-base font-medium underline inline-flex items-center transition-colors duration-300 group">
+                  <Link
+                    href="/programmes/audit-qualite-master"
+                    className="text-blue-800 hover:text-blue-900 text-sm sm:text-base font-medium underline inline-flex items-center transition-colors duration-300 group"
+                  >
                     En Savoir Plus
                     <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4 transition-transform duration-300 group-hover:translate-x-1" />
                   </Link>
