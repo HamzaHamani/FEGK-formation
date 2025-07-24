@@ -37,17 +37,19 @@ export default function ProgrammesPage() {
       levelCode: "license",
       duration: "2 semestres",
       durationCode: "short",
-      cost: "16 000 DH",
-      schedule: "Week-end",
+      cost: "16 000 DH (1000 DH dossier + 15 000 DH formation en 2 tranches)",
+      schedule: "Week-end (Samedi et Dimanche)",
       format: "Hybride",
       description:
         "Formation spécialisée pour concevoir et produire une offre de services compétitive adaptée aux besoins clients",
-      requirements: "Bac+2",
+      requirements: "Bac+2 (public ou privé accrédité)",
       careers: [
         "Responsable marketing",
         "Chef de projet innovation",
         "Directeur d'établissement hôtelier",
         "Responsable clientèle",
+        "Chef de projet expérience client",
+        "Directeur ou gérant",
       ],
       featured: true,
     },
@@ -56,30 +58,32 @@ export default function ProgrammesPage() {
       title: "Management Stratégique et Marketing des Services",
       level: "Master Spécialisé",
       levelCode: "master",
-      duration: "3 semestres",
+      duration: "4 semestres",
       durationCode: "long",
-      cost: "31 000 DH",
-      schedule: "Week-end",
+      cost: "31 000 DH (1000 DH dossier + 30 000 DH formation en 4 tranches)",
+      schedule: "Week-end (Samedi et Dimanche)",
       format: "Hybride",
       description:
-        "Formation avancée pour les cadres du middle et top management dans le secteur des services",
-      requirements: "Bac+3",
+        "Formation de Master en management stratégique et marketing des services, développant une expertise approfondie du secteur tertiaire",
+      requirements: "Bac+3 (Licence ou équivalent)",
       careers: [
-        "Marketing stratégique",
-        "Management international",
-        "Consultant en stratégie",
-        "Directeur général",
+        "Directeur marketing",
+        "Consultant stratégique",
+        "Responsable développement commercial",
+        "Chef d'entreprise",
+        "Manager général",
+        "Consultant en services",
       ],
       featured: true,
     },
     {
       id: "audit-qualite-licence",
       title: "Management Audit Qualité",
-      level: "Licence Universitaire Spécialisée",
+      level: "Licence  Spécialisée ",
       levelCode: "license",
       duration: "2 semestres",
       durationCode: "short",
-      cost: "17 000 DH (étudiants nationaux)",
+      cost: "17 000 DH (1000 DH dossier + 16 000 DH formation)",
       schedule: "Week-end",
       format: "Hybride",
       description:
@@ -99,15 +103,15 @@ export default function ProgrammesPage() {
     {
       id: "audit-qualite-master",
       title: "Management Audit Qualité Industrie & Service",
-      level: "Master Universitaire Spécialisé",
+      level: "Master Spécialisé ",
       levelCode: "master",
       duration: "4 semestres (2 ans)",
       durationCode: "long",
-      cost: "31 000 DH (étudiants nationaux)",
+      cost: "31 000 DH (1000 DH dossier + 30 000 DH formation en 5 tranches)",
       schedule: "Week-end",
       format: "Hybride",
       description:
-        "Formation avancée dans le Management Audit Qualité pour former des cadres dans le domaine spécialisé en Management Audit Qualité",
+        "Formation avancée dans le Management Audit Qualité Industrie & Service pour former des cadres dans le domaine spécialisé en Management Audit Qualité",
       requirements: "Bac+3 (ou équivalent)",
       careers: [
         "Responsables qualité dans différents secteurs",
@@ -225,10 +229,10 @@ export default function ProgrammesPage() {
                   className={`p-4 sm:p-6 lg:p-8 text-white flex flex-col justify-between ${
                     program.comingSoon ? "bg-gray-600" : "bg-blue-800"
                   }`}
-                  style={{ minHeight: '280px' }}
+                  style={{ minHeight: "280px" }}
                 >
                   <div>
-                    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-start mb-4 sm:mb-6 gap-3 sm:gap-0">
+                    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 sm:mb-6 gap-3 sm:gap-0">
                       <Badge
                         className={`font-semibold px-3 py-1 text-sm sm:text-base ${
                           program.comingSoon
@@ -238,7 +242,7 @@ export default function ProgrammesPage() {
                       >
                         {program.level}
                       </Badge>
-                      <div className="flex flex-wrap gap-2">
+                      <div className="flex flex-wrap gap-2 items-center">
                         <Badge
                           variant="outline"
                           className="border-white text-white bg-white/20 font-semibold text-xs sm:text-sm"
@@ -445,79 +449,201 @@ export default function ProgrammesPage() {
             </p>
           </div>
 
-          <div className="overflow-x-auto">
-            <table className="w-full bg-white rounded-lg shadow-lg overflow-hidden min-w-[600px]">
-              <thead className="bg-blue-800 text-white">
-                <tr>
-                  <th className="px-3 sm:px-6 py-3 sm:py-4 text-left font-semibold text-sm sm:text-base">
-                    Critères
-                  </th>
-                  <th className="px-3 sm:px-6 py-3 sm:py-4 text-center font-semibold text-sm sm:text-base">
-                    MMS (Licence)
-                  </th>
-                  <th className="px-3 sm:px-6 py-3 sm:py-4 text-center font-semibold text-sm sm:text-base">
-                    MSMS (Master)
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-200">
-                <tr>
-                  <td className="px-3 sm:px-6 py-3 sm:py-4 font-medium text-gray-900 text-sm sm:text-base">
-                    Niveau d'entrée
-                  </td>
-                  <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-blue-800 font-medium text-sm sm:text-base">
-                    Bac+2
-                  </td>
-                  <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-blue-800 font-medium text-sm sm:text-base">
-                    Bac+3
-                  </td>
-                </tr>
-                <tr className="bg-gray-50">
-                  <td className="px-3 sm:px-6 py-3 sm:py-4 font-medium text-gray-900 text-sm sm:text-base">
-                    Durée
-                  </td>
-                  <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-blue-800 font-medium text-sm sm:text-base">
-                    2 semestres
-                  </td>
-                  <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-blue-800 font-medium text-sm sm:text-base">
-                    18 mois
-                  </td>
-                </tr>
-                <tr>
-                  <td className="px-3 sm:px-6 py-3 sm:py-4 font-medium text-gray-900 text-sm sm:text-base">
-                    Investissement
-                  </td>
-                  <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-blue-800 font-medium text-sm sm:text-base">
-                    16 000 DH
-                  </td>
-                  <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-blue-800 font-medium text-sm sm:text-base">
-                    31 000 DH
-                  </td>
-                </tr>
-                <tr className="bg-gray-50">
-                  <td className="px-3 sm:px-6 py-3 sm:py-4 font-medium text-gray-900 text-sm sm:text-base">
-                    Public cible
-                  </td>
-                  <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-gray-700 text-xs sm:text-sm">
-                    Professionnels junior
-                  </td>
-                  <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-gray-700 text-xs sm:text-sm">
-                    Cadres expérimentés
-                  </td>
-                </tr>
-                <tr>
-                  <td className="px-3 sm:px-6 py-3 sm:py-4 font-medium text-gray-900 text-sm sm:text-base">
-                    Spécialisation
-                  </td>
-                  <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-gray-700 text-xs sm:text-sm">
-                    Marketing des services
-                  </td>
-                  <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-gray-700 text-xs sm:text-sm">
-                    Management stratégique
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+          {/* License Programs Comparison */}
+          <div className="mb-12 sm:mb-16">
+            <div className="text-center mb-6 sm:mb-8">
+              <h3 className="font-playfair text-xl sm:text-2xl font-bold text-blue-900 mb-2">
+                Comparaison des Programmes Licence Universitaire Spécialisée
+              </h3>
+              <p className="text-sm sm:text-base text-gray-600">
+                Management et Marketing des Services vs Management Audit Qualité
+              </p>
+            </div>
+
+            <div className="overflow-x-auto">
+              <table className="w-full bg-white rounded-lg shadow-lg overflow-hidden min-w-[600px]">
+                <thead className="bg-blue-800 text-white">
+                  <tr>
+                    <th className="px-3 sm:px-6 py-3 sm:py-4 text-left font-semibold text-sm sm:text-base">
+                      Critères
+                    </th>
+                    <th className="px-3 sm:px-6 py-3 sm:py-4 text-center font-semibold text-sm sm:text-base">
+                      MMS (Licence)
+                    </th>
+                    <th className="px-3 sm:px-6 py-3 sm:py-4 text-center font-semibold text-sm sm:text-base">
+                      Audit Qualité (LUS)
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-200">
+                  <tr>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 font-medium text-gray-900 text-sm sm:text-base">
+                      Niveau d'entrée
+                    </td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-blue-800 font-medium text-sm sm:text-base">
+                      Bac+2 (public ou privé)
+                    </td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-green-700 font-medium text-sm sm:text-base">
+                      Bac+2 (ou équivalent)
+                    </td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 font-medium text-gray-900 text-sm sm:text-base">
+                      Durée
+                    </td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-blue-800 font-medium text-sm sm:text-base">
+                      2 semestres
+                    </td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-green-700 font-medium text-sm sm:text-base">
+                      2 semestres
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 font-medium text-gray-900 text-sm sm:text-base">
+                      Investissement
+                    </td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-blue-800 font-medium text-sm sm:text-base">
+                      16 000 DH (+ 1000 DH dossier)
+                    </td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-green-700 font-medium text-sm sm:text-base">
+                      17 000 DH (+ 1000 DH dossier)
+                    </td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 font-medium text-gray-900 text-sm sm:text-base">
+                      Domaine principal
+                    </td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-gray-700 text-xs sm:text-sm">
+                      Marketing des Services
+                    </td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-gray-700 text-xs sm:text-sm">
+                      Management Audit Qualité
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 font-medium text-gray-900 text-sm sm:text-base">
+                      Public cible
+                    </td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-gray-700 text-xs sm:text-sm">
+                      Professionnels du secteur tertiaire
+                    </td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-gray-700 text-xs sm:text-sm">
+                      Professionnels de la qualité
+                    </td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 font-medium text-gray-900 text-sm sm:text-base">
+                      Débouchés principaux
+                    </td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-gray-700 text-xs sm:text-sm">
+                      Responsable marketing, Chef de projet
+                    </td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-gray-700 text-xs sm:text-sm">
+                      Responsable qualité, Auditeur
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* Master Programs Comparison */}
+          <div>
+            <div className="text-center mb-6 sm:mb-8">
+              <h3 className="font-playfair text-xl sm:text-2xl font-bold text-blue-900 mb-2">
+                Comparaison des Programmes Master Universitaire Spécialisé
+              </h3>
+              <p className="text-sm sm:text-base text-gray-600">
+                Management Stratégique Marketing des Services vs Management
+                Audit Qualité
+              </p>
+            </div>
+
+            <div className="overflow-x-auto">
+              <table className="w-full bg-white rounded-lg shadow-lg overflow-hidden min-w-[600px]">
+                <thead className="bg-green-700 text-white">
+                  <tr>
+                    <th className="px-3 sm:px-6 py-3 sm:py-4 text-left font-semibold text-sm sm:text-base">
+                      Critères
+                    </th>
+                    <th className="px-3 sm:px-6 py-3 sm:py-4 text-center font-semibold text-sm sm:text-base">
+                      MSMS (Master)
+                    </th>
+                    <th className="px-3 sm:px-6 py-3 sm:py-4 text-center font-semibold text-sm sm:text-base">
+                      Audit Qualité (MUS)
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-200">
+                  <tr>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 font-medium text-gray-900 text-sm sm:text-base">
+                      Niveau d'entrée
+                    </td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-blue-800 font-medium text-sm sm:text-base">
+                      Bac+3 (Licence ou équivalent)
+                    </td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-green-700 font-medium text-sm sm:text-base">
+                      Bac+3 (Licence ou équivalent)
+                    </td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 font-medium text-gray-900 text-sm sm:text-base">
+                      Durée
+                    </td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-blue-800 font-medium text-sm sm:text-base">
+                      4 semestres
+                    </td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-green-700 font-medium text-sm sm:text-base">
+                      4 semestres
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 font-medium text-gray-900 text-sm sm:text-base">
+                      Investissement
+                    </td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-blue-800 font-medium text-sm sm:text-base">
+                      31 000 DH (+ 1000 DH dossier)
+                    </td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-green-700 font-medium text-sm sm:text-base">
+                      32 000 DH (+ 1000 DH dossier)
+                    </td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 font-medium text-gray-900 text-sm sm:text-base">
+                      Domaine principal
+                    </td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-gray-700 text-xs sm:text-sm">
+                      Management Stratégique & Marketing
+                    </td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-gray-700 text-xs sm:text-sm">
+                      Management Audit Qualité
+                    </td>
+                  </tr>
+                  <tr>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 font-medium text-gray-900 text-sm sm:text-base">
+                      Public cible
+                    </td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-gray-700 text-xs sm:text-sm">
+                      Managers et dirigeants
+                    </td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-gray-700 text-xs sm:text-sm">
+                      Responsables qualité seniors
+                    </td>
+                  </tr>
+                  <tr className="bg-gray-50">
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 font-medium text-gray-900 text-sm sm:text-base">
+                      Débouchés principaux
+                    </td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-gray-700 text-xs sm:text-sm">
+                      Directeur marketing, Chef d'entreprise
+                    </td>
+                    <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-gray-700 text-xs sm:text-sm">
+                      Directeur qualité, Consultant senior
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </section>
