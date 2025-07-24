@@ -258,13 +258,15 @@ export default function AdmissionsPage() {
               avant la date limite.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-700 hover:bg-blue-800">
-                <Download className="mr-2 h-4 w-4" />
-                Télécharger le Dossier
-              </Button>
+              <Link href="/admissions">
+                {" "}
+                <Button size="lg" className="bg-blue-700 hover:bg-blue-800">
+                  Candidater Maintenant
+                </Button>
+              </Link>
               <Link href="/contact">
                 <Button size="lg" variant="outline">
-                  Questions ? Contactez-nous
+                  Questions ? Contanctez-nous
                 </Button>
               </Link>
             </div>

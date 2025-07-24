@@ -73,7 +73,7 @@ export default function HomePage() {
                   <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-300 group-hover:translate-x-1" />
                 </Button>
               </Link>
-              <Link href="/admissions" className="w-full sm:w-auto">
+              <Link href="/programmes" className="w-full sm:w-auto">
                 <Button
                   size="lg"
                   variant="outline"
@@ -224,16 +224,25 @@ export default function HomePage() {
                   combine expertise en management et marketing très appréciée
                   par les employeurs.
                 </p>
-                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                  <div className="text-xl sm:text-2xl font-bold text-blue-800">
-                    16 000 DH
+                <div className="flex flex-col gap-3">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <div className="text-xl sm:text-2xl font-bold text-blue-800">
+                      16 000 DH
+                    </div>
+                    <Link href="/programmes/mms" className="w-full sm:w-auto">
+                      <Button className="w-full sm:w-auto bg-blue-800 hover:bg-blue-900 text-white text-sm sm:text-base px-4 sm:px-6 transition-colors duration-300 group">
+                        En Savoir Plus
+                        <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                      </Button>
+                    </Link>
                   </div>
-                  <Link href="/programmes/mms" className="w-full sm:w-auto">
-                    <Button className="w-full sm:w-auto bg-blue-800 hover:bg-blue-900 text-white text-sm sm:text-base px-4 sm:px-6 transition-colors duration-300 group">
-                      En Savoir Plus
-                      <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                  <div className="flex justify-center">
+                    <Button className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white text-sm sm:text-base px-4 sm:px-6 transition-colors duration-300" asChild>
+                      <a href="https://sites.google.com/uit.ac.ma/lus-mms/inscription-en-ligne" target="_blank" rel="noopener noreferrer">
+                        S'inscrire Maintenant
+                      </a>
                     </Button>
-                  </Link>
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -272,16 +281,25 @@ export default function HomePage() {
                   stratégique et vos compétences de leadership pour des postes
                   supérieurs.
                 </p>
-                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                  <div className="text-xl sm:text-2xl font-bold text-blue-800">
-                    31 000 DH
+                <div className="flex flex-col gap-3">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <div className="text-xl sm:text-2xl font-bold text-blue-800">
+                      31 000 DH
+                    </div>
+                    <Link href="/programmes/msms" className="w-full sm:w-auto">
+                      <Button className="w-full sm:w-auto bg-blue-800 hover:bg-blue-900 text-white text-sm sm:text-base px-4 sm:px-6 transition-colors duration-300 group">
+                        En Savoir Plus
+                        <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                      </Button>
+                    </Link>
                   </div>
-                  <Link href="/programmes/msms" className="w-full sm:w-auto">
-                    <Button className="w-full sm:w-auto bg-blue-800 hover:bg-blue-900 text-white text-sm sm:text-base px-4 sm:px-6 transition-colors duration-300 group">
-                      En Savoir Plus
-                      <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                  <div className="flex justify-center">
+                    <Button className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white text-sm sm:text-base px-4 sm:px-6 transition-colors duration-300" asChild>
+                      <a href="https://sites.google.com/uit.ac.ma/mus-msms/inscription-en-ligne" target="_blank" rel="noopener noreferrer">
+                        S'inscrire Maintenant
+                      </a>
                     </Button>
-                  </Link>
+                  </div>
                 </div>
               </CardContent>
             </Card>
@@ -559,7 +577,7 @@ export default function HomePage() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center px-4 sm:px-0">
-            <Link href="/admissions" className="w-full sm:w-auto">
+            <Link href="/programmes" className="w-full sm:w-auto">
               <Button
                 size="lg"
                 className="w-full sm:w-auto bg-white text-blue-900 hover:bg-blue-50 font-semibold px-6 sm:px-8 lg:px-10 py-3 sm:py-4 text-base sm:text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl group"

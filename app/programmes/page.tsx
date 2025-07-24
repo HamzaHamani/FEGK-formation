@@ -234,7 +234,7 @@ export default function ProgrammesPage() {
                   <div>
                     <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-4 sm:mb-6 gap-3 sm:gap-0">
                       <Badge
-                        className={`font-semibold px-3 py-1 text-sm sm:text-base ${
+                        className={`font-semibold px-3 py-1 text-sm sm:text-base cursor-default ${
                           program.comingSoon
                             ? "bg-white text-gray-600"
                             : "bg-white text-blue-800"
@@ -245,7 +245,7 @@ export default function ProgrammesPage() {
                       <div className="flex flex-wrap gap-2 items-center">
                         <Badge
                           variant="outline"
-                          className="border-white text-white bg-white/20 font-semibold text-xs sm:text-sm"
+                          className="border-white  text-white bg-white/20 font-semibold text-xs sm:text-sm"
                         >
                           {program.requirements}
                         </Badge>

@@ -393,8 +393,18 @@ export default function AuditQualiteLicencePage() {
               le coordonnateur de la formation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                Pré-inscription en Ligne
+              <Button
+                size="lg"
+                className="bg-blue-600 hover:bg-blue-700"
+                asChild
+              >
+                <a
+                  href="https://sites.google.com/uit.ac.ma/lus-maq/inscription-en-ligne"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Pré-inscription en Ligne
+                </a>
               </Button>
               <Button
                 size="lg"

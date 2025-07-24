@@ -509,8 +509,18 @@ export default function MSMSPage() {
               Stratégique et Marketing des Services.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                Candidater Maintenant
+              <Button
+                size="lg"
+                className="bg-blue-600 hover:bg-blue-700"
+                asChild
+              >
+                <a
+                  href="https://sites.google.com/uit.ac.ma/mus-msms/inscription-en-ligne"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Pré-inscription en Ligne
+                </a>
               </Button>
               <Button
                 size="lg"

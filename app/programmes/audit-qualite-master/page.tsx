@@ -406,7 +406,7 @@ export default function AuditQualiteMasterPage() {
                       <FileText className="h-5 w-5 text-blue-600 mt-0.5" />
                       <span>
                         Site d'inscription:
-                        https://bac.google.com/uit.ac.ma/mus-maqis
+                        https://feg.uit.ac.ma/mus-management-audit-qualite-industrie-service/
                       </span>
                     </li>
                   </ul>
@@ -485,8 +485,10 @@ export default function AuditQualiteMasterPage() {
               le coordonnateur de la formation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                Pré-inscription en Ligne
+              <Button size="lg" className="bg-blue-600 hover:bg-blue-700" asChild>
+                <a href="https://feg.uit.ac.ma/mus-management-audit-qualite-industrie-service/" target="_blank" rel="noopener noreferrer">
+                  Pré-inscription en Ligne
+                </a>
               </Button>
               <Button
                 size="lg"

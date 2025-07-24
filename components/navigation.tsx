@@ -169,9 +169,11 @@ export default function Navigation() {
               Contact
             </Link>
 
-            <Button className="bg-blue-800 hover:bg-blue-900 text-white font-medium px-4 lg:px-6 text-sm lg:text-base transition-all duration-200 hover:scale-105 hover:shadow-lg">
-              Candidater
-            </Button>
+            <Link href="/programmes">
+              <Button className="bg-blue-800 hover:bg-blue-900 text-white font-medium px-4 lg:px-6 text-sm lg:text-base transition-all duration-200 hover:scale-105 hover:shadow-lg">
+                Candidater
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -235,12 +237,14 @@ export default function Navigation() {
                 Contact
               </Link>
               <div className="px-3 sm:px-4 pt-3 sm:pt-4">
-                <Button
-                  className="w-full bg-blue-800 hover:bg-blue-900 text-white font-medium text-sm sm:text-base py-2 transition-all duration-200 hover:scale-105 hover:shadow-lg"
-                  onClick={() => setIsOpen(false)}
-                >
-                  Candidater
-                </Button>
+                <Link href="/programmes">
+                  <Button
+                    className="w-full bg-blue-800 hover:bg-blue-900 text-white font-medium text-sm sm:text-base py-2 transition-all duration-200 hover:scale-105 hover:shadow-lg"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    Candidater
+                  </Button>
+                </Link>
             </div>
           </div>
         </div>
