@@ -204,22 +204,22 @@ export default function AProposPage() {
                   <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4">
                     <Image
                       src="/placeholder.svg?height=96&width=96"
-                      alt="Responsable Formation"
+                      alt="Vice Doyen"
                       width={96}
                       height={96}
                       className="rounded-full"
                     />
                   </div>
                   <CardTitle className="font-playfair text-lg">
-                    Pr Hicham OUAKIL
+                    M. Hicham OUAKIL
                   </CardTitle>
                   <p className="text-blue-800 font-medium text-sm">
-                    Responsable Formation Continue
+                    Vice Doyen
                   </p>
                 </CardHeader>
                 <CardContent className="text-center">
                   <p className="text-gray-600 text-xs mb-2">
-                    Tél: 06 61 13 08 94
+                    Tél: +212 661-130894
                   </p>
                   <p className="text-gray-600 text-xs">
                     hicham.ouakil@uit.ac.ma
@@ -232,24 +232,26 @@ export default function AProposPage() {
                   <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4">
                     <Image
                       src="/placeholder.svg?height=96&width=96"
-                      alt="Coordinatrice Pédagogique"
+                      alt="Équipe de Direction"
                       width={96}
                       height={96}
                       className="rounded-full"
                     />
                   </div>
                   <CardTitle className="font-playfair text-lg">
-                    Pr Hajar HBADI
+                    Mme. Houda LECHHEB
                   </CardTitle>
                   <p className="text-green-700 font-medium text-sm">
-                    Coordinatrice Pédagogique
+                    Équipe de Direction
                   </p>
                 </CardHeader>
                 <CardContent className="text-center">
                   <p className="text-gray-600 text-xs mb-2">
-                    Tél: 06 67 48 01 59
+                    Tél: +212 661-849348
                   </p>
-                  <p className="text-gray-600 text-xs">hajar.hbadi@uit.ac.ma</p>
+                  <p className="text-gray-600 text-xs">
+                    houda.lechheb@uit.ac.ma
+                  </p>
                 </CardContent>
               </Card>
 
@@ -258,24 +260,26 @@ export default function AProposPage() {
                   <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4">
                     <Image
                       src="/placeholder.svg?height=96&width=96"
-                      alt="Secrétaire"
+                      alt="Équipe de Direction"
                       width={96}
                       height={96}
                       className="rounded-full"
                     />
                   </div>
                   <CardTitle className="font-playfair text-lg">
-                    Mme Fatima SBAI
+                    M. Mohammed ELATMANI
                   </CardTitle>
                   <p className="text-blue-800 font-medium text-sm">
-                    Secrétaire Formation Continue
+                    Équipe de Direction
                   </p>
                 </CardHeader>
                 <CardContent className="text-center">
                   <p className="text-gray-600 text-xs mb-2">
-                    Tél: 05 37 32 92 23
+                    Tél: +212 635-587844
                   </p>
-                  <p className="text-gray-600 text-xs">fatima.sbai@uit.ac.ma</p>
+                  <p className="text-gray-600 text-xs">
+                    mohammed.elatmani@uit.ac.ma
+                  </p>
                 </CardContent>
               </Card>
 
@@ -284,24 +288,26 @@ export default function AProposPage() {
                   <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4">
                     <Image
                       src="/placeholder.svg?height=96&width=96"
-                      alt="Agent d'Accueil"
+                      alt="Équipe de Direction"
                       width={96}
                       height={96}
                       className="rounded-full"
                     />
                   </div>
                   <CardTitle className="font-playfair text-lg">
-                    Mr Najib ELFAR
+                    M. Hamza HAMANI
                   </CardTitle>
                   <p className="text-green-700 font-medium text-sm">
-                    Agent d'Accueil et d'Information
+                    Équipe de Direction
                   </p>
                 </CardHeader>
                 <CardContent className="text-center">
                   <p className="text-gray-600 text-xs mb-2">
-                    Tél: 05 37 32 92 18
+                    Tél: +212 693-517484
                   </p>
-                  <p className="text-gray-600 text-xs">najib.elfar@uit.ac.ma</p>
+                  <p className="text-gray-600 text-xs">
+                    hamza.hamani@uit.ac.ma
+                  </p>
                 </CardContent>
               </Card>
             </div>

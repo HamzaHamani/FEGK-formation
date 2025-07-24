@@ -189,7 +189,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-6 sm:gap-8">
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
             {/* MMS Program */}
             <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 w-full group">
               <div className="aspect-video bg-gradient-to-r from-blue-600 to-blue-700 relative overflow-hidden">
@@ -224,26 +224,27 @@ export default function HomePage() {
                   combine expertise en management et marketing très appréciée
                   par les employeurs.
                 </p>
-                <div className="flex flex-col gap-3">
-                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                    <div className="text-xl sm:text-2xl font-bold text-blue-800">
-                      16 000 DH
-                    </div>
-                    <Link href="/programmes/mms" className="w-full sm:w-auto">
-                      <Button className="w-full sm:w-auto bg-blue-800 hover:bg-blue-900 text-white text-sm sm:text-base px-4 sm:px-6 transition-colors duration-300 group">
-                        En Savoir Plus
-                        <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4 transition-transform duration-300 group-hover:translate-x-1" />
-                      </Button>
-                    </Link>
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-4">
+                  <div className="text-xl sm:text-2xl font-bold text-blue-800">
+                    16 000 DH
                   </div>
-                  <div className="flex justify-center">
-                    <Button className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white text-sm sm:text-base px-4 sm:px-6 transition-colors duration-300" asChild>
-                      <a href="https://sites.google.com/uit.ac.ma/lus-mms/inscription-en-ligne" target="_blank" rel="noopener noreferrer">
-                        S'inscrire Maintenant
-                      </a>
-                    </Button>
-                  </div>
+                  <Link href="/programmes/mms" className="text-blue-800 hover:text-blue-900 text-sm sm:text-base font-medium underline inline-flex items-center transition-colors duration-300 group">
+                    En Savoir Plus
+                    <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                  </Link>
                 </div>
+                <Button
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm sm:text-base px-4 sm:px-6 transition-colors duration-300"
+                  asChild
+                >
+                  <a
+                    href="https://sites.google.com/uit.ac.ma/lus-mms/inscription-en-ligne"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    S'inscrire Maintenant
+                  </a>
+                </Button>
               </CardContent>
             </Card>
 
@@ -281,26 +282,137 @@ export default function HomePage() {
                   stratégique et vos compétences de leadership pour des postes
                   supérieurs.
                 </p>
-                <div className="flex flex-col gap-3">
-                  <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-                    <div className="text-xl sm:text-2xl font-bold text-blue-800">
-                      31 000 DH
-                    </div>
-                    <Link href="/programmes/msms" className="w-full sm:w-auto">
-                      <Button className="w-full sm:w-auto bg-blue-800 hover:bg-blue-900 text-white text-sm sm:text-base px-4 sm:px-6 transition-colors duration-300 group">
-                        En Savoir Plus
-                        <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4 transition-transform duration-300 group-hover:translate-x-1" />
-                      </Button>
-                    </Link>
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-4">
+                  <div className="text-xl sm:text-2xl font-bold text-blue-800">
+                    31 000 DH
                   </div>
-                  <div className="flex justify-center">
-                    <Button className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white text-sm sm:text-base px-4 sm:px-6 transition-colors duration-300" asChild>
-                      <a href="https://sites.google.com/uit.ac.ma/mus-msms/inscription-en-ligne" target="_blank" rel="noopener noreferrer">
-                        S'inscrire Maintenant
-                      </a>
-                    </Button>
+                  <Link href="/programmes/msms" className="text-blue-800 hover:text-blue-900 text-sm sm:text-base font-medium underline inline-flex items-center transition-colors duration-300 group">
+                    En Savoir Plus
+                    <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                  </Link>
+                </div>
+                <Button
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm sm:text-base px-4 sm:px-6 transition-colors duration-300"
+                  asChild
+                >
+                  <a
+                    href="https://sites.google.com/uit.ac.ma/mus-msms/inscription-en-ligne"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    S'inscrire Maintenant
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Audit Qualité Licence Program */}
+            <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 w-full group">
+              <div className="aspect-video bg-gradient-to-r from-blue-600 to-blue-700 relative overflow-hidden">
+                <div className="absolute inset-0 bg-black/10"></div>
+                <div className="absolute bottom-3 sm:bottom-4 left-4 sm:left-6 right-4 sm:right-6">
+                  <Badge className="bg-white/20 text-white border-white/30 mb-2 text-xs sm:text-sm transition-all duration-300 group-hover:bg-white/30">
+                    Licence Spécialisée
+                  </Badge>
+                  <h3 className="font-playfair text-lg sm:text-xl lg:text-2xl font-bold text-white leading-tight">
+                    Management Audit Qualité
+                  </h3>
+                </div>
+              </div>
+              <CardContent className="p-4 sm:p-6">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4">
+                  <div className="flex items-center gap-1 sm:gap-2">
+                    <Clock className="h-3 w-3 sm:h-4 sm:w-4" />
+                    <span>2 Semestres</span>
+                  </div>
+                  <div className="flex items-center gap-1 sm:gap-2">
+                    <Calendar className="h-3 w-3 sm:h-4 sm:w-4" />
+                    <span>Week-ends</span>
+                  </div>
+                  <div className="flex items-center gap-1 sm:gap-2">
+                    <Award className="h-3 w-3 sm:h-4 sm:w-4" />
+                    <span>Certification</span>
                   </div>
                 </div>
+                <p className="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6 leading-relaxed">
+                  Formation spécialisée en management de la qualité et audit organisationnel. Maîtrisez les outils et méthodes pour améliorer les performances et assurer la conformité des organisations.
+                </p>
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-4">
+                  <div className="text-xl sm:text-2xl font-bold text-blue-800">
+                    16 000 DH
+                  </div>
+                  <Link href="/programmes/audit-qualite-licence" className="text-blue-800 hover:text-blue-900 text-sm sm:text-base font-medium underline inline-flex items-center transition-colors duration-300 group">
+                    En Savoir Plus
+                    <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                  </Link>
+                </div>
+                <Button
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm sm:text-base px-4 sm:px-6 transition-colors duration-300"
+                  asChild
+                >
+                  <a
+                    href="https://sites.google.com/uit.ac.ma/lus-maq/inscription-en-ligne"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    S'inscrire Maintenant
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* Audit Qualité Master Program */}
+            <Card className="bg-white border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 w-full group">
+              <div className="aspect-video bg-gradient-to-r from-blue-700 to-blue-800 relative overflow-hidden">
+                <div className="absolute inset-0 bg-black/10"></div>
+                <div className="absolute bottom-3 sm:bottom-4 left-4 sm:left-6 right-4 sm:right-6">
+                  <Badge className="bg-white/20 text-white border-white/30 mb-2 text-xs sm:text-sm transition-all duration-300 group-hover:bg-white/30">
+                    Master Spécialisé
+                  </Badge>
+                  <h3 className="font-playfair text-lg sm:text-xl lg:text-2xl font-bold text-white leading-tight">
+                    Management Audit Qualité
+                  </h3>
+                </div>
+              </div>
+              <CardContent className="p-4 sm:p-6">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-6 text-xs sm:text-sm text-gray-600 mb-3 sm:mb-4">
+                  <div className="flex items-center gap-1 sm:gap-2">
+                    <Clock className="h-3 w-3 sm:h-4 sm:w-4" />
+                    <span>18 Mois</span>
+                  </div>
+                  <div className="flex items-center gap-1 sm:gap-2">
+                    <Calendar className="h-3 w-3 sm:h-4 sm:w-4" />
+                    <span>Week-ends</span>
+                  </div>
+                  <div className="flex items-center gap-1 sm:gap-2">
+                    <Award className="h-3 w-3 sm:h-4 sm:w-4" />
+                    <span>Expert Level</span>
+                  </div>
+                </div>
+                <p className="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6 leading-relaxed">
+                  Formation avancée pour devenir expert en audit et management de la qualité. Développez votre expertise pour des postes de direction dans l'amélioration continue et la certification qualité.
+                </p>
+                <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-4">
+                  <div className="text-xl sm:text-2xl font-bold text-blue-800">
+                    31 000 DH
+                  </div>
+                  <Link href="/programmes/audit-qualite-master" className="text-blue-800 hover:text-blue-900 text-sm sm:text-base font-medium underline inline-flex items-center transition-colors duration-300 group">
+                    En Savoir Plus
+                    <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                  </Link>
+                </div>
+                <Button
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white text-sm sm:text-base px-4 sm:px-6 transition-colors duration-300"
+                  asChild
+                >
+                  <a
+                    href="https://fegk.uit.ac.ma/wp-content/uploads/2023/05/formulaire_dinscription_Audit_qualite_Master.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    S'inscrire Maintenant
+                  </a>
+                </Button>
               </CardContent>
             </Card>
           </div>
@@ -312,7 +424,7 @@ export default function HomePage() {
                 size="lg"
                 className="border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white bg-transparent text-sm sm:text-base px-4 sm:px-6 lg:px-8 transition-all duration-300 hover:scale-105 hover:shadow-lg group"
               >
-                Voir Tous les Programmes
+                Plus d'Informations
                 <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-300 group-hover:translate-x-1" />
               </Button>
             </Link>
