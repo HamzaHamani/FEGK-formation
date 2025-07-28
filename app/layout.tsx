@@ -172,7 +172,7 @@ export default function RootLayout({
       lang="fr"
       className={`${playfair.variable} ${sourceSerif.variable} ${tiemposHeadline.variable}`}
     >
-      <head>
+      <body className={sourceSerif.className}>
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-C09ZNX9DGG"
@@ -186,8 +186,7 @@ export default function RootLayout({
             gtag('config', 'G-C09ZNX9DGG');
           `}
         </Script>
-      </head>
-      <body className={sourceSerif.className}>
+        
         <Navigation />
         <NavigationSpacer />
         <main>{children}</main>

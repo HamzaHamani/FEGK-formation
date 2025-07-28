@@ -21,7 +21,7 @@ Successfully added Google Analytics tracking code (G-C09ZNX9DGG) to the FEGK for
 ```tsx
 import Script from "next/script";
 
-// In the <head> section:
+// In the <body> section (Next.js manages <head> automatically):
 <Script
   src="https://www.googletagmanager.com/gtag/js?id=G-C09ZNX9DGG"
   strategy="afterInteractive"
