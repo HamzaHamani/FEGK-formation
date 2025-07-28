@@ -160,6 +160,10 @@ export const metadata: Metadata = {
   verification: {
     google: "your-google-verification-code",
   },
+  other: {
+    "facebook:page": "https://www.facebook.com/people/MUS-LUS/61578352602309/",
+    "linkedin:company": "https://www.linkedin.com/company/108265562",
+  },
 };
 
 export default function RootLayout({
@@ -186,7 +190,7 @@ export default function RootLayout({
             gtag('config', 'G-C09ZNX9DGG');
           `}
         </Script>
-        
+
         <Navigation />
         <NavigationSpacer />
         <main>{children}</main>

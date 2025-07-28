@@ -5,9 +5,7 @@ import {
   Mail,
   Clock,
   Facebook,
-  Twitter,
   Linkedin,
-  Instagram,
 } from "lucide-react";
 import Image from "next/image";
 
@@ -41,28 +39,24 @@ export default function Footer() {
             {/* Social Media */}
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.facebook.com/people/MUS-LUS/61578352602309/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors"
+                aria-label="Suivez-nous sur Facebook - MUS LUS FEGK"
+                title="Page Facebook officielle de MUS LUS - Formation Continue FEGK"
               >
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="#"
-                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-400 transition-colors"
-              >
-                <Twitter className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
+                href="https://www.linkedin.com/company/108265562"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
+                aria-label="Suivez-nous sur LinkedIn - FEGK Formation Continue"
+                title="Profil LinkedIn officiel de FEGK - Formation Continue Management Audit Qualité"
               >
                 <Linkedin className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors"
-              >
-                <Instagram className="h-5 w-5" />
               </a>
             </div>
           </div>

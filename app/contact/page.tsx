@@ -9,7 +9,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { MapPin, Phone, Mail, Clock, Users, MessageSquare } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Users, MessageSquare, Facebook, Linkedin } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -79,6 +79,10 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://managementauditetqualite.com/contact",
+  },
+  other: {
+    "facebook:page": "https://www.facebook.com/people/MUS-LUS/61578352602309/",
+    "linkedin:company": "https://www.linkedin.com/company/108265562",
   },
 };
 
@@ -316,6 +320,42 @@ export default function ContactPage() {
                     <p className="text-xs sm:text-sm text-gray-600 mt-1">
                       Notre équipe vous répond en continu
                     </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="transition-all duration-300 hover:shadow-lg">
+                  <CardHeader className="pb-3 sm:pb-4">
+                    <CardTitle className="flex items-center gap-2 text-base sm:text-lg">
+                      <Users className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600" />
+                      Suivez-nous
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="pt-0">
+                    <p className="text-xs sm:text-sm text-gray-600 mb-4">
+                      Restez connectés avec FEGK sur nos réseaux sociaux
+                    </p>
+                    <div className="flex space-x-4">
+                      <a
+                        href="https://www.facebook.com/people/MUS-LUS/61578352602309/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
+                        aria-label="Suivez-nous sur Facebook - MUS LUS FEGK"
+                        title="Page Facebook officielle de MUS LUS - Formation Continue FEGK"
+                      >
+                        <Facebook className="h-6 w-6 text-white" />
+                      </a>
+                      <a
+                        href="https://www.linkedin.com/company/108265562"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-12 h-12 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-800 transition-colors"
+                        aria-label="Suivez-nous sur LinkedIn - FEGK Formation Continue"
+                        title="Profil LinkedIn officiel de FEGK - Formation Continue Management Audit Qualité"
+                      >
+                        <Linkedin className="h-6 w-6 text-white" />
+                      </a>
+                    </div>
                   </CardContent>
                 </Card>
               </div>

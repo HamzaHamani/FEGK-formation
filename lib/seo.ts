@@ -94,7 +94,10 @@ export const structuredData = {
       contactType: "customer service",
       availableLanguage: ["French", "Arabic"],
     },
-    sameAs: ["https://www.facebook.com/FEGK.UIT.Official"],
+    sameAs: [
+      "https://www.facebook.com/people/MUS-LUS/61578352602309/",
+      "https://www.linkedin.com/company/108265562"
+    ],
   },
 
   course: (courseData: {

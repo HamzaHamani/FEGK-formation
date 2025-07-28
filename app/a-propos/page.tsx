@@ -115,8 +115,9 @@ export default function AProposPage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=500&width=600"
-                alt="Campus de la faculté"
+                src="/img1.jpg"
+                alt="Étudiants en formation continue FEGK - Image des étudiants en train de récupérer leur diplôme"
+                title="Formation Continue FEGK - Environnement d'apprentissage moderne- Étudiants diplômés"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-xl w-full h-auto"

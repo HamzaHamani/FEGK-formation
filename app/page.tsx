@@ -673,9 +673,9 @@ export default function HomePage() {
             </div>
             <div className="relative order-first lg:order-last flex justify-center lg:justify-end">
               <Image
-                src="/placeholder.svg?height=600&width=500"
-                alt="Étudiants en formation continue FEGK - Salle de classe moderne Campus Maamora Kénitra"
-                title="Formation Continue FEGK - Environnement d'apprentissage moderne"
+                src="img1.jpg"
+                alt="Étudiants en formation continue FEGK - Image des étudiants en train de récupérer leur diplôme"
+                title="Formation Continue FEGK - Environnement d'apprentissage moderne- Étudiants diplômés"
                 width={500}
                 height={600}
                 className="rounded-lg shadow-xl max-w-full h-auto"
