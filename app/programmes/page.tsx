@@ -83,7 +83,7 @@ export default function ProgrammesPage() {
       levelCode: "license",
       duration: "2 semestres",
       durationCode: "short",
-      cost: "17 000 DH (1000 DH dossier + 16 000 DH formation)",
+      cost: "16 000 DH (1000 DH dossier + 15 000 DH formation)",
       schedule: "Week-end",
       format: "Hybride",
       description:
@@ -506,7 +506,7 @@ export default function ProgrammesPage() {
                       16 000 DH (+ 1000 DH dossier)
                     </td>
                     <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-green-700 font-medium text-sm sm:text-base">
-                      17 000 DH (+ 1000 DH dossier)
+                      16 000 DH (+ 1000 DH dossier)
                     </td>
                   </tr>
                   <tr className="bg-gray-50">

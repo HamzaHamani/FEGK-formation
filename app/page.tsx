@@ -176,6 +176,74 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Quick Stats */}
+      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-blue-900 text-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 text-center relative">
+            <div className="py-6 sm:py-8 px-3 sm:px-4 relative">
+              <AnimatedCounter
+                target={30}
+                suffix="+"
+                duration={2500}
+                className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2"
+              />
+              <div className="text-xs sm:text-sm lg:text-base text-blue-200">
+                Années d'Excellence
+              </div>
+              {/* Desktop separator */}
+              <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-12 sm:h-16 bg-blue-700"></div>
+            </div>
+
+            <div className="py-6 sm:py-8 px-3 sm:px-4 relative">
+              <AnimatedCounter
+                target={200}
+                suffix="+"
+                duration={2800}
+                className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2"
+              />
+              <div className="text-xs sm:text-sm lg:text-base text-blue-200">
+                Diplômés
+              </div>
+              {/* Desktop separator */}
+              <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-12 sm:h-16 bg-blue-700"></div>
+            </div>
+
+            <div className="py-6 sm:py-8 px-3 sm:px-4 relative">
+              <AnimatedCounter
+                target={95}
+                suffix="%"
+                duration={2200}
+                className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2"
+              />
+              <div className="text-xs sm:text-sm lg:text-base text-blue-200">
+                Taux de Réussite
+              </div>
+              {/* Desktop separator only */}
+              <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-12 sm:h-16 bg-blue-700"></div>
+            </div>
+
+            <div className="py-6 sm:py-8 px-3 sm:px-4">
+              <AnimatedCounter
+                target={85}
+                suffix="%"
+                duration={2600}
+                className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2"
+              />
+              <div className="text-xs sm:text-sm lg:text-base text-blue-200">
+                Progression de Carrière
+              </div>
+            </div>
+
+            {/* Mobile separators */}
+            {/* Vertical separator down the middle (mobile only) */}
+            <div className="md:hidden absolute left-1/2 top-0 bottom-0 w-px bg-blue-700 transform -translate-x-1/2"></div>
+
+            {/* Horizontal separator across full width (mobile only) */}
+            <div className="md:hidden absolute left-0 right-0 top-1/2 h-px bg-blue-700 transform -translate-y-1/2"></div>
+          </div>
+        </div>
+      </section>
+
       {/* Featured Programs */}
       <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
@@ -226,7 +294,10 @@ export default function HomePage() {
                 </p>
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-4">
                   <div className="text-xl sm:text-2xl font-bold text-blue-800">
-                    16 000 DH
+                    <div>15 000 DH</div>
+                    <div className="text-sm font-normal text-gray-600">
+                      + 1 000 DH frais de dossier
+                    </div>
                   </div>
                   <Link
                     href="/programmes/mms"
@@ -287,7 +358,10 @@ export default function HomePage() {
                 </p>
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-4">
                   <div className="text-xl sm:text-2xl font-bold text-blue-800">
-                    31 000 DH
+                    <div>30 000 DH</div>
+                    <div className="text-sm font-normal text-gray-600">
+                      + 1 000 DH frais de dossier
+                    </div>
                   </div>
                   <Link
                     href="/programmes/msms"
@@ -348,7 +422,10 @@ export default function HomePage() {
                 </p>
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-4">
                   <div className="text-xl sm:text-2xl font-bold text-blue-800">
-                    16 000 DH
+                    <div>15 000 DH</div>
+                    <div className="text-sm font-normal text-gray-600">
+                      + 1 000 DH frais de dossier
+                    </div>
                   </div>
                   <Link
                     href="/programmes/audit-qualite-licence"
@@ -409,7 +486,10 @@ export default function HomePage() {
                 </p>
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-4">
                   <div className="text-xl sm:text-2xl font-bold text-blue-800">
-                    31 000 DH
+                    <div>30 000 DH</div>
+                    <div className="text-sm font-normal text-gray-600">
+                      + 1 000 DH frais de dossier
+                    </div>
                   </div>
                   <Link
                     href="/programmes/audit-qualite-master"
@@ -519,76 +599,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Quick Stats */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-blue-900 text-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 text-center relative">
-            <div className="py-6 sm:py-8 px-3 sm:px-4 relative">
-              <AnimatedCounter
-                target={30}
-                suffix="+"
-                duration={2500}
-                className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2"
-              />
-              <div className="text-xs sm:text-sm lg:text-base text-blue-200">
-                Années d'Excellence
-              </div>
-              {/* Desktop separator */}
-              <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-12 sm:h-16 bg-blue-700"></div>
-            </div>
-
-            <div className="py-6 sm:py-8 px-3 sm:px-4 relative">
-              <AnimatedCounter
-                target={200}
-                suffix="+"
-                duration={2800}
-                className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2"
-              />
-              <div className="text-xs sm:text-sm lg:text-base text-blue-200">
-                Diplômés
-              </div>
-              {/* Desktop separator */}
-              <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-12 sm:h-16 bg-blue-700"></div>
-            </div>
-
-            <div className="py-6 sm:py-8 px-3 sm:px-4 relative">
-              <AnimatedCounter
-                target={95}
-                suffix="%"
-                duration={2200}
-                className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2"
-              />
-              <div className="text-xs sm:text-sm lg:text-base text-blue-200">
-                Taux de Réussite
-              </div>
-              {/* Desktop separator only */}
-              <div className="hidden md:block absolute right-0 top-1/2 transform -translate-y-1/2 w-px h-12 sm:h-16 bg-blue-700"></div>
-            </div>
-
-            <div className="py-6 sm:py-8 px-3 sm:px-4">
-              <AnimatedCounter
-                target={85}
-                suffix="%"
-                duration={2600}
-                className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-1 sm:mb-2"
-              />
-              <div className="text-xs sm:text-sm lg:text-base text-blue-200">
-                Progression de Carrière
-              </div>
-            </div>
-
-            {/* Mobile separators */}
-            {/* Vertical separator down the middle (mobile only) */}
-            <div className="md:hidden absolute left-1/2 top-0 bottom-0 w-px bg-blue-700 transform -translate-x-1/2"></div>
-
-            {/* Horizontal separator across full width (mobile only) */}
-            <div className="md:hidden absolute left-0 right-0 top-1/2 h-px bg-blue-700 transform -translate-y-1/2"></div>
-          </div>
-        </div>
-      </section>
-
       {/* News & Events Preview */}
-      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      {/* <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
             <h2 className="font-playfair text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
@@ -693,7 +705,7 @@ export default function HomePage() {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Final CTA Section */}
       <section className="py-16 sm:py-20 lg:py-24 px-4 bg-blue-900 text-white">

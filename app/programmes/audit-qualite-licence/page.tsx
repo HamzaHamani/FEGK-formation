@@ -79,7 +79,7 @@ export default function AuditQualiteLicencePage() {
                 <div className="flex items-center gap-2">
                   <Euro className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600" />
                   <span className="text-sm sm:text-base">
-                    17 000 DH (nationaux)
+                    16 000 DH (nationaux)
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
@@ -335,7 +335,7 @@ export default function AuditQualiteLicencePage() {
                 </CardHeader>
                 <CardContent>
                   <div className="text-3xl font-bold text-blue-600 mb-2">
-                    17 000 DH
+                    16 000 DH
                   </div>
                   <p className="text-gray-600">
                     Formation complète (étudiants nationaux)
