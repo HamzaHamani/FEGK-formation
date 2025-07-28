@@ -273,13 +273,14 @@ export default function AProposPage() {
             <div className="grid lg:grid-cols-2 xl:grid-cols-4 gap-8">
               <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <CardHeader className="text-center">
-                  <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4">
+                  <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
                     <Image
-                      src="/placeholder.svg?height=96&width=96"
-                      alt="Vice Doyen"
+                      src="/equipe/hicham.jpg"
+                      alt="M. Hicham OUAKIL - Vice Doyen FEGK"
+                      title="M. Hicham OUAKIL - Vice Doyen de la Faculté d'Économie et Gestion Kénitra"
                       width={96}
                       height={96}
-                      className="rounded-full"
+                      className="rounded-full w-full h-full object-cover"
                     />
                   </div>
                   <CardTitle className="font-playfair text-lg">
@@ -301,13 +302,14 @@ export default function AProposPage() {
 
               <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <CardHeader className="text-center">
-                  <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4">
+                  <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
                     <Image
-                      src="/placeholder.svg?height=96&width=96"
-                      alt="Équipe de Direction"
+                      src="/equipe/houda.jpg"
+                      alt="Mme. Houda LECHHEB - Équipe de Direction FEGK"
+                      title="Mme. Houda LECHHEB - Équipe de Direction FEGK Formation Continue"
                       width={96}
                       height={96}
-                      className="rounded-full"
+                      className="rounded-full w-full h-full object-cover"
                     />
                   </div>
                   <CardTitle className="font-playfair text-lg">
@@ -329,13 +331,14 @@ export default function AProposPage() {
 
               <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <CardHeader className="text-center">
-                  <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4">
+                  <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
                     <Image
-                      src="/placeholder.svg?height=96&width=96"
-                      alt="Équipe de Direction"
+                      src="/equipe/elatmani.jpeg"
+                      alt="M. Mohammed ELATMANI - Équipe de Direction FEGK"
+                      title="M. Mohammed ELATMANI - Équipe de Direction FEGK Formation Continue"
                       width={96}
                       height={96}
-                      className="rounded-full"
+                      className="rounded-full w-full h-full object-cover"
                     />
                   </div>
                   <CardTitle className="font-playfair text-lg">
@@ -357,13 +360,14 @@ export default function AProposPage() {
 
               <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <CardHeader className="text-center">
-                  <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4">
+                  <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4 overflow-hidden">
                     <Image
-                      src="/placeholder.svg?height=96&width=96"
-                      alt="Équipe de Direction"
+                      src="/equipe/hamani.jpeg"
+                      alt="M. Hamza HAMANI - Équipe de Direction FEGK"
+                      title="M. Hamza HAMANI - Équipe de Direction FEGK Formation Continue"
                       width={96}
                       height={96}
-                      className="rounded-full"
+                      className="rounded-full w-full h-full object-cover"
                     />
                   </div>
                   <CardTitle className="font-playfair text-lg">

@@ -96,7 +96,7 @@ export const structuredData = {
     },
     sameAs: [
       "https://www.facebook.com/people/MUS-LUS/61578352602309/",
-      "https://www.linkedin.com/company/108265562"
+      "https://www.linkedin.com/company/108265562",
     ],
   },
 
