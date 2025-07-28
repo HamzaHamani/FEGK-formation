@@ -4,6 +4,77 @@ import { Badge } from "@/components/ui/badge";
 import { Users, Award, Globe } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "À Propos FEGK - Faculté d'Économie et Gestion Kénitra | Université Ibn Tofail",
+  description:
+    "Découvrez FEGK : Histoire, mission et excellence en formation continue. Faculté d'Économie et Gestion Kénitra - Université Ibn Tofail. Leaders en formation Management.",
+  keywords: [
+    "FEGK histoire",
+    "faculté économie gestion Kénitra",
+    "université Ibn Tofail",
+    "formation continue FEGK",
+    "mission FEGK",
+    "excellence formation",
+    "équipe FEGK",
+    "campus Maamora",
+    "économie gestion",
+    "formation professionnelle",
+    // University identity keywords
+    "UIT histoire",
+    "Université Ibn Tofail Kenitra",
+    "FEGK Ibn Tofail",
+    "Faculté Économie Gestion Commerce",
+    "établissement supérieur Maroc",
+    // Academic excellence keywords
+    "excellence académique",
+    "qualité formation supérieure",
+    "innovation pédagogique",
+    "recherche scientifique",
+    "partenariats universitaires",
+    "accréditation formation",
+    // Regional keywords
+    "université Kénitra",
+    "enseignement supérieur Rabat Sale Kénitra",
+    "formation Maamora",
+    "éducation Maroc",
+    // Mission keywords
+    "formation cadres dirigeants",
+    "développement compétences",
+    "insertion professionnelle",
+    "employabilité diplômés",
+    "formation tout au long de la vie",
+    "apprentissage continu",
+    "expertise formation continue",
+    "leadership académique",
+  ],
+  openGraph: {
+    title: "À Propos FEGK - Excellence en Formation Continue",
+    description:
+      "Découvrez l'histoire et la mission de FEGK - Faculté d'Économie et Gestion Kénitra",
+    url: "https://managementauditetqualite.com/a-propos",
+    siteName: "Management Audit et Qualité - FEGK",
+    images: [
+      {
+        url: "/LOGO.jpg",
+        width: 1200,
+        height: 630,
+        alt: "FEGK Faculté d'Économie et Gestion Kénitra",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "À Propos FEGK - Excellence en Formation Continue",
+    description: "Découvrez l'histoire et la mission de FEGK",
+    images: ["/LOGO.jpg"],
+  },
+  alternates: {
+    canonical: "https://managementauditetqualite.com/a-propos",
+  },
+};
 
 export default function AProposPage() {
   return (

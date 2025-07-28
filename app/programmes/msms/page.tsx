@@ -15,10 +15,72 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { structuredData } from "@/lib/seo";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Master Management Stratégique et Marketing Services (MSMS) - FEGK",
+  description:
+    "Master MSMS FEGK : Formation en Management Stratégique et Marketing des Services. 18 mois, weekend, hybride. Développez vos compétences en leadership et marketing. Inscription ouverte.",
+  keywords: [
+    "master MSMS FEGK",
+    "management stratégique formation",
+    "marketing services master",
+    "MSMS Kénitra",
+    "formation management stratégique",
+    "master marketing FEGK",
+    "formation cadres supérieurs",
+    "leadership formation",
+    "stratégie marketing formation",
+    "master weekend Maroc",
+    "formation hybride management",
+    "inscription master MSMS",
+  ],
+  alternates: {
+    canonical: "https://managementauditetqualite.com/programmes/msms",
+  },
+};
 
 export default function MSMSPage() {
+  const courseLD = structuredData.course({
+    name: "Master en Management Stratégique et Marketing des Services (MSMS)",
+    description:
+      "Formation avancée pour les cadres du middle et top management dans le secteur des services",
+    provider: "FEGK - Université Ibn Tofail",
+    courseCode: "MSMS",
+    educationalLevel: "Master",
+    duration: "P18M",
+    price: "31000",
+    url: "https://managementauditetqualite.com/programmes/msms",
+  });
+
+  const breadcrumbLD = structuredData.breadcrumb([
+    { name: "Accueil", url: "https://managementauditetqualite.com" },
+    {
+      name: "Programmes",
+      url: "https://managementauditetqualite.com/programmes",
+    },
+    {
+      name: "MSMS",
+      url: "https://managementauditetqualite.com/programmes/msms",
+    },
+  ]);
+
   return (
     <div className="min-h-screen bg-white">
+      {/* Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(courseLD),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbLD),
+        }}
+      />
       {/* Header */}
       <section className="py-16 px-4 bg-gradient-to-r from-blue-800 to-blue-900 text-white">
         <div className="max-w-6xl mx-auto">
@@ -93,11 +155,29 @@ export default function MSMSPage() {
                   <span>Samedi & Dimanche</span>
                 </div>
               </div>
+
+              {/* Application Section - Under icons on left side */}
+              <div className="text-center mt-6">
+                <Button
+                  size="lg"
+                  className="bg-blue-600 hover:bg-blue-700 w-full"
+                  asChild
+                >
+                  <a
+                    href="https://sites.google.com/uit.ac.ma/mus-msms/inscription-en-ligne"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Pré-inscription en Ligne
+                  </a>
+                </Button>
+              </div>
             </div>
             <div>
               <Image
                 src="/placeholder.svg?height=400&width=600"
-                alt="Management Stratégique et Marketing des Services"
+                alt="Étudiants Master Management Stratégique et Marketing Services - Campus universitaire FEGK Kénitra"
+                title="Master MSMS - Management Stratégique et Marketing des Services FEGK"
                 width={600}
                 height={400}
                 className="rounded-lg shadow-lg"
@@ -441,7 +521,7 @@ export default function MSMSPage() {
                 </CardHeader>
                 <CardContent>
                   <div className="text-3xl font-bold text-blue-600 mb-2">
-                    31 000 DH
+                    30 000 DH
                   </div>
                   <p className="text-gray-600">Formation complète</p>
                 </CardContent>
@@ -496,39 +576,6 @@ export default function MSMSPage() {
                 <strong>Compte au trésor N°:</strong> 310 330 1006 021 701980101
                 68
               </p>
-            </div>
-          </div>
-
-          {/* Application */}
-          <div className="text-center">
-            <h2 className="text-3xl font-bold mb-6 text-blue-800">
-              Candidature
-            </h2>
-            <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-              Postulez dès maintenant pour intégrer notre Master en Management
-              Stratégique et Marketing des Services.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                className="bg-blue-600 hover:bg-blue-700"
-                asChild
-              >
-                <a
-                  href="https://sites.google.com/uit.ac.ma/mus-msms/inscription-en-ligne"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Pré-inscription en Ligne
-                </a>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent"
-              >
-                Télécharger la Brochure
-              </Button>
             </div>
           </div>
         </div>

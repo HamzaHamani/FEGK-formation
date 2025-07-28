@@ -15,7 +15,7 @@ export default function Navigation() {
   useEffect(() => {
     const controlNavbar = () => {
       const currentScrollY = window.scrollY;
-      
+
       // Show navbar when at the top
       if (currentScrollY < 10) {
         setIsVisible(true);
@@ -29,7 +29,7 @@ export default function Navigation() {
       } else if (currentScrollY < lastScrollY) {
         setIsVisible(true);
       }
-      
+
       setLastScrollY(currentScrollY);
     };
 
@@ -45,23 +45,27 @@ export default function Navigation() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
   return (
-    <nav 
+    <nav
       className={`bg-white border-b border-gray-200 fixed top-0 z-50 w-full transition-all duration-300 ease-in-out ${
-        isVisible ? 'translate-y-0 shadow-sm' : '-translate-y-full shadow-none'
+        isVisible ? "translate-y-0 shadow-sm" : "-translate-y-full shadow-none"
       }`}
     >
       <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8 min-w-0">
         <div className="flex justify-between items-center h-16 sm:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 sm:gap-4 min-w-0 group">
+          <Link
+            href="/"
+            className="flex items-center gap-2 sm:gap-4 min-w-0 group"
+          >
             <Image
               src="/logo-fac.png"
               alt="Faculté d'Économie et de Gestion Kénitra"
+              title="FEGK - Faculté d'Économie et Gestion Kénitra | Université Ibn Tofail"
               width={200}
               height={60}
               className="h-8 sm:h-10 lg:h-12 w-auto max-w-[140px] sm:max-w-[180px] lg:max-w-none transition-transform duration-200 group-hover:scale-105"
@@ -84,7 +88,11 @@ export default function Navigation() {
                 onMouseLeave={() => setIsProgramsOpen(false)}
               >
                 Programmes
-                <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isProgramsOpen ? 'rotate-180' : ''}`} />
+                <ChevronDown
+                  className={`h-4 w-4 transition-transform duration-200 ${
+                    isProgramsOpen ? "rotate-180" : ""
+                  }`}
+                />
               </button>
               <div
                 className={`absolute top-full left-0 mt-1 w-80 bg-white border border-gray-200 rounded-lg shadow-xl transition-all duration-300 ease-out ${
@@ -178,73 +186,87 @@ export default function Navigation() {
 
           {/* Mobile menu button */}
           <div className="lg:hidden flex-shrink-0">
-            <Button 
-              variant="ghost" 
-              size="sm" 
-              onClick={() => setIsOpen(!isOpen)} 
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setIsOpen(!isOpen)}
               className="p-2 transition-all duration-200 hover:bg-gray-100 hover:scale-105"
             >
               <div className="relative w-5 h-5 sm:w-6 sm:h-6">
-                <Menu className={`absolute inset-0 h-5 w-5 sm:h-6 sm:w-6 transition-all duration-300 ${isOpen ? 'opacity-0 rotate-180 scale-0' : 'opacity-100 rotate-0 scale-100'}`} />
-                <X className={`absolute inset-0 h-5 w-5 sm:h-6 sm:w-6 transition-all duration-300 ${isOpen ? 'opacity-100 rotate-0 scale-100' : 'opacity-0 rotate-180 scale-0'}`} />
+                <Menu
+                  className={`absolute inset-0 h-5 w-5 sm:h-6 sm:w-6 transition-all duration-300 ${
+                    isOpen
+                      ? "opacity-0 rotate-180 scale-0"
+                      : "opacity-100 rotate-0 scale-100"
+                  }`}
+                />
+                <X
+                  className={`absolute inset-0 h-5 w-5 sm:h-6 sm:w-6 transition-all duration-300 ${
+                    isOpen
+                      ? "opacity-100 rotate-0 scale-100"
+                      : "opacity-0 rotate-180 scale-0"
+                  }`}
+                />
               </div>
             </Button>
           </div>
         </div>
 
         {/* Mobile Navigation */}
-        <div 
+        <div
           className={`lg:hidden border-t bg-white w-full transition-all duration-300 ease-in-out overflow-hidden ${
-            isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+            isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
           }`}
         >
-          <div className={`flex flex-col space-y-2 sm:space-y-4 py-4 sm:py-6 transition-all duration-300 ease-in-out transform ${
-            isOpen ? 'translate-y-0' : '-translate-y-4'
-          }`}>
-              <Link
-                href="/"
-                className="text-gray-700 hover:text-blue-800 transition-all duration-200 font-medium px-3 sm:px-4 py-2 text-sm sm:text-base hover:bg-gray-50 rounded-md mx-3 sm:mx-4 hover:translate-x-1"
-                onClick={() => setIsOpen(false)}
-              >
-                Accueil
+          <div
+            className={`flex flex-col space-y-2 sm:space-y-4 py-4 sm:py-6 transition-all duration-300 ease-in-out transform ${
+              isOpen ? "translate-y-0" : "-translate-y-4"
+            }`}
+          >
+            <Link
+              href="/"
+              className="text-gray-700 hover:text-blue-800 transition-all duration-200 font-medium px-3 sm:px-4 py-2 text-sm sm:text-base hover:bg-gray-50 rounded-md mx-3 sm:mx-4 hover:translate-x-1"
+              onClick={() => setIsOpen(false)}
+            >
+              Accueil
+            </Link>
+            <Link
+              href="/programmes"
+              className="text-gray-700 hover:text-blue-800 transition-all duration-200 font-medium px-3 sm:px-4 py-2 text-sm sm:text-base hover:bg-gray-50 rounded-md mx-3 sm:mx-4 hover:translate-x-1"
+              onClick={() => setIsOpen(false)}
+            >
+              Programmes
+            </Link>
+            <Link
+              href="/admissions"
+              className="text-gray-700 hover:text-blue-800 transition-all duration-200 font-medium px-3 sm:px-4 py-2 text-sm sm:text-base hover:bg-gray-50 rounded-md mx-3 sm:mx-4 hover:translate-x-1"
+              onClick={() => setIsOpen(false)}
+            >
+              Admissions
+            </Link>
+            <Link
+              href="/a-propos"
+              className="text-gray-700 hover:text-blue-800 transition-all duration-200 font-medium px-3 sm:px-4 py-2 text-sm sm:text-base hover:bg-gray-50 rounded-md mx-3 sm:mx-4 hover:translate-x-1"
+              onClick={() => setIsOpen(false)}
+            >
+              À Propos
+            </Link>
+            <Link
+              href="/contact"
+              className="text-gray-700 hover:text-blue-800 transition-all duration-200 font-medium px-3 sm:px-4 py-2 text-sm sm:text-base hover:bg-gray-50 rounded-md mx-3 sm:mx-4 hover:translate-x-1"
+              onClick={() => setIsOpen(false)}
+            >
+              Contact
+            </Link>
+            <div className="px-3 sm:px-4 pt-3 sm:pt-4">
+              <Link href="/programmes">
+                <Button
+                  className="w-full bg-blue-800 hover:bg-blue-900 text-white font-medium text-sm sm:text-base py-2 transition-all duration-200 hover:scale-105 hover:shadow-lg"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Candidater
+                </Button>
               </Link>
-              <Link
-                href="/programmes"
-                className="text-gray-700 hover:text-blue-800 transition-all duration-200 font-medium px-3 sm:px-4 py-2 text-sm sm:text-base hover:bg-gray-50 rounded-md mx-3 sm:mx-4 hover:translate-x-1"
-                onClick={() => setIsOpen(false)}
-              >
-                Programmes
-              </Link>
-              <Link
-                href="/admissions"
-                className="text-gray-700 hover:text-blue-800 transition-all duration-200 font-medium px-3 sm:px-4 py-2 text-sm sm:text-base hover:bg-gray-50 rounded-md mx-3 sm:mx-4 hover:translate-x-1"
-                onClick={() => setIsOpen(false)}
-              >
-                Admissions
-              </Link>
-              <Link
-                href="/a-propos"
-                className="text-gray-700 hover:text-blue-800 transition-all duration-200 font-medium px-3 sm:px-4 py-2 text-sm sm:text-base hover:bg-gray-50 rounded-md mx-3 sm:mx-4 hover:translate-x-1"
-                onClick={() => setIsOpen(false)}
-              >
-                À Propos
-              </Link>
-              <Link
-                href="/contact"
-                className="text-gray-700 hover:text-blue-800 transition-all duration-200 font-medium px-3 sm:px-4 py-2 text-sm sm:text-base hover:bg-gray-50 rounded-md mx-3 sm:mx-4 hover:translate-x-1"
-                onClick={() => setIsOpen(false)}
-              >
-                Contact
-              </Link>
-              <div className="px-3 sm:px-4 pt-3 sm:pt-4">
-                <Link href="/programmes">
-                  <Button
-                    className="w-full bg-blue-800 hover:bg-blue-900 text-white font-medium text-sm sm:text-base py-2 transition-all duration-200 hover:scale-105 hover:shadow-lg"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    Candidater
-                  </Button>
-                </Link>
             </div>
           </div>
         </div>

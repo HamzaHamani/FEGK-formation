@@ -13,10 +13,69 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { structuredData } from "@/lib/seo";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Licence Management et Marketing des Services (MMS) - FEGK",
+  description:
+    "Licence MMS FEGK : Formation en Management et Marketing des Services. 2 semestres, weekend, hybride. Concevez des offres de services compétitives. Inscription ouverte.",
+  keywords: [
+    "licence MMS FEGK",
+    "management marketing services",
+    "formation MMS Kénitra",
+    "licence marketing services",
+    "formation management services",
+    "MMS weekend",
+    "licence FEGK management",
+    "marketing services formation",
+    "formation hybride MMS",
+    "inscription licence MMS",
+    "services marketing formation",
+    "management formation licence",
+  ],
+  alternates: {
+    canonical: "https://managementauditetqualite.com/programmes/mms",
+  },
+};
 
 export default function MMSPage() {
+  const courseLD = structuredData.course({
+    name: "Licence en Management et Marketing des Services (MMS)",
+    description:
+      "Formation spécialisée pour concevoir et produire une offre de services compétitive adaptée aux besoins clients",
+    provider: "FEGK - Université Ibn Tofail",
+    courseCode: "MMS",
+    educationalLevel: "Licence",
+    duration: "P1Y",
+    price: "16000",
+    url: "https://managementauditetqualite.com/programmes/mms",
+  });
+
+  const breadcrumbLD = structuredData.breadcrumb([
+    { name: "Accueil", url: "https://managementauditetqualite.com" },
+    {
+      name: "Programmes",
+      url: "https://managementauditetqualite.com/programmes",
+    },
+    { name: "MMS", url: "https://managementauditetqualite.com/programmes/mms" },
+  ]);
+
   return (
     <div className="min-h-screen bg-white">
+      {/* Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(courseLD),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbLD),
+        }}
+      />
       {/* Header */}
       <section className="py-12 sm:py-16 px-4 bg-gradient-to-r from-blue-700 to-blue-900 text-white">
         <div className="max-w-6xl mx-auto">
@@ -85,11 +144,29 @@ export default function MMSPage() {
                   </span>
                 </div>
               </div>
+
+              {/* Application Section - Under icons on left side */}
+              <div className="text-center mt-6">
+                <Button
+                  size="lg"
+                  className="bg-blue-600 hover:bg-blue-700 w-full"
+                  asChild
+                >
+                  <a
+                    href="https://sites.google.com/uit.ac.ma/lus-mms/inscription-en-ligne"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Pré-inscription en Ligne
+                  </a>
+                </Button>
+              </div>
             </div>
             <div>
               <Image
                 src="/placeholder.svg?height=400&width=600"
-                alt="Management et Marketing des Services"
+                alt="Étudiants en formation Management et Marketing des Services - Salle de cours moderne FEGK Kénitra"
+                title="Formation Management et Marketing des Services - Licence MMS FEGK"
                 width={600}
                 height={400}
                 className="rounded-lg shadow-lg w-full h-auto"
@@ -331,7 +408,7 @@ export default function MMSPage() {
                 </CardHeader>
                 <CardContent>
                   <div className="text-3xl font-bold text-blue-600 mb-2">
-                    16 000 DH
+                    15 000 DH
                   </div>
                   <p className="text-gray-600">Formation complète</p>
                 </CardContent>
@@ -374,39 +451,6 @@ export default function MMSPage() {
                 <strong>Compte au trésor N°:</strong> 310 330 1006 021 7019801
                 01 68
               </p>
-            </div>
-          </div>
-
-          {/* Pre-registration */}
-          <div className="text-center">
-            <h2 className="text-3xl font-bold mb-6 text-blue-800">
-              Pré-inscription
-            </h2>
-            <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-              Effectuez votre pré-inscription en ligne ou contactez directement
-              le responsable de la formation.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                className="bg-blue-600 hover:bg-blue-700"
-                asChild
-              >
-                <a
-                  href="https://sites.google.com/uit.ac.ma/lus-mms/inscription-en-ligne"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Pré-inscription en Ligne
-                </a>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent"
-              >
-                Télécharger la Brochure
-              </Button>
             </div>
           </div>
         </div>

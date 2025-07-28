@@ -15,6 +15,80 @@ import {
   Download,
 } from "lucide-react";
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "Admissions Formation Continue FEGK - Inscription Management & Audit Qualité",
+  description:
+    "Admissions FEGK : Processus d'inscription pour formations Management, Marketing et Audit Qualité. Conditions d'admission, dossier candidature, dates importantes.",
+  keywords: [
+    "admission FEGK",
+    "inscription formation continue",
+    "admission management FEGK",
+    "candidature audit qualité",
+    "inscription Kénitra",
+    "admission Ibn Tofail",
+    "processus admission",
+    "dossier candidature",
+    "conditions admission",
+    "inscription weekend",
+    // University-specific keywords
+    "admission UIT",
+    "inscription Université Ibn Tofail",
+    "candidature FEGK Ibn Tofail",
+    "admission Faculté Économie Gestion",
+    // Degree-specific keywords
+    "admission LU",
+    "admission LSU",
+    "admission MSU",
+    "admission MUS",
+    "inscription licence spécialisée",
+    "inscription master spécialisé",
+    "candidature master universitaire",
+    // Program-specific keywords
+    "admission MMS",
+    "admission MSMS",
+    "inscription Master Management Stratégique",
+    "inscription Master Management Systèmes",
+    "candidature Audit Qualité",
+    "admission formation audit",
+    "inscription formation qualité",
+    // Process keywords
+    "frais inscription FEGK",
+    "dates inscription",
+    "concours admission",
+    "sélection candidats",
+    "prérequis admission",
+    "formation continue admission",
+    "inscription études supérieures",
+    "admission formation professionnelle",
+  ],
+  openGraph: {
+    title: "Admissions FEGK - Inscription Formation Continue",
+    description:
+      "Découvrez le processus d'admission pour nos formations en Management et Audit Qualité",
+    url: "https://managementauditetqualite.com/admissions",
+    siteName: "Management Audit et Qualité - FEGK",
+    images: [
+      {
+        url: "/LOGO.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Admissions FEGK Formation Continue",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Admissions FEGK - Inscription Formation Continue",
+    description: "Découvrez le processus d'admission pour nos formations",
+    images: ["/LOGO.jpg"],
+  },
+  alternates: {
+    canonical: "https://managementauditetqualite.com/admissions",
+  },
+};
 
 export default function AdmissionsPage() {
   return (

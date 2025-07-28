@@ -5,16 +5,101 @@ import { ArrowRight, Calendar, Clock, Users, Award, Globe } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import AnimatedCounter from "@/components/animated-counter";
+import { structuredData } from "@/lib/seo";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title:
+    "Management Audit et Qualité - Formation Continue FEGK Kénitra | Université Ibn Tofail",
+  description:
+    "Formation continue en Management, Audit et Qualité à FEGK Kénitra : Licence et Master en Management Marketing Services, Audit Qualité. Formation weekend, hybride. Inscription ouverte.",
+  keywords: [
+    "management audit et qualité",
+    "formation management audit qualité",
+    "audit et qualité formation",
+    "management qualité FEGK",
+    "formation continue FEGK",
+    "FEGK formation",
+    "formation management Kénitra",
+    "formation marketing services",
+    "audit qualité formation",
+    "licence management FEGK",
+    "master management FEGK",
+    "formation weekend Maroc",
+    "formation hybride",
+    "inscription formation continue",
+    "développement professionnel",
+    "formation cadres Maroc",
+    "Université Ibn Tofail formation",
+    "FEGK Kénitra inscription",
+    "formation certifiante management",
+    "audit qualité industrie",
+    "management stratégique formation",
+    "certification qualité formation",
+    // University-specific keywords
+    "Ibn Tofail formation continue",
+    "UIT FEGK",
+    "Université Ibn Tofail Kenitra",
+    "FEGK Ibn Tofail formation",
+    "Faculté Économie Gestion Commerce",
+    // Degree-specific keywords
+    "LU formation",
+    "LSU formation",
+    "MSU formation",
+    "MUS formation",
+    "licence spécialisée universitaire",
+    "master spécialisé universitaire",
+    "licence universitaire formation",
+    "master universitaire spécialisé",
+    // Program-specific keywords
+    "MMS formation FEGK",
+    "MSMS formation FEGK",
+    "Master Management Stratégique formation",
+    "Master Management Systèmes formation",
+    "formation audit qualité licence",
+    "formation audit qualité master",
+    "marketing des services formation",
+    // Location and modality keywords
+    "formation continue Kénitra",
+    "formation weekend Kenitra",
+    "formation hybride Maroc",
+    "études supérieures continue",
+    "formation executive Maroc",
+    "formation professionnelle supérieure",
+  ],
+  alternates: {
+    canonical: "https://managementauditetqualite.com",
+  },
+};
 
 export default function HomePage() {
+  const organizationLD = structuredData.organization;
+  const breadcrumbLD = structuredData.breadcrumb([
+    { name: "Accueil", url: "https://managementauditetqualite.com" },
+  ]);
+
   return (
     <div className="min-h-screen bg-white">
+      {/* Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(organizationLD),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbLD),
+        }}
+      />
       {/* Hero Section */}
       <section className="relative text-white min-h-[70vh] sm:min-h-[80vh] lg:h-[85vh] flex items-center">
         {/* Background Image */}
         <Image
           src="/hero.webp"
-          alt="Hero Background"
+          alt="Formation Continue FEGK - Étudiants en formation Management et Marketing à l'Université Ibn Tofail Kénitra"
+          title="Formation Continue FEGK - Excellence en Management, Marketing et Audit Qualité"
           fill
           className="object-cover object-center"
           priority
@@ -26,13 +111,13 @@ export default function HomePage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20 z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight mb-6 sm:mb-8">
-              Développez Votre Carrière avec l'Excellence Académique
+              Management Audit et Qualité - Formation Continue FEGK
             </h1>
             <p className="text-sm sm:text-lg md:text-xl text-blue-100 mb-6 sm:mb-8 leading-relaxed px-2 sm:px-0">
               Rejoignez des milliers de professionnels qui ont transformé leur
-              carrière grâce à nos programmes académiques rigoureux en
-              Management et Marketing des Services à la Faculté d'Économie et de
-              Gestion de Kénitra.
+              carrière grâce à nos programmes de formation continue en
+              Management, Audit et Qualité, Marketing des Services à la Faculté
+              d'Économie et de Gestion de l'Université Ibn Tofail, Kénitra.
             </p>
 
             {/* Key Features */}
@@ -589,7 +674,8 @@ export default function HomePage() {
             <div className="relative order-first lg:order-last flex justify-center lg:justify-end">
               <Image
                 src="/placeholder.svg?height=600&width=500"
-                alt="Étudiants en classe"
+                alt="Étudiants en formation continue FEGK - Salle de classe moderne Campus Maamora Kénitra"
+                title="Formation Continue FEGK - Environnement d'apprentissage moderne"
                 width={500}
                 height={600}
                 className="rounded-lg shadow-xl max-w-full h-auto"

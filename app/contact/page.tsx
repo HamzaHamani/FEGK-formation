@@ -10,6 +10,77 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { MapPin, Phone, Mail, Clock, Users, MessageSquare } from "lucide-react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact FEGK - Formation Continue Management Audit Qualité | Kénitra",
+  description:
+    "Contactez FEGK pour vos questions sur les formations Management et Audit Qualité. Adresse, téléphone, email. Campus Universitaire Maamora, Kénitra.",
+  keywords: [
+    "contact FEGK",
+    "FEGK Kénitra adresse",
+    "formation continue contact",
+    "campus Maamora",
+    "téléphone FEGK",
+    "email FEGK",
+    "nous contacter",
+    "information formation",
+    "bureau FEGK",
+    "horaires FEGK",
+    // University-specific keywords
+    "contact UIT",
+    "contact Université Ibn Tofail",
+    "FEGK Ibn Tofail contact",
+    "Faculté Économie Gestion contact",
+    "campus Ibn Tofail",
+    // Location keywords
+    "Kénitra contact université",
+    "Rabat Sale Kénitra formation",
+    "Maamora campus contact",
+    "adresse université Kénitra",
+    // Service keywords
+    "information admission",
+    "renseignements formation",
+    "contact formation continue",
+    "service étudiant FEGK",
+    "secrétariat FEGK",
+    "administration FEGK",
+    "orientation FEGK",
+    "conseil formation",
+    // Program inquiry keywords
+    "information MMS",
+    "information MSMS",
+    "renseignement Master Management",
+    "contact formation audit",
+    "information formation qualité",
+    "contact LSU MSU",
+    "renseignement licence master",
+  ],
+  openGraph: {
+    title: "Contact FEGK - Nous Contacter",
+    description:
+      "Contactez-nous pour toute question sur nos formations Management et Audit Qualité",
+    url: "https://managementauditetqualite.com/contact",
+    siteName: "Management Audit et Qualité - FEGK",
+    images: [
+      {
+        url: "/LOGO.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Contact FEGK Formation Continue",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact FEGK - Nous Contacter",
+    description: "Contactez-nous pour toute question sur nos formations",
+    images: ["/LOGO.jpg"],
+  },
+  alternates: {
+    canonical: "https://managementauditetqualite.com/contact",
+  },
+};
 
 export default function ContactPage() {
   return (
@@ -90,7 +161,9 @@ export default function ContactPage() {
                         </p>
                         <div className="grid gap-3">
                           <div className="bg-blue-50 rounded-lg p-3 border-l-4 border-blue-600">
-                            <p className="font-medium text-sm text-gray-900">M. Hicham Ouakil</p>
+                            <p className="font-medium text-sm text-gray-900">
+                              M. Hicham Ouakil
+                            </p>
                             <p className="text-xs text-gray-600">Vice Doyen</p>
                             <p className="text-sm text-blue-600 flex items-center gap-1 mt-1">
                               <Phone className="h-3 w-3" />
@@ -99,8 +172,12 @@ export default function ContactPage() {
                           </div>
 
                           <div className="bg-blue-50 rounded-lg p-3 border-l-4 border-blue-600">
-                            <p className="font-medium text-sm text-gray-900">Mme. Houda Lechheb</p>
-                            <p className="text-xs text-gray-600">Équipe de Direction</p>
+                            <p className="font-medium text-sm text-gray-900">
+                              Mme. Houda Lechheb
+                            </p>
+                            <p className="text-xs text-gray-600">
+                              Équipe de Direction
+                            </p>
                             <p className="text-sm text-blue-600 flex items-center gap-1 mt-1">
                               <Phone className="h-3 w-3" />
                               +212 661-849348
@@ -108,8 +185,12 @@ export default function ContactPage() {
                           </div>
 
                           <div className="bg-blue-50 rounded-lg p-3 border-l-4 border-blue-600">
-                            <p className="font-medium text-sm text-gray-900">M. Mohammed Elatmani</p>
-                            <p className="text-xs text-gray-600">Équipe de Direction</p>
+                            <p className="font-medium text-sm text-gray-900">
+                              M. Mohammed Elatmani
+                            </p>
+                            <p className="text-xs text-gray-600">
+                              Équipe de Direction
+                            </p>
                             <p className="text-sm text-blue-600 flex items-center gap-1 mt-1">
                               <Phone className="h-3 w-3" />
                               +212 635-587844
@@ -117,8 +198,12 @@ export default function ContactPage() {
                           </div>
 
                           <div className="bg-blue-50 rounded-lg p-3 border-l-4 border-blue-600">
-                            <p className="font-medium text-sm text-gray-900">M. Hamza Hamani</p>
-                            <p className="text-xs text-gray-600">Équipe de Direction</p>
+                            <p className="font-medium text-sm text-gray-900">
+                              M. Hamza Hamani
+                            </p>
+                            <p className="text-xs text-gray-600">
+                              Équipe de Direction
+                            </p>
                             <p className="text-sm text-blue-600 flex items-center gap-1 mt-1">
                               <Phone className="h-3 w-3" />
                               +212 693-517484
@@ -163,7 +248,9 @@ export default function ContactPage() {
                         </p>
                         <div className="grid gap-3">
                           <div className="bg-green-50 rounded-lg p-3 border-l-4 border-green-600">
-                            <p className="font-medium text-sm text-gray-900">M. Hicham Ouakil</p>
+                            <p className="font-medium text-sm text-gray-900">
+                              M. Hicham Ouakil
+                            </p>
                             <p className="text-xs text-gray-600">Vice Doyen</p>
                             <p className="text-sm text-green-600 flex items-center gap-1 mt-1">
                               <Mail className="h-3 w-3" />
@@ -172,8 +259,12 @@ export default function ContactPage() {
                           </div>
 
                           <div className="bg-green-50 rounded-lg p-3 border-l-4 border-green-600">
-                            <p className="font-medium text-sm text-gray-900">Mme. Houda Lechheb</p>
-                            <p className="text-xs text-gray-600">Équipe de Direction</p>
+                            <p className="font-medium text-sm text-gray-900">
+                              Mme. Houda Lechheb
+                            </p>
+                            <p className="text-xs text-gray-600">
+                              Équipe de Direction
+                            </p>
                             <p className="text-sm text-green-600 flex items-center gap-1 mt-1">
                               <Mail className="h-3 w-3" />
                               houda.lechheb@uit.ac.ma
@@ -181,8 +272,12 @@ export default function ContactPage() {
                           </div>
 
                           <div className="bg-green-50 rounded-lg p-3 border-l-4 border-green-600">
-                            <p className="font-medium text-sm text-gray-900">M. Mohammed Elatmani</p>
-                            <p className="text-xs text-gray-600">Équipe de Direction</p>
+                            <p className="font-medium text-sm text-gray-900">
+                              M. Mohammed Elatmani
+                            </p>
+                            <p className="text-xs text-gray-600">
+                              Équipe de Direction
+                            </p>
                             <p className="text-sm text-green-600 flex items-center gap-1 mt-1">
                               <Mail className="h-3 w-3" />
                               mohammed.elatmani@uit.ac.ma
@@ -190,8 +285,12 @@ export default function ContactPage() {
                           </div>
 
                           <div className="bg-green-50 rounded-lg p-3 border-l-4 border-green-600">
-                            <p className="font-medium text-sm text-gray-900">M. Hamza Hamani</p>
-                            <p className="text-xs text-gray-600">Équipe de Direction</p>
+                            <p className="font-medium text-sm text-gray-900">
+                              M. Hamza Hamani
+                            </p>
+                            <p className="text-xs text-gray-600">
+                              Équipe de Direction
+                            </p>
                             <p className="text-sm text-green-600 flex items-center gap-1 mt-1">
                               <Mail className="h-3 w-3" />
                               hamza.hamani@uit.ac.ma

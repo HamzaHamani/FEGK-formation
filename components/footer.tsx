@@ -22,17 +22,20 @@ export default function Footer() {
               <Image
                 src="/logo-fac.png"
                 alt="Faculté d'Économie et de Gestion Kénitra"
+                title="FEGK - Faculté d'Économie et Gestion Kénitra | Formation Continue"
                 width={150}
                 height={45}
                 className="h-10 w-auto"
               />
             </div>
             <p className="text-gray-300 mb-6 text-sm leading-relaxed max-w-md">
-              Faculté d'Économie et de Gestion - Kénitra
+              FEGK - Faculté d'Économie et de Gestion, Université Ibn Tofail
+              Kénitra
               <br />
-              Programmes spécialisés en Management et Marketing des Services
-              pour développer vos compétences professionnelles et accélérer
-              votre carrière.
+              Formation continue en Management, Marketing des Services et Audit
+              Qualité. Programmes weekend et hybrides pour développer vos
+              compétences professionnelles et accélérer votre carrière.
+              Inscription ouverte.
             </p>
 
             {/* Social Media */}

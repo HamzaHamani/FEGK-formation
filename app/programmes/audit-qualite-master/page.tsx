@@ -13,10 +13,73 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { structuredData } from "@/lib/seo";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Master Management Audit Qualité Industrie & Service - FEGK",
+  description:
+    "Master Audit Qualité FEGK : Formation avancée en Management Audit Qualité. 18 mois, weekend, hybride. Devenez expert en audit et certification qualité. Inscription ouverte.",
+  keywords: [
+    "master audit qualité FEGK",
+    "formation audit qualité master",
+    "management audit qualité master",
+    "audit qualité industrie formation",
+    "master qualité FEGK",
+    "formation expert audit",
+    "certification qualité master",
+    "audit qualité service formation",
+    "master weekend audit",
+    "formation avancée audit",
+    "inscription master audit",
+    "expert qualité formation",
+  ],
+  alternates: {
+    canonical:
+      "https://managementauditetqualite.com/programmes/audit-qualite-master",
+  },
+};
 
 export default function AuditQualiteMasterPage() {
+  const courseLD = structuredData.course({
+    name: "Master en Management Audit Qualité Industrie & Service",
+    description:
+      "Formation avancée pour devenir expert en audit et management de la qualité dans les secteurs industriel et des services",
+    provider: "FEGK - Université Ibn Tofail",
+    courseCode: "MMAQ",
+    educationalLevel: "Master",
+    duration: "P18M",
+    price: "31000",
+    url: "https://managementauditetqualite.com/programmes/audit-qualite-master",
+  });
+
+  const breadcrumbLD = structuredData.breadcrumb([
+    { name: "Accueil", url: "https://managementauditetqualite.com" },
+    {
+      name: "Programmes",
+      url: "https://managementauditetqualite.com/programmes",
+    },
+    {
+      name: "Audit Qualité Master",
+      url: "https://managementauditetqualite.com/programmes/audit-qualite-master",
+    },
+  ]);
+
   return (
     <div className="min-h-screen bg-white">
+      {/* Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(courseLD),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbLD),
+        }}
+      />
       {/* Header */}
       <section className="py-12 sm:py-16 px-4 bg-gradient-to-r from-blue-700 to-blue-900 text-white">
         <div className="max-w-6xl mx-auto">
@@ -86,11 +149,29 @@ export default function AuditQualiteMasterPage() {
                   <span className="text-sm sm:text-base">Week-end</span>
                 </div>
               </div>
+
+              {/* Application Section - Under icons on left side */}
+              <div className="text-center mt-6">
+                <Button
+                  size="lg"
+                  className="bg-blue-600 hover:bg-blue-700 w-full"
+                  asChild
+                >
+                  <a
+                    href="https://fegk.uit.ac.ma/wp-content/uploads/2023/05/formulaire_dinscription_Audit_qualite_Master.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Pré-inscription en Ligne
+                  </a>
+                </Button>
+              </div>
             </div>
             <div>
               <Image
                 src="/placeholder.svg?height=400&width=600"
-                alt="Management Audit Qualité Industrie & Service"
+                alt="Formation Master Management Audit Qualité Industrie & Service - Laboratoire FEGK Kénitra"
+                title="Master Management Audit Qualité Industrie & Service - FEGK"
                 width={600}
                 height={400}
                 className="rounded-lg shadow-lg w-full h-auto"
@@ -427,11 +508,9 @@ export default function AuditQualiteMasterPage() {
                 </CardHeader>
                 <CardContent>
                   <div className="text-3xl font-bold text-blue-600 mb-2">
-                    31 000 DH
+                    30 000 DH
                   </div>
-                  <p className="text-gray-600">
-                    Formation complète (étudiants nationaux)
-                  </p>
+                  <p className="text-gray-600">Formation complète</p>
                 </CardContent>
               </Card>
 
@@ -472,31 +551,6 @@ export default function AuditQualiteMasterPage() {
                 <strong>Compte au trésor N°:</strong> 310 330 1006 021 7019801
                 01 68
               </p>
-            </div>
-          </div>
-
-          {/* Pre-registration */}
-          <div className="text-center">
-            <h2 className="text-3xl font-bold mb-6 text-blue-800">
-              Pré-inscription
-            </h2>
-            <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
-              Effectuez votre pré-inscription en ligne ou contactez directement
-              le coordonnateur de la formation.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700" asChild>
-                <a href="https://feg.uit.ac.ma/mus-management-audit-qualite-industrie-service/" target="_blank" rel="noopener noreferrer">
-                  Pré-inscription en Ligne
-                </a>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-blue-600 text-blue-600 hover:bg-blue-50 bg-transparent"
-              >
-                Télécharger la Brochure
-              </Button>
             </div>
           </div>
         </div>
