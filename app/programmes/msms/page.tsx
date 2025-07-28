@@ -173,14 +173,15 @@ export default function MSMSPage() {
                 </Button>
               </div>
             </div>
-            <div>
+            <div className="w-[500px] h-[550px] relative">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/programmes/masterM.webp"
                 alt="Étudiants Master Management Stratégique et Marketing Services - Campus universitaire FEGK Kénitra"
                 title="Master MSMS - Management Stratégique et Marketing des Services FEGK"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg"
+                width={500}
+                height={550}
+                style={{ objectFit: "cover" }}
+                className="rounded-lg shadow-lg w-[500px] h-[550px]"
               />
             </div>
           </div>

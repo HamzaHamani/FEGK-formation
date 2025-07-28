@@ -162,14 +162,15 @@ export default function MMSPage() {
                 </Button>
               </div>
             </div>
-            <div>
+            <div className="w-[500px] h-[550px] relative">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/programmes/licenseM.webp"
                 alt="Étudiants en formation Management et Marketing des Services - Salle de cours moderne FEGK Kénitra"
                 title="Formation Management et Marketing des Services - Licence MMS FEGK"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg w-full h-auto"
+                width={500}
+                height={550}
+                style={{ objectFit: "cover" }}
+                className="rounded-lg shadow-lg w-[500px] h-[550px]"
               />
             </div>
           </div>

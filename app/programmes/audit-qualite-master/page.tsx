@@ -167,14 +167,15 @@ export default function AuditQualiteMasterPage() {
                 </Button>
               </div>
             </div>
-            <div>
+            <div className="w-[500px] h-[550px] relative">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/programmes/masterA.webp"
                 alt="Formation Master Management Audit Qualité Industrie & Service - Laboratoire FEGK Kénitra"
                 title="Master Management Audit Qualité Industrie & Service - FEGK"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg w-full h-auto"
+                width={500}
+                height={550}
+                style={{ objectFit: "cover" }}
+                className="rounded-lg shadow-lg w-[500px] h-[550px]"
               />
             </div>
           </div>
