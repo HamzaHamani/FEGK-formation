@@ -19,6 +19,7 @@ import {
   Facebook,
   Linkedin,
 } from "lucide-react";
+import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -331,42 +332,6 @@ export default function ContactPage() {
                     </p>
                   </CardContent>
                 </Card>
-
-                <Card className="transition-all duration-300 hover:shadow-lg">
-                  <CardHeader className="pb-3 sm:pb-4">
-                    <CardTitle className="flex items-center gap-2 text-base sm:text-lg">
-                      <Users className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600" />
-                      Suivez-nous
-                    </CardTitle>
-                  </CardHeader>
-                  <CardContent className="pt-0">
-                    <p className="text-xs sm:text-sm text-gray-600 mb-4">
-                      Restez connectés avec FEGK sur nos réseaux sociaux
-                    </p>
-                    <div className="flex space-x-4">
-                      <a
-                        href="https://www.facebook.com/people/MUS-LUS/61578352602309/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
-                        aria-label="Suivez-nous sur Facebook - MUS LUS FEGK"
-                        title="Page Facebook officielle de MUS LUS - Formation Continue FEGK"
-                      >
-                        <Facebook className="h-6 w-6 text-white" />
-                      </a>
-                      <a
-                        href="https://www.linkedin.com/company/108265562"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-12 h-12 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-800 transition-colors"
-                        aria-label="Suivez-nous sur LinkedIn - FEGK Formation Continue"
-                        title="Profil LinkedIn officiel de FEGK - Formation Continue Management Audit Qualité"
-                      >
-                        <Linkedin className="h-6 w-6 text-white" />
-                      </a>
-                    </div>
-                  </CardContent>
-                </Card>
               </div>
             </div>
 
@@ -463,6 +428,43 @@ export default function ContactPage() {
                   </div>
                 </CardContent>
               </Card>
+
+              {/* Social Media Card */}
+              <Card className="transition-all duration-300 hover:shadow-lg mt-4">
+                <CardHeader className="pb-3 sm:pb-4">
+                  <CardTitle className="flex items-center gap-2 text-base sm:text-lg">
+                    <Users className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600" />
+                    Suivez-nous
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <p className="text-xs sm:text-sm text-gray-600 mb-4">
+                    Restez connectés avec FEGK sur nos réseaux sociaux
+                  </p>
+                  <div className="flex space-x-4">
+                    <a
+                      href="https://www.facebook.com/people/MUS-LUS/61578352602309/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors"
+                      aria-label="Suivez-nous sur Facebook - MUS LUS FEGK"
+                      title="Page Facebook officielle de MUS LUS - Formation Continue FEGK"
+                    >
+                      <Facebook className="h-6 w-6 text-white" />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/company/108265562"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-12 h-12 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-800 transition-colors"
+                      aria-label="Suivez-nous sur LinkedIn - FEGK Formation Continue"
+                      title="Profil LinkedIn officiel de FEGK - Formation Continue Management Audit Qualité"
+                    >
+                      <Linkedin className="h-6 w-6 text-white" />
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
 
@@ -534,8 +536,15 @@ export default function ContactPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               <Card>
                 <CardHeader className="text-center">
-                  <div className="w-20 h-20 bg-blue-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <Users className="h-10 w-10 text-blue-600" />
+                  <div className="w-20 h-20 mx-auto mb-4 relative overflow-hidden rounded-full">
+                    <Image
+                      src="/equipe/hicham.jpg"
+                      alt="M. Hicham Ouakil - Vice Doyen FEGK"
+                      fill
+                      className="object-cover"
+                      placeholder="blur"
+                      blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyEyDnyHV1XV1Q0dwKz/9k="
+                    />
                   </div>
                   <CardTitle className="text-lg">M. Hicham Ouakil</CardTitle>
                   <CardDescription>Vice Doyen</CardDescription>
@@ -554,8 +563,15 @@ export default function ContactPage() {
 
               <Card>
                 <CardHeader className="text-center">
-                  <div className="w-20 h-20 bg-blue-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <Users className="h-10 w-10 text-blue-600" />
+                  <div className="w-20 h-20 mx-auto mb-4 relative overflow-hidden rounded-full">
+                    <Image
+                      src="/equipe/houda.jpg"
+                      alt="Mme. Houda Lechheb - Équipe de Direction FEGK"
+                      fill
+                      className="object-cover"
+                      placeholder="blur"
+                      blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyEyDnyHV1XV1Q0dwKz/9k="
+                    />
                   </div>
                   <CardTitle className="text-lg">Mme. Houda Lechheb</CardTitle>
                   <CardDescription>Équipe de Direction</CardDescription>
@@ -574,8 +590,15 @@ export default function ContactPage() {
 
               <Card>
                 <CardHeader className="text-center">
-                  <div className="w-20 h-20 bg-blue-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <Users className="h-10 w-10 text-blue-600" />
+                  <div className="w-20 h-20 mx-auto mb-4 relative overflow-hidden rounded-full">
+                    <Image
+                      src="/equipe/elatmani.jpeg"
+                      alt="M. Mohammed Elatmani - Équipe de Direction FEGK"
+                      fill
+                      className="object-cover"
+                      placeholder="blur"
+                      blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyEyDnyHV1XV1Q0dwKz/9k="
+                    />
                   </div>
                   <CardTitle className="text-lg">
                     M. Mohammed Elatmani
@@ -596,8 +619,15 @@ export default function ContactPage() {
 
               <Card>
                 <CardHeader className="text-center">
-                  <div className="w-20 h-20 bg-blue-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-                    <Users className="h-10 w-10 text-blue-600" />
+                  <div className="w-20 h-20 mx-auto mb-4 relative overflow-hidden rounded-full">
+                    <Image
+                      src="/equipe/hamani.jpeg"
+                      alt="M. Hamza Hamani - Équipe de Direction FEGK"
+                      fill
+                      className="object-cover"
+                      placeholder="blur"
+                      blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyEyDnyHV1XV1Q0dwKz/9k="
+                    />
                   </div>
                   <CardTitle className="text-lg">M. Hamza Hamani</CardTitle>
                   <CardDescription>Équipe de Direction</CardDescription>

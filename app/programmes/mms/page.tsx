@@ -162,7 +162,7 @@ export default function MMSPage() {
                 </Button>
               </div>
             </div>
-            <div className="w-[500px] h-[550px] relative">
+            <div className="w-[500px] h-[550px] relative overflow-hidden">
               <Image
                 src="/programmes/licenseM.webp"
                 alt="Étudiants en formation Management et Marketing des Services - Salle de cours moderne FEGK Kénitra"

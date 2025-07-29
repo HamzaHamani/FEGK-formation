@@ -168,7 +168,7 @@ export default function AuditQualiteLicencePage() {
                 </Button>
               </div>
             </div>
-            <div className="w-[500px] h-[550px] relative">
+            <div className="w-[500px] h-[550px] relative overflow-hidden">
               <Image
                 src="/programmes/licenseA.webp"
                 alt="Formation Licence Management Audit Qualité - Étudiants en cours pratique FEGK Kénitra"

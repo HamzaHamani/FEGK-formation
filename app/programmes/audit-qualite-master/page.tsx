@@ -167,7 +167,7 @@ export default function AuditQualiteMasterPage() {
                 </Button>
               </div>
             </div>
-            <div className="w-[500px] h-[550px] relative">
+            <div className="w-[500px] h-[550px] relative overflow-hidden">
               <Image
                 src="/programmes/masterA.webp"
                 alt="Formation Master Management Audit Qualité Industrie & Service - Laboratoire FEGK Kénitra"

@@ -173,7 +173,7 @@ export default function MSMSPage() {
                 </Button>
               </div>
             </div>
-            <div className="w-[500px] h-[550px] relative">
+            <div className="w-[500px] h-[550px] relative overflow-hidden">
               <Image
                 src="/programmes/masterM.webp"
                 alt="Étudiants Master Management Stratégique et Marketing Services - Campus universitaire FEGK Kénitra"
