@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "Programmes de Formation Continue FEGK - Management, Marketing & Audit",
+  title: "Programmes Formation Continue FEGK - Management & Audit",
   description:
-    "Découvrez tous nos programmes de formation continue FEGK : Licence et Master en Management Marketing Services, Audit Qualité. Formation weekend, hybride. Université Ibn Tofail Kénitra.",
+    "Découvrez nos programmes formation continue FEGK : Licence et Master Management Marketing Services, Audit Qualité. Formation weekend hybride.",
   keywords: [
     "programmes formation FEGK",
     "formation continue programmes",

@@ -18,10 +18,9 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "Admissions Formation Continue FEGK - Inscription Management & Audit Qualité",
+  title: "Admissions Formation Continue FEGK - Inscription Management",
   description:
-    "Admissions FEGK : Processus d'inscription pour formations Management, Marketing et Audit Qualité. Conditions d'admission, dossier candidature, dates importantes.",
+    "Admissions FEGK : Processus inscription formations Management, Marketing et Audit Qualité. Conditions admission, dossier candidature, dates importantes.",
   keywords: [
     "admission FEGK",
     "inscription formation continue",

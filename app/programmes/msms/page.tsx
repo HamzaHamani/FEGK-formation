@@ -19,9 +19,9 @@ import { structuredData } from "@/lib/seo";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Master Management Stratégique et Marketing Services (MSMS) - FEGK",
+  title: "Master Management Stratégique Marketing Services MSMS - FEGK",
   description:
-    "Master MSMS FEGK : Formation en Management Stratégique et Marketing des Services. 18 mois, weekend, hybride. Développez vos compétences en leadership et marketing. Inscription ouverte.",
+    "Master MSMS FEGK : Formation Management Stratégique et Marketing Services. 18 mois weekend hybride. Développez compétences leadership marketing. Inscription ouverte.",
   keywords: [
     "master MSMS FEGK",
     "management stratégique formation",
@@ -178,10 +178,11 @@ export default function MSMSPage() {
                 src="/programmes/masterM.webp"
                 alt="Étudiants Master Management Stratégique et Marketing Services - Campus universitaire FEGK Kénitra"
                 title="Master MSMS - Management Stratégique et Marketing des Services FEGK"
-                width={500}
-                height={550}
-                style={{ objectFit: "cover" }}
-                className="rounded-lg shadow-lg w-[500px] h-[550px]"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-lg"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R+VLNjZ1dQ2q"
               />
             </div>
           </div>

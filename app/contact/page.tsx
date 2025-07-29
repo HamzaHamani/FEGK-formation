@@ -22,9 +22,9 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact FEGK - Formation Continue Management Audit Qualité | Kénitra",
+  title: "Contact FEGK - Formation Management Audit Qualité Kénitra",
   description:
-    "Contactez FEGK pour vos questions sur les formations Management et Audit Qualité. Adresse, téléphone, email. Campus Universitaire Maamora, Kénitra.",
+    "Contactez FEGK pour vos formations Management et Audit Qualité. Adresse, téléphone, email. Campus Universitaire Maamora, Kénitra.",
   keywords: [
     "contact FEGK",
     "FEGK Kénitra adresse",

@@ -17,9 +17,9 @@ import { structuredData } from "@/lib/seo";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Master Management Audit Qualité Industrie & Service - FEGK",
+  title: "Master Management Audit Qualité Industrie Service - FEGK",
   description:
-    "Master Audit Qualité FEGK : Formation avancée en Management Audit Qualité. 18 mois, weekend, hybride. Devenez expert en audit et certification qualité. Inscription ouverte.",
+    "Master Audit Qualité FEGK : Formation avancée Management Audit Qualité. 18 mois weekend hybride. Devenez expert audit et certification qualité. Inscription ouverte.",
   keywords: [
     "master audit qualité FEGK",
     "formation audit qualité master",
@@ -158,7 +158,7 @@ export default function AuditQualiteMasterPage() {
                   asChild
                 >
                   <a
-                    href="https://fegk.uit.ac.ma/wp-content/uploads/2023/05/formulaire_dinscription_Audit_qualite_Master.pdf"
+                    href="https://sites.google.com/uit.ac.ma/mus-management-audit-qualite-industrie-service/inscription-en-ligne"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -172,10 +172,11 @@ export default function AuditQualiteMasterPage() {
                 src="/programmes/masterA.webp"
                 alt="Formation Master Management Audit Qualité Industrie & Service - Laboratoire FEGK Kénitra"
                 title="Master Management Audit Qualité Industrie & Service - FEGK"
-                width={500}
-                height={550}
-                style={{ objectFit: "cover" }}
-                className="rounded-lg shadow-lg w-[500px] h-[550px]"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-lg w-full h-auto"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R+VLNjZ1dQ2q"
               />
             </div>
           </div>

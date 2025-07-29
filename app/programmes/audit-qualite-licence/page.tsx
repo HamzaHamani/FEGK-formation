@@ -19,7 +19,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Licence Management Audit Qualité - FEGK Kénitra",
   description:
-    "Licence Audit Qualité FEGK : Formation en Management Audit Qualité. 2 semestres, weekend, hybride. Maîtrisez les outils qualité et audit organisationnel. Inscription ouverte.",
+    "Licence Audit Qualité FEGK : Formation Management Audit Qualité. 2 semestres weekend hybride. Maîtrisez outils qualité et audit organisationnel. Inscription ouverte.",
   keywords: [
     "licence audit qualité FEGK",
     "formation audit qualité",
@@ -173,10 +173,11 @@ export default function AuditQualiteLicencePage() {
                 src="/programmes/licenseA.webp"
                 alt="Formation Licence Management Audit Qualité - Étudiants en cours pratique FEGK Kénitra"
                 title="Licence Management Audit Qualité - Formation FEGK"
-                width={500}
-                height={550}
-                style={{ objectFit: "cover" }}
-                className="rounded-lg shadow-lg w-[500px] h-[550px]"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-lg w-full h-auto"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R+VLNjZ1dQ2q"
               />
             </div>
           </div>

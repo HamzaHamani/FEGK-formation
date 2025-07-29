@@ -17,9 +17,9 @@ import { structuredData } from "@/lib/seo";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Licence Management et Marketing des Services (MMS) - FEGK",
+  title: "Licence Management Marketing Services (MMS) - FEGK",
   description:
-    "Licence MMS FEGK : Formation en Management et Marketing des Services. 2 semestres, weekend, hybride. Concevez des offres de services compétitives. Inscription ouverte.",
+    "Licence MMS FEGK : Formation Management et Marketing Services. 2 semestres weekend hybride. Concevez offres services compétitives. Inscription ouverte.",
   keywords: [
     "licence MMS FEGK",
     "management marketing services",
@@ -167,10 +167,11 @@ export default function MMSPage() {
                 src="/programmes/licenseM.webp"
                 alt="Étudiants en formation Management et Marketing des Services - Salle de cours moderne FEGK Kénitra"
                 title="Formation Management et Marketing des Services - Licence MMS FEGK"
-                width={500}
-                height={550}
-                style={{ objectFit: "cover" }}
-                className="rounded-lg shadow-lg w-[500px] h-[550px]"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-lg w-full h-auto"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R+VLNjZ1dQ2q"
               />
             </div>
           </div>

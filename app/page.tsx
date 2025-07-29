@@ -9,10 +9,9 @@ import { structuredData } from "@/lib/seo";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "Management Audit et Qualité - Formation Continue FEGK Kénitra | Université Ibn Tofail",
+  title: "Formation Continue FEGK Kénitra - Management Audit Qualité",
   description:
-    "Formation continue en Management, Audit et Qualité à FEGK Kénitra : Licence et Master en Management Marketing Services, Audit Qualité. Formation weekend, hybride. Inscription ouverte.",
+    "Formation continue FEGK Kénitra : Licence et Master en Management, Marketing Services, Audit Qualité. Formation weekend hybride. Inscription ouverte.",
   keywords: [
     "management audit et qualité",
     "formation management audit qualité",
@@ -103,6 +102,8 @@ export default function HomePage() {
           fill
           className="object-cover object-center"
           priority
+          placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R+VLNjZ1dQ2q"
         />
         {/* Blue Overlay for contrast */}
         <div className="absolute inset-0 bg-gradient-to-b from-blue-900/80 to-blue-800/80"></div>
@@ -589,7 +590,7 @@ export default function HomePage() {
                   asChild
                 >
                   <a
-                    href="https://fegk.uit.ac.ma/wp-content/uploads/2023/05/formulaire_dinscription_Audit_qualite_Master.pdf"
+                    href="https://sites.google.com/uit.ac.ma/mus-management-audit-qualite-industrie-service/inscription-en-ligne"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -679,6 +680,8 @@ export default function HomePage() {
                 width={500}
                 height={600}
                 className="rounded-lg shadow-xl max-w-full h-auto"
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R+VLNjZ1dQ2q"
               />
             </div>
           </div>
