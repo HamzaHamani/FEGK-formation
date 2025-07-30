@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Masteren Management Stratégique et Marketing des Services ",
+  title: "Master en Management Stratégique et Marketing des Services ",
   description:
     "Formation MSMS - Master Management Stratégique et Marketing des Services FEGK. Master spécialisé universitaire. Formation weekend. Université Ibn Tofail.",
   keywords: [

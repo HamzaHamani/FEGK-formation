@@ -11,9 +11,11 @@ import {
   Target,
   BookOpen,
 } from "lucide-react";
-import Image from "next/image";
+import LazyImage from "@/components/lazy-image";
 import Link from "next/link";
 import { structuredData } from "@/lib/seo";
+import type { Metadata } from "next";
+
 export default function MMSPage() {
   const courseLD = structuredData.course({
     name: "Licence en Management et Marketing des Services (MMS)",
@@ -78,7 +80,7 @@ export default function MMSPage() {
       {/* Program Overview */}
       <section className="py-12 sm:py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 items-center mb-12 sm:mb-16">
+          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 mt-5  mb-12 sm:mb-16">
             <div>
               <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 sm:mb-6 text-blue-800">
                 Objectif Général de la Formation
@@ -137,17 +139,17 @@ export default function MMSPage() {
                 </Button>
               </div>
             </div>
-            <div className="w-[500px] h-[550px] relative overflow-hidden">
-              <Image
-                src="/programmes/licenseM.webp"
-                alt="Étudiants en formation Management et Marketing des Services - Salle de cours moderne FEGK Kénitra"
-                title="Formation Management et Marketing des Services - Licence MMS FEGK"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg w-full h-auto"
-                placeholder="blur"
-                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R+VLNjZ1dQ2q"
-              />
+            <div className="flex justify-center items-center">
+              <div className="w-[500px] h-[550px] relative overflow-hidden">
+                <LazyImage
+                  src="/programmes/licenseM.webp"
+                  alt="Étudiants en formation Management et Marketing des Services - Salle de cours moderne FEGK Kénitra"
+                  title="Formation Management et Marketing des Services - Licence MMS FEGK"
+                  width={600}
+                  height={400}
+                  className="rounded-lg shadow-lg w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
 

@@ -13,7 +13,7 @@ import {
   Globe,
   TrendingUp,
 } from "lucide-react";
-import Image from "next/image";
+import LazyImage from "@/components/lazy-image";
 import Link from "next/link";
 import { structuredData } from "@/lib/seo";
 import type { Metadata } from "next";
@@ -82,7 +82,7 @@ export default function MSMSPage() {
       {/* Program Overview */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+          <div className="grid lg:grid-cols-2 gap-12 mt-5 mb-16">
             <div>
               <h2 className="text-3xl font-bold mb-6 text-blue-800">
                 Objectifs de la Formation
@@ -150,17 +150,17 @@ export default function MSMSPage() {
                 </Button>
               </div>
             </div>
-            <div className="w-[500px] h-[550px] relative overflow-hidden">
-              <Image
-                src="/programmes/masterM.webp"
-                alt="Étudiants Master Management Stratégique et Marketing Services - Campus universitaire FEGK Kénitra"
-                title="Master MSMS - Management Stratégique et Marketing des Services FEGK"
-                width={600}
-                height={400}
-                className="rounded-lg shadow-lg"
-                placeholder="blur"
-                blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R+VLNjZ1dQ2q"
-              />
+            <div className="flex justify-center items-center">
+              <div className="w-[500px] h-[550px] relative overflow-hidden">
+                <LazyImage
+                  src="/programmes/masterM.webp"
+                  alt="Étudiants Master Management Stratégique et Marketing Services - Campus universitaire FEGK Kénitra"
+                  title="Master MSMS - Management Stratégique et Marketing des Services FEGK"
+                  width={600}
+                  height={400}
+                  className="rounded-lg shadow-lg w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
 
