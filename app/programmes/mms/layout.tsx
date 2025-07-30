@@ -1,12 +1,12 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Master Management Marketing Services | FEGK Ibn Tofail",
+  title: "License en Management et Marketing des Services",
   description:
-    "Formation MMS - Master Management Marketing Services à FEGK. Master spécialisé universitaire en management et marketing des services. Université Ibn Tofail.",
+    "Formation MMS - License en Management et Marketing des Services à FEGK. License spécialisée universitaire en management et marketing des services. Université Ibn Tofail.",
   keywords: [
     "MMS",
-    "Master Management Marketing Services",
+    "License en Management et Marketing des Services",
     "FEGK",
     "Ibn Tofail",
     "Université Ibn Tofail",

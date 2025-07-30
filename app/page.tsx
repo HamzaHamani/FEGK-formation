@@ -8,69 +8,6 @@ import AnimatedCounter from "@/components/animated-counter";
 import { structuredData } from "@/lib/seo";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Formation Continue FEGK Kénitra - Management Audit Qualité",
-  description:
-    "Formation continue FEGK Kénitra : Licence et Master en Management, Marketing Services, Audit Qualité. Formation weekend hybride. Inscription ouverte.",
-  keywords: [
-    "management audit et qualité",
-    "formation management audit qualité",
-    "audit et qualité formation",
-    "management qualité FEGK",
-    "formation continue FEGK",
-    "FEGK formation",
-    "formation management Kénitra",
-    "formation marketing services",
-    "audit qualité formation",
-    "licence management FEGK",
-    "master management FEGK",
-    "formation weekend Maroc",
-    "formation hybride",
-    "inscription formation continue",
-    "développement professionnel",
-    "formation cadres Maroc",
-    "Université Ibn Tofail formation",
-    "FEGK Kénitra inscription",
-    "formation certifiante management",
-    "audit qualité industrie",
-    "management stratégique formation",
-    "certification qualité formation",
-    // University-specific keywords
-    "Ibn Tofail formation continue",
-    "UIT FEGK",
-    "Université Ibn Tofail Kenitra",
-    "FEGK Ibn Tofail formation",
-    "Faculté Économie Gestion Commerce",
-    // Degree-specific keywords
-    "LU formation",
-    "LSU formation",
-    "MSU formation",
-    "MUS formation",
-    "licence spécialisée universitaire",
-    "master spécialisé universitaire",
-    "licence universitaire formation",
-    "master universitaire spécialisé",
-    // Program-specific keywords
-    "MMS formation FEGK",
-    "MSMS formation FEGK",
-    "Master Management Stratégique formation",
-    "Master Management Systèmes formation",
-    "formation audit qualité licence",
-    "formation audit qualité master",
-    "marketing des services formation",
-    // Location and modality keywords
-    "formation continue Kénitra",
-    "formation weekend Kenitra",
-    "formation hybride Maroc",
-    "études supérieures continue",
-    "formation executive Maroc",
-    "formation professionnelle supérieure",
-  ],
-  alternates: {
-    canonical: "https://managementauditetqualite.com",
-  },
-};
-
 export default function HomePage() {
   const organizationLD = structuredData.organization;
   const breadcrumbLD = structuredData.breadcrumb([

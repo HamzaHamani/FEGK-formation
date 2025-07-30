@@ -38,7 +38,7 @@ const tiemposHeadline = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Management Audit Qualité - Formation Continue FEGK",
+  title: "Formation Continue Management Audit Qualité - FEGK",
   description:
     "Formation Management, Audit et Qualité FEGK Kénitra : Licence et Master. Université Ibn Tofail. Formation weekend. Inscription ouverte.",
   keywords: [
@@ -155,6 +155,10 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "your-google-verification-code",
+  },
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/LOGO.jpg',
   },
   other: {
     "facebook:page": "https://www.facebook.com/people/MUS-LUS/61578352602309/",

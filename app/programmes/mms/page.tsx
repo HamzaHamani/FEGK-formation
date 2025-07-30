@@ -14,31 +14,6 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import { structuredData } from "@/lib/seo";
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "Licence Management Marketing Services (MMS) - FEGK",
-  description:
-    "Licence MMS FEGK : Formation Management et Marketing Services. 2 semestres weekend hybride. Concevez offres services compétitives. Inscription ouverte.",
-  keywords: [
-    "licence MMS FEGK",
-    "management marketing services",
-    "formation MMS Kénitra",
-    "licence marketing services",
-    "formation management services",
-    "MMS weekend",
-    "licence FEGK management",
-    "marketing services formation",
-    "formation hybride MMS",
-    "inscription licence MMS",
-    "services marketing formation",
-    "management formation licence",
-  ],
-  alternates: {
-    canonical: "https://managementauditetqualite.com/programmes/mms",
-  },
-};
-
 export default function MMSPage() {
   const courseLD = structuredData.course({
     name: "Licence en Management et Marketing des Services (MMS)",

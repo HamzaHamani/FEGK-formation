@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Licence Audit et Qualité | FEGK Ibn Tofail",
+  title: "Licence en Management Audit et Qualité  ",
   description:
-    "Formation Licence en Audit et Qualité à la Faculté d'Économie, Gestion et Commerce (FEGK) de l'Université Ibn Tofail. Licence spécialisée universitaire (LSU) en audit et contrôle qualité.",
+    "Formation Licence Management en Audit et Qualité à la Faculté d'Économie, Gestion et Commerce (FEGK) de l'Université Ibn Tofail. Licence spécialisée universitaire (LSU) en audit et contrôle qualité.",
   keywords: [
     "Licence Audit Qualité",
     "LU",
