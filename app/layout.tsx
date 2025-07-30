@@ -157,8 +157,8 @@ export const metadata: Metadata = {
     google: "your-google-verification-code",
   },
   icons: {
-    icon: '/favicon.ico',
-    apple: '/LOGO.jpg',
+    icon: "/favicon.ico",
+    apple: "/LOGO.jpg",
   },
   other: {
     "facebook:page": "https://www.facebook.com/people/MUS-LUS/61578352602309/",

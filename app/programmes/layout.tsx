@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Programmes FEGK - Formation Continue Management Kénitra",
   description:
-    "Découvrez notre catalogue complet de formations continues FEGK. Programmes MMS, MSMS et cursus spécialisés. Formation weekend hybride. Inscription ouverte.",
+    "Découvrez notre catalogue complet de formations continues FEGK. Programmes MMS, MSMS et cursus spécialisés pour cadres. Formation weekend hybride.",
   keywords: [
     "programmes formation FEGK",
     "catalogue formations continues",

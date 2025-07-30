@@ -3,7 +3,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Master Management Audit et Qualité Industrie & Service",
   description:
-    "Formation Master en Audit et Qualité à la Faculté d'Économie, Gestion et Commerce (FEGK) de l'Université Ibn Tofail. Master spécialisé universitaire (MSU) en audit et management qualité.",
+    "Formation Master Audit et Qualité FEGK. Master spécialisé universitaire (MSU) en audit et management qualité. Formation weekend hybride. Université Ibn Tofail.",
   keywords: [
     "Master Audit Qualité",
     "MSU",
