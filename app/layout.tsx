@@ -38,13 +38,9 @@ const tiemposHeadline = localFont({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default:
-      "Management Audit et Qualité - Formation Continue FEGK Université Ibn Tofail",
-    template: "%s | Management Audit et Qualité",
-  },
+  title: "Management Audit Qualité - Formation Continue FEGK",
   description:
-    "Formation continue en Management, Audit et Qualité à FEGK Kénitra : Licence et Master en Management et Marketing des Services, Management Audit Qualité. Université Ibn Tofail. Formation weekend, hybride.",
+    "Formation Management, Audit et Qualité FEGK Kénitra : Licence et Master. Université Ibn Tofail. Formation weekend. Inscription ouverte.",
   keywords: [
     "management audit et qualité",
     "formation management audit qualité",

@@ -16,30 +16,6 @@ import Link from "next/link";
 import { structuredData } from "@/lib/seo";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Master Management Audit Qualité Industrie Service - FEGK",
-  description:
-    "Master Audit Qualité FEGK : Formation avancée Management Audit Qualité. 18 mois weekend hybride. Devenez expert audit et certification qualité. Inscription ouverte.",
-  keywords: [
-    "master audit qualité FEGK",
-    "formation audit qualité master",
-    "management audit qualité master",
-    "audit qualité industrie formation",
-    "master qualité FEGK",
-    "formation expert audit",
-    "certification qualité master",
-    "audit qualité service formation",
-    "master weekend audit",
-    "formation avancée audit",
-    "inscription master audit",
-    "expert qualité formation",
-  ],
-  alternates: {
-    canonical:
-      "https://managementauditetqualite.com/programmes/audit-qualite-master",
-  },
-};
-
 export default function AuditQualiteMasterPage() {
   const courseLD = structuredData.course({
     name: "Master en Management Audit Qualité Industrie & Service",

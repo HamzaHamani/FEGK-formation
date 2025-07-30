@@ -7,7 +7,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "À Propos FEGK - Faculté Économie Gestion Kénitra",
+  title: "À Propos FEGK - Management Audit et Qualité Kénitra",
   description:
     "Découvrez FEGK : Histoire, mission et excellence en formation continue. Faculté d'Économie et Gestion Kénitra - Université Ibn Tofail.",
   keywords: [

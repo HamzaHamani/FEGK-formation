@@ -6,9 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
+
 import {
   MapPin,
   Phone,
@@ -23,7 +21,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact FEGK - Formation Management Audit Qualité Kénitra",
+  title: "Contact FEGK - Management Audit et Qualité Kénitra",
   description:
     "Contactez FEGK pour vos formations Management et Audit Qualité. Adresse, téléphone, email. Campus Universitaire Maamora, Kénitra.",
   keywords: [

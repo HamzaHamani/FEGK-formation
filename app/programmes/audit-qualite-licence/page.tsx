@@ -16,30 +16,6 @@ import Link from "next/link";
 import { structuredData } from "@/lib/seo";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Licence Management Audit Qualité - FEGK Kénitra",
-  description:
-    "Licence Audit Qualité FEGK : Formation Management Audit Qualité. 2 semestres weekend hybride. Maîtrisez outils qualité et audit organisationnel. Inscription ouverte.",
-  keywords: [
-    "licence audit qualité FEGK",
-    "formation audit qualité",
-    "management audit formation",
-    "qualité audit licence",
-    "formation audit FEGK",
-    "audit qualité Kénitra",
-    "certification qualité formation",
-    "management qualité licence",
-    "audit organisationnel formation",
-    "formation weekend audit",
-    "inscription audit qualité",
-    "FEGK audit formation",
-  ],
-  alternates: {
-    canonical:
-      "https://managementauditetqualite.com/programmes/audit-qualite-licence",
-  },
-};
-
 export default function AuditQualiteLicencePage() {
   const courseLD = structuredData.course({
     name: "Licence en Management Audit Qualité",

@@ -18,29 +18,6 @@ import Link from "next/link";
 import { structuredData } from "@/lib/seo";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Master Management Stratégique Marketing Services MSMS - FEGK",
-  description:
-    "Master MSMS FEGK : Formation Management Stratégique et Marketing Services. 18 mois weekend hybride. Développez compétences leadership marketing. Inscription ouverte.",
-  keywords: [
-    "master MSMS FEGK",
-    "management stratégique formation",
-    "marketing services master",
-    "MSMS Kénitra",
-    "formation management stratégique",
-    "master marketing FEGK",
-    "formation cadres supérieurs",
-    "leadership formation",
-    "stratégie marketing formation",
-    "master weekend Maroc",
-    "formation hybride management",
-    "inscription master MSMS",
-  ],
-  alternates: {
-    canonical: "https://managementauditetqualite.com/programmes/msms",
-  },
-};
-
 export default function MSMSPage() {
   const courseLD = structuredData.course({
     name: "Master en Management Stratégique et Marketing des Services (MSMS)",
