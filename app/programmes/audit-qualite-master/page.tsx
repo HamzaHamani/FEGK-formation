@@ -83,8 +83,8 @@ export default function AuditQualiteMasterPage() {
       {/* Program Overview */}
       <section className="py-12 sm:py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8 sm:gap-12 mt-5  mb-12 sm:mb-16">
-            <div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center mb-12 sm:mb-16">
+            <div className="order-1 lg:order-1">
               <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 sm:mb-6 text-blue-800">
                 Objectif de la Formation
               </h2>
@@ -143,8 +143,8 @@ export default function AuditQualiteMasterPage() {
                 </Button>
               </div>
             </div>
-            <div className="flex justify-center items-center">
-              <div className="w-[500px] h-[550px] relative overflow-hidden">
+            <div className="order-2 lg:order-2 flex justify-center items-center">
+              <div className="w-full max-w-[400px] md:max-w-[450px] lg:max-w-[500px] aspect-[4/5] relative overflow-hidden">
                 <LazyImage
                   src="/programmes/masterA.webp"
                   alt="Formation Master Management Audit Qualité Industrie & Service - Laboratoire FEGK Kénitra"
@@ -537,42 +537,27 @@ export default function AuditQualiteMasterPage() {
       {/* Contact */}
       <section className="py-16 px-4 bg-blue-800 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Contact et Informations</h2>
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
-            <div>
-              <h3 className="font-semibold mb-2">Équipe de Direction</h3>
-              <p>
-                <strong>M. Hicham OUAKIL</strong> - Vice-Doyen
-              </p>
-              <p>Tel: +212 661-130894 | Email: hicham.ouakil@uit.ac.ma</p>
-              <p>
-                <strong>Mme. Houda LECHHEB</strong> - Équipe de Direction
-              </p>
-              <p>Tel: +212 661-849348 | Email: houda.lechheb@uit.ac.ma</p>
-              <p>
-                <strong>M. Mohammed ELATMANI</strong> - Équipe de Direction
-              </p>
-              <p>Tel: +212 635-587844 | Email: mohammed.elatmani@uit.ac.ma</p>
-              <p>
-                <strong>M. Hamza HAMANI</strong> - Équipe de Direction
-              </p>
-              <p>Tel: +212 693-517484 | Email: hamza.hamani@uit.ac.ma</p>
-            </div>
-            <div>
-              <h3 className="font-semibold mb-2">
-                Faculté d'Économie et de Gestion
-              </h3>
-              <p>Campus Universitaire Maamora</p>
-              <p>BP: 2010 Kénitra</p>
-              <p>Tél: 05 37 32 92 18</p>
-              <p>Email: lechheb@yahoo.fr</p>
-            </div>
+          <h2 className="text-3xl font-bold mb-8">Contact et Informations</h2>
+          <p className="text-lg mb-8 opacity-90">
+            Pour plus d'informations sur ce programme ou pour nous contacter,
+            cliquez sur le bouton ci-dessous.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link href="/contact">
+              <Button size="lg" variant="secondary">
+                Nous Contacter
+              </Button>
+            </Link>
+            <Link href="/programmes">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white hover:text-blue-800"
+              >
+                Retour aux Programmes
+              </Button>
+            </Link>
           </div>
-          <Link href="/programmes">
-            <Button size="lg" variant="secondary">
-              Retour aux Programmes
-            </Button>
-          </Link>
         </div>
       </section>
     </div>

@@ -82,15 +82,15 @@ export default function MSMSPage() {
       {/* Program Overview */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-12 mt-5 mb-16">
-            <div>
-              <h2 className="text-3xl font-bold mb-6 text-blue-800">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center mb-12 sm:mb-16">
+            <div className="order-1 lg:order-1">
+              <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 sm:mb-6 text-blue-800">
                 Objectifs de la Formation
               </h2>
               <div className="space-y-4 mb-6">
                 <div className="flex items-start gap-3">
                   <Target className="h-6 w-6 text-blue-600 mt-1" />
-                  <p className="text-gray-600">
+                  <p className="text-sm sm:text-base text-gray-600">
                     Participer à la réussite de l'industrie du service par la
                     formation de cadres du middle et top management destinés au
                     secteur des services et domaines connexes
@@ -98,7 +98,7 @@ export default function MSMSPage() {
                 </div>
                 <div className="flex items-start gap-3">
                   <Users className="h-6 w-6 text-blue-600 mt-1" />
-                  <p className="text-gray-600">
+                  <p className="text-sm sm:text-base text-gray-600">
                     Former des cadres supérieurs poly-compétents capables
                     d'intervenir dans le montage de produits et/ou de projets,
                     de commercialiser un produit et/ou une destination
@@ -107,29 +107,35 @@ export default function MSMSPage() {
                 </div>
                 <div className="flex items-start gap-3">
                   <TrendingUp className="h-6 w-6 text-blue-600 mt-1" />
-                  <p className="text-gray-600">
+                  <p className="text-sm sm:text-base text-gray-600">
                     Renforcer les compétences dans le marketing des services et
                     la conduite des affaires
                   </p>
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 gap-4 mb-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-4 sm:mb-6">
                 <div className="flex items-center gap-2">
-                  <Clock className="h-5 w-5 text-blue-600" />
-                  <span>18 mois (4 semestres)</span>
+                  <Clock className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600" />
+                  <span className="text-sm sm:text-base">
+                    18 mois (4 semestres)
+                  </span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Users className="h-5 w-5 text-blue-600" />
-                  <span>Formation hybride</span>
+                  <Users className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600" />
+                  <span className="text-sm sm:text-base">
+                    Formation hybride
+                  </span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Euro className="h-5 w-5 text-blue-600" />
-                  <span>31 000 DH</span>
+                  <Euro className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600" />
+                  <span className="text-sm sm:text-base">31 000 DH</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Calendar className="h-5 w-5 text-blue-600" />
-                  <span>Samedi & Dimanche</span>
+                  <Calendar className="h-4 w-4 sm:h-5 sm:w-5 text-blue-600" />
+                  <span className="text-sm sm:text-base">
+                    Samedi & Dimanche
+                  </span>
                 </div>
               </div>
 
@@ -150,8 +156,8 @@ export default function MSMSPage() {
                 </Button>
               </div>
             </div>
-            <div className="flex justify-center items-center">
-              <div className="w-[500px] h-[550px] relative overflow-hidden">
+            <div className="order-2 lg:order-2 flex justify-center items-center">
+              <div className="w-full max-w-[400px] md:max-w-[450px] lg:max-w-[500px] aspect-[4/5] relative overflow-hidden">
                 <LazyImage
                   src="/programmes/masterM.webp"
                   alt="Étudiants Master Management Stratégique et Marketing Services - Campus universitaire FEGK Kénitra"
@@ -563,42 +569,27 @@ export default function MSMSPage() {
       {/* Contact */}
       <section className="py-16 px-4 bg-blue-800 text-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4">Contact et Informations</h2>
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
-            <div>
-              <h3 className="font-semibold mb-2">Équipe de Direction</h3>
-              <p>
-                <strong>M. Hicham OUAKIL</strong> - Vice-Doyen
-              </p>
-              <p>Tel: +212 661-130894 | Email: hicham.ouakil@uit.ac.ma</p>
-              <p>
-                <strong>Mme. Houda LECHHEB</strong> - Équipe de Direction
-              </p>
-              <p>Tel: +212 661-849348 | Email: houda.lechheb@uit.ac.ma</p>
-              <p>
-                <strong>M. Mohammed ELATMANI</strong> - Équipe de Direction
-              </p>
-              <p>Tel: +212 635-587844 | Email: mohammed.elatmani@uit.ac.ma</p>
-              <p>
-                <strong>M. Hamza HAMANI</strong> - Équipe de Direction
-              </p>
-              <p>Tel: +212 693-517484 | Email: hamza.hamani@uit.ac.ma</p>
-            </div>
-            <div>
-              <h3 className="font-semibold mb-2">
-                Faculté d'Économie et de Gestion
-              </h3>
-              <p>Campus Universitaire Maamora</p>
-              <p>BP: 2010 Kénitra</p>
-              <p>Tél: 05 37 32 92 18</p>
-              <p>Email: hicham.ouakil@uit.ac.ma</p>
-            </div>
+          <h2 className="text-3xl font-bold mb-8">Contact et Informations</h2>
+          <p className="text-lg mb-8 opacity-90">
+            Pour plus d'informations sur ce programme ou pour nous contacter,
+            cliquez sur le bouton ci-dessous.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link href="/contact">
+              <Button size="lg" variant="secondary">
+                Nous Contacter
+              </Button>
+            </Link>
+            <Link href="/programmes">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white hover:text-blue-800"
+              >
+                Retour aux Programmes
+              </Button>
+            </Link>
           </div>
-          <Link href="/programmes">
-            <Button size="lg" variant="secondary">
-              Retour aux Programmes
-            </Button>
-          </Link>
         </div>
       </section>
     </div>
