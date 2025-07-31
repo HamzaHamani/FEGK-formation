@@ -111,7 +111,7 @@ export default function ProgrammesPage() {
       schedule: "Week-end",
       format: "Hybride",
       description:
-        "Formation avancée dans le Management Audit Qualité Industrie & Service pour former des cadres dans le domaine spécialisé en Management Audit Qualité",
+        "Formation avancée dans le Management Audit Qualité Industrie & Service pour former des cadres dans les domaines spécialisés en Management Audit Qualité",
       requirements: "Bac+3 (ou équivalent)",
       careers: [
         "Responsables qualité dans différents secteurs",
@@ -492,10 +492,10 @@ export default function ProgrammesPage() {
                       Durée
                     </td>
                     <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-blue-800 font-medium text-sm sm:text-base">
-                      2 semestres
+                      2 semestres (1 an)
                     </td>
                     <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-green-700 font-medium text-sm sm:text-base">
-                      2 semestres
+                      2 semestres (1 an)
                     </td>
                   </tr>
                   <tr>
@@ -514,10 +514,10 @@ export default function ProgrammesPage() {
                       Domaine principal
                     </td>
                     <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-gray-700 text-xs sm:text-sm">
-                      Marketing des Services
+                      Tous les Domaines
                     </td>
                     <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-gray-700 text-xs sm:text-sm">
-                      Management Audit Qualité
+                      Tous les Domaines
                     </td>
                   </tr>
                   <tr>
@@ -591,10 +591,10 @@ export default function ProgrammesPage() {
                       Durée
                     </td>
                     <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-blue-800 font-medium text-sm sm:text-base">
-                      4 semestres
+                      4 semestres (2 ans)
                     </td>
                     <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-green-700 font-medium text-sm sm:text-base">
-                      4 semestres
+                      4 semestres (2 ans)
                     </td>
                   </tr>
                   <tr>
@@ -613,10 +613,10 @@ export default function ProgrammesPage() {
                       Domaine principal
                     </td>
                     <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-gray-700 text-xs sm:text-sm">
-                      Management Stratégique & Marketing
+                      Tous les domaines
                     </td>
                     <td className="px-3 sm:px-6 py-3 sm:py-4 text-center text-gray-700 text-xs sm:text-sm">
-                      Management Audit Qualité
+                      Tous les domaines
                     </td>
                   </tr>
                   <tr>
