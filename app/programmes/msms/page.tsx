@@ -82,8 +82,8 @@ export default function MSMSPage() {
       {/* Program Overview */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center mb-12 sm:mb-16">
-            <div className="order-1 lg:order-1">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-start mt-6 mb-12 sm:mb-16">
+            <div className="order-1 md:order-1">
               <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 sm:mb-6 text-blue-800">
                 Objectifs de la Formation
               </h2>
@@ -156,8 +156,8 @@ export default function MSMSPage() {
                 </Button>
               </div>
             </div>
-            <div className="order-2 lg:order-2 flex justify-center items-center">
-              <div className="w-full max-w-[400px] md:max-w-[450px] lg:max-w-[500px] aspect-[4/5] relative overflow-hidden">
+            <div className="order-2 md:order-2 flex justify-center items-center">
+              <div className="w-full max-w-[400px] sm:max-w-[450px] md:max-w-[380px] lg:max-w-[500px] aspect-[3/4] sm:aspect-[4/5] relative overflow-hidden">
                 <LazyImage
                   src="/programmes/masterM.webp"
                   alt="Étudiants Master Management Stratégique et Marketing Services - Campus universitaire FEGK Kénitra"

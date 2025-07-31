@@ -80,8 +80,8 @@ export default function MMSPage() {
       {/* Program Overview */}
       <section className="py-12 sm:py-16 px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center mb-12 sm:mb-16">
-            <div className="order-1 lg:order-1">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-start mb-12 sm:mb-16">
+            <div className="order-1 md:order-1">
               <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 sm:mb-6 text-blue-800">
                 Objectif Général de la Formation
               </h2>
@@ -139,8 +139,8 @@ export default function MMSPage() {
                 </Button>
               </div>
             </div>
-            <div className="order-2 lg:order-2 flex justify-center items-center">
-              <div className="w-full max-w-[400px] md:max-w-[450px] lg:max-w-[500px] aspect-[4/5] relative overflow-hidden">
+            <div className="order-2 md:order-2 flex justify-center items-center">
+              <div className="w-full max-w-[400px] sm:max-w-[450px] md:max-w-[380px] lg:max-w-[500px] aspect-[3/4] sm:aspect-[4/5] relative overflow-hidden">
                 <LazyImage
                   src="/programmes/licenseM.webp"
                   alt="Étudiants en formation Management et Marketing des Services - Salle de cours moderne FEGK Kénitra"
@@ -440,7 +440,8 @@ export default function MMSPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8">Contact et Informations</h2>
           <p className="text-lg mb-8 opacity-90">
-            Pour plus d'informations sur ce programme ou pour nous contacter, cliquez sur le bouton ci-dessous.
+            Pour plus d'informations sur ce programme ou pour nous contacter,
+            cliquez sur le bouton ci-dessous.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link href="/contact">
@@ -449,7 +450,11 @@ export default function MMSPage() {
               </Button>
             </Link>
             <Link href="/programmes">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-800">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white hover:text-blue-800"
+              >
                 Retour aux Programmes
               </Button>
             </Link>
